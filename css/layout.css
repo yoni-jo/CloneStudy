@@ -90,7 +90,12 @@ header ul.enb li:last-child a {
   padding-right: 10px;
   box-sizing: border-box;
 }
-
+header ul.enb li:last-child a i{
+  font-size:16px;
+  font-weight: bold;
+  margin:5px;
+  vertical-align: middle;
+}
 hr {
   display: none;
 }
@@ -339,10 +344,25 @@ main div#showRoom ul.detail li img {
 
 main div#showRoom a.go {
   display: inline-block;
-  padding: 6px 10px;
+  padding: 3px 5px;
   border: 1px solid;
   font-size: 13px;
 }
 main div#showRoom a.go::after{
-  
+  content:">";
+  margin-left: 5px;
+  display: inline-block;
+ transform: scaleX(0.5);
+}
+main div#showRoom button.counsel{
+
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background: gray;
+  color: white;
+  font-size: 16px;
 }
