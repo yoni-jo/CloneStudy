@@ -14,7 +14,6 @@ header {
   /* 중앙정렬 */
   padding-top: 30px;
   overflow: hidden;
-  position: relative;
 }
 
 h1 {
@@ -33,7 +32,6 @@ header h1 a {
 header>ul {
   /* > 자식선택자 바로아래있는 태그를 가르킴 */
   float: left;
-  display: inline-block;
 }
 
 header ul.gnb {
@@ -57,19 +55,37 @@ ul.gnb li h2 a {
 
 header ul.enb {
   width: 15%;
+  position: relative;
 }
 
 header ul.enb li {
   float: left;
   font-size: 12px;
 }
-
+header ul.enb li:first-child{
+  width: 39%;
+  text-align: left;
+}
+header ul.enb li:nth-child(2){
+  width: 61%;
+  text-align: right;
+}
 header ul.enb li:last-child {
   position: absolute;
-  top: 0;
-  right: 50px;
+  top: -25px;
+  background-color: red;
+  width: 100%;
+  padding: 5px;
 }
-
+header ul.enb li:last-child a{
+  color:#fff;
+  line-height: 100%;
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
 hr {
   display: none;
 }
