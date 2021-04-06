@@ -285,10 +285,9 @@ main div#office_banner a {
 }
 
 /* 컨텐츠 showRoom영역 */
-main div#showRoom {
+/* main div#showRoom {
   text-align: center;
   padding-top: 120px;
-  height: 100%;
 }
 
 main div#showRoom h2 {
@@ -311,9 +310,10 @@ main div#showRoom ul.list li {
 }
 
 main div#showRoom ul.list li+li {
-  /* 모든 li의 left border값이 지정된다  */
+  /* 모든 li의 left border값이 지정된다
   border-left: 1px solid;
 }
+
 
 main div#showRoom ul.list li a {
   padding: 6px 22px;
@@ -341,21 +341,87 @@ main div#showRoom ul.detail li h3.hidden {
 
 main div#showRoom ul.detail li img {
   width: 100%;
+} */
+/*  쇼룸------------------------- */
+#showroom{
+  padding-top: 120px;
+  text-align: center;
+}
+#showroom h2{
+
+  text-align: center;
+  font-size: 47px;
+  margin-bottom: 22px;
+}
+#showroom h2+p{
+
+  text-align: center;
+}
+#showroom ul{
+
+}
+/* 쇼룸리스트 */
+#showroom ul.list{
+  text-align: center;
+  margin-top: 25px;
+  display: inline-block;
+}
+#showroom ul.list li{
+  display: inline-block;
+}
+#showroom ul.list li+li{
+ border-left: 1px solid;
+}
+#showroom ul.list li a{
+  padding: 6px 20px;
+  display: block;
+}
+/* 쇼룸디테일 */
+#showroom ul.detail{
+  padding-top: 30px;
+  max-width: 1920px;
+  height: 33.85416vw;
+  position: relative;
+}
+#showroom ul.detail li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#showroom ul.detail li h3{
+  display: none;
 }
 
-main div#showRoom a.go {
+#showroom ul.detail li img{
+ width: 100%;
+}
+#showroom a.go{
+  display: inline-block;
+  padding: 6px 20px;
+  border: 1px solid;
+  font-size: 13px;
+}
+#showroom a.go::after{
+ content: ">";
+ margin-left: 8px;
+ transform: scaleY(1.7) translateY(-1.5px);
+ display: inline-block;
+}
+
+ main div#showroom a.go {
   display: inline-block;
   padding: 3px 5px;
   border: 1px solid;
   font-size: 13px;
 }
-main div#showRoom a.go::after{
+main div#showroom a.go::after{
   content:">";
   margin-left: 5px;
   display: inline-block;
  transform: scaleX(0.5);
 }
-main div#showRoom button.counsel{
+main div#showroom button.counsel{
 
   position: fixed;
   bottom: 100px;
@@ -368,10 +434,19 @@ main div#showRoom button.counsel{
   font-size: 16px;
 
 }
-main div#showRoom button.counsel i{
+main div#showroom button.counsel i{
   font-size: 25px;
   margin-right: 10px;
   vertical-align: -4px;
 
 }
+/* 컨텐츠 news영역 */
 main div#news{}
+main div#news h2{}
+main div#news p{}
+main div#news ul{}
+main div#news ul li{}
+main div#news ul li h3{}
+main div#news ul li a{}
+main div#news ul li time{}
+main div#news a.more{}
