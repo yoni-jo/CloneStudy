@@ -62,14 +62,17 @@ header ul.enb li {
   float: left;
   font-size: 12px;
 }
-header ul.enb li:first-child{
+
+header ul.enb li:first-child {
   width: 39%;
   text-align: left;
 }
-header ul.enb li:nth-child(2){
+
+header ul.enb li:nth-child(2) {
   width: 61%;
   text-align: right;
 }
+
 header ul.enb li:last-child {
   position: absolute;
   top: -25px;
@@ -77,8 +80,9 @@ header ul.enb li:last-child {
   width: 100%;
   padding: 5px;
 }
-header ul.enb li:last-child a{
-  color:#fff;
+
+header ul.enb li:last-child a {
+  color: #fff;
   line-height: 100%;
   width: 100%;
   display: block;
@@ -86,6 +90,7 @@ header ul.enb li:last-child a{
   padding-right: 10px;
   box-sizing: border-box;
 }
+
 hr {
   display: none;
 }
@@ -292,6 +297,7 @@ main div#showRoom p {
 
 main div#showRoom ul.list {
   text-align: center;
+  display: inline-block;
 }
 
 main div#showRoom ul.list li {
@@ -314,19 +320,29 @@ main div#showRoom ul.list li:last-child a {
   border: 0px;
 }
 
-main div#showRoom ul.detail {position: relative;}
+main div#showRoom ul.detail {
+  position: relative;
+}
 
 main div#showRoom ul.detail li {
   position: absolute;
   top: 50px;
 }
 
-main div#showRoom ul.detail li h3 {}
-
 main div#showRoom ul.detail li h3.hidden {
-  display: none
+  display: none;
 }
 
 main div#showRoom ul.detail li img {
-width: 100%;
+  width: 100%;
+}
+
+main div#showRoom a.go {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid;
+  font-size: 13px;
+}
+main div#showRoom a.go::after{
+  
 }
