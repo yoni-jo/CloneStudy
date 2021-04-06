@@ -288,6 +288,7 @@ main div#office_banner a {
 main div#showRoom {
   text-align: center;
   padding-top: 120px;
+  height: 100%;
 }
 
 main div#showRoom h2 {
@@ -373,3 +374,4 @@ main div#showRoom button.counsel i{
   vertical-align: -4px;
 
 }
+main div#news{}
