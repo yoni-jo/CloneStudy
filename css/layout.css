@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+/* 스타일 주석 */
+/* 상단영역 */
+/* 스타일 구문형식
+  마크업명{
+   속성 : 값;
+  }
+ */
+header {
+  max-width: 1200px;
+  /* 최대너비 */
+  margin: 0 auto;
+  /* 중앙정렬 */
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+h1 {
+  float: left;
+  /* 수평정렬 */
+  width: 15%;
+}
+
+header h1 a {
+  width: 120px;
+  height: 40px;
+  display: block;
+  text-align: center;
+}
+
+header>ul {
+  /* > 자식선택자 바로아래있는 태그를 가르킴 */
+  float: left;
+  display: inline-block;
+}
+
+header ul.gnb {
+  /* + 인접선택자 옆에 있는 태그를 가르킴 */
+  width: 70%;
+  text-align: center;
+}
+
+ul.gnb {}
+
+ul.gnb li {
+  font-size: 13px;
+  display: inline-block;
+}
+
+ul.gnb li h2 {}
+
+ul.gnb li h2 a {
+  padding: 4px 20px;
+}
+
+header ul.enb {
+  width: 15%;
+}
+
+header ul.enb li {
+  float: left;
+  font-size: 12px;
+}
+
+header ul.enb li:last-child {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+hr {
+  display: none;
+}
+
+/* 타이틀영역 */
+div#title {
+  padding: 200px 0 200px 0;
+  background-image: url(../img/interiorhome.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 100px;
+  box-sizing: content-box;
+}
+
+div#title h2 {
+  color: white;
+  font-size: 20px;
+  line-height: 2;
+}
+
+div#title h3 {
+  color: white;
+  font-size: 40px;
+  line-height: 1;
+}
+
+div#title a {
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border-bottom: border-box;
+}
+
+div#title a:after {
+  content: ">";
+  margin-left: 12px;
+  font-size: 20px;
+  transform: scaleX(0.5);
+  display: inline-block;
+}
+
+div#title ul li.hide {
+  display: none;
+}
+
+/*컨텐츠 issues */
+/* 컨텐츠 -----이슈  */
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main #issues {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 125px;
+}
+
+main #issues h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+main #issues h2::before {
+  content: "[ ";
+}
+
+main #issues h2::after {
+  content: " ]";
+}
+
+main #issues h3 {}
+
+main #issues h2+p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+main #issues ul {
+  text-align: center;
+  overflow: hidden;
+}
+
+main #issues ul li {
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+}
+
+main #issues ul li.left {
+  float: left;
+}
+
+main #issues ul li.left a::before {
+  content: "";
+  width: 100%;
+  height: 330px;
+  background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0819/issues.jpg);
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main #issues ul li.left+li a::before {
+  content: "";
+  width: 100%;
+  height: 330px;
+  background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0404/issues_02.jpg);
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main #issues ul li.right {
+  float: right;
+}
+
+main #issues ul li.right a::before {
+  content: "";
+  width: 100%;
+  height: 330px;
+  background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0404/issues_03.jpg);
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main #issues ul li a {
+  -color: blue;
+  display: block;
+}
+
+main #issues ul li a::before {
+  content: "";
+}
+
+main #issues ul li a h3 {
+  font-weight: bold;
+  line-height: 3;
+}
+
+main #issues ul li a h3+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+main #issues ul li a p.go {}
+
+/* 컨텐츠 office_banner영역 */
+main div#office_banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url(../img/img_officewelove_bg@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+main div#office_banner h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main div#office_banner p {
+  margin: 20px 0 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+main div#office_banner a {
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* 컨텐츠 showRoom영역 */
+main div#showRoom {
+  text-align: center;
+  padding-top: 120px;
+}
+
+main div#showRoom h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 22px;
+}
+
+main div#showRoom p {
+  padding-bottom: 80px;
+}
+
+main div#showRoom ul.list {
+  text-align: center;
+}
+
+main div#showRoom ul.list li {
+  display: inline-block;
+}
+
+main div#showRoom ul.list li+li {
+  /* 모든 li의 left border값이 지정된다  */
+  border-left: 1px solid;
+}
+
+main div#showRoom ul.list li a {
+  padding: 6px 22px;
+  display: block;
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+main div#showRoom ul.list li:last-child a {
+  border: 0px;
+}
+
+main div#showRoom ul.detail {position: relative;}
+
+main div#showRoom ul.detail li {
+  position: absolute;
+  top: 50px;
+}
+
+main div#showRoom ul.detail li h3 {}
+
+main div#showRoom ul.detail li h3.hidden {
+  display: none
+}
+
+main div#showRoom ul.detail li img {
+width: 100%;
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*브라우저 스타일초기화 */
+* {
+  margin: 0;
+  /*바깥여백    */
+  padding: 0;
+  /*안쪽 여백    */
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  color: #000;
+  font-weight: normal;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
