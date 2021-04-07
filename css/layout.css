@@ -503,7 +503,7 @@ main #studycase ul li.left a::before {
   content: "";
   width: 100%;
   height: 330px;
-  background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0819/issues.jpg);
+  background-image: url(../img/studycase/case_study_01.jpg);
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
@@ -513,7 +513,7 @@ main #studycase ul li.left+li a::before {
   content: "";
   width: 100%;
   height: 330px;
-  background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0404/issues_02.jpg);
+  background-image: url(../img/studycase/case_study_02.jpg);
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
@@ -527,7 +527,7 @@ main #studycase ul li.right a::before {
   content: "";
   width: 100%;
   height: 330px;
-  background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0404/issues_03.jpg);
+  background-image: url(../img/studycase/case_study_03.jpg);
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
