@@ -436,8 +436,7 @@ main div#news {
   margin-bottom: 100px;
 }
 
-main div#news h2, p {
-}
+main div#news h2, p {}
 
 main div#news h2 {
   font-size: 47px;
@@ -607,27 +606,31 @@ main #studycase ul li a p.go {
   width: 100%;
   text-align: center;
 }
-  main #studycase ul li:first-child a p.go:before{
-    content: "3M";
-    display: block;
-    margin-bottom: 60px;
-    font-size:3em;
-    font-weight: bolder;
-  }
-   main #studycase ul li:nth-child(2) a p.go:before{
-    content: "kakaogames";
-    display: block;
-    margin-bottom: 60px;
-    font-size:3em;
-    text-align:center;
-  }
-    main #studycase ul li:last-child a p.go:before{
-    content: "unionwork";
-    display: block;
-    margin-bottom: 60px;
-    font-size:3em;
-    text-align:center;
-  }
+
+main #studycase ul li:first-child a p.go:before {
+  content: "3M";
+  display: block;
+  margin-bottom: 60px;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+main #studycase ul li:nth-child(2) a p.go:before {
+  content: "kakaogames";
+  display: block;
+  margin-bottom: 60px;
+  font-size: 3em;
+  text-align: center;
+}
+
+main #studycase ul li:last-child a p.go:before {
+  content: "unionwork";
+  display: block;
+  margin-bottom: 60px;
+  font-size: 3em;
+  text-align: center;
+}
+
 main #studycase ul li a:hover p.go {
   opacity: 100%;
 }
@@ -646,6 +649,5 @@ main #studycase ul li a span.go_blind {
   opacity: 0%;
   z-index: 1;
 }
-  main #studycase ul li a span.go_blind:before{
-    
-  }
+
+main #studycase ul li a span.go_blind:before {}
