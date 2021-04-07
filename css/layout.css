@@ -90,12 +90,14 @@ header ul.enb li:last-child a {
   padding-right: 10px;
   box-sizing: border-box;
 }
-header ul.enb li:last-child a i{
-  font-size:16px;
+
+header ul.enb li:last-child a i {
+  font-size: 16px;
   font-weight: bold;
-  margin:5px;
+  margin: 5px;
   vertical-align: middle;
 }
+
 hr {
   display: none;
 }
@@ -343,87 +345,96 @@ main div#showRoom ul.detail li img {
   width: 100%;
 } */
 /*  쇼룸------------------------- */
-#showroom{
+#showroom {
   padding-top: 120px;
   text-align: center;
 }
-#showroom h2{
 
+#showroom h2 {
   text-align: center;
   font-size: 47px;
   margin-bottom: 22px;
 }
-#showroom h2+p{
 
+#showroom h2+p {
   text-align: center;
 }
-#showroom ul{
 
-}
+#showroom ul {}
+
 /* 쇼룸리스트 */
-#showroom ul.list{
+#showroom ul.list {
   text-align: center;
   display: inline-block;
   margin-bottom: 50px;
   margin-top: 50px;
 }
-#showroom ul.list li{
+
+#showroom ul.list li {
   display: inline-block;
 }
-#showroom ul.list li+li{
- border-left: 1px solid;
+
+#showroom ul.list li+li {
+  border-left: 1px solid;
 }
-#showroom ul.list li a{
+
+#showroom ul.list li a {
   padding: 6px 20px;
   display: block;
 }
+
 /* 쇼룸디테일 */
-#showroom ul.detail{
+#showroom ul.detail {
   padding-top: 30px;
   max-width: 1920px;
   height: 33.85416vw;
   position: relative;
 }
-#showroom ul.detail li{
+
+#showroom ul.detail li {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
 }
-#showroom ul.detail li h3{
+
+#showroom ul.detail li h3 {
   display: none;
 }
 
-#showroom ul.detail li img{
- width: 100%;
+#showroom ul.detail li img {
+  width: 100%;
 }
-#showroom a.go{
+
+#showroom a.go {
   display: inline-block;
   padding: 6px 20px;
   border: 1px solid;
   font-size: 13px;
 }
-#showroom a.go::after{
- content: ">";
- margin-left: 8px;
- transform: scaleY(1.7) translateY(-1.5px);
- display: inline-block;
+
+#showroom a.go::after {
+  content: ">";
+  margin-left: 8px;
+  transform: scaleY(1.7) translateY(-1.5px);
+  display: inline-block;
 }
 
- main div#showroom a.go {
+main div#showroom a.go {
   display: inline-block;
   padding: 3px 5px;
   border: 1px solid;
   font-size: 13px;
 }
-main div#showroom a.go::after{
-  content:">";
+
+main div#showroom a.go::after {
+  content: ">";
   margin-left: 5px;
   display: inline-block;
- transform: scaleX(0.5);
+  transform: scaleX(0.5);
 }
-main div#showroom button.counsel{
 
+main div#showroom button.counsel {
   position: fixed;
   bottom: 100px;
   right: 50px;
@@ -433,22 +444,54 @@ main div#showroom button.counsel{
   background: #616161;
   color: white;
   font-size: 16px;
-
 }
-main div#showroom button.counsel i{
+
+main div#showroom button.counsel i {
   font-size: 25px;
   margin-right: 10px;
   vertical-align: -4px;
-
 }
+
 /* 컨텐츠 news영역 */
-main div#news{width: 1200px;height: 100%;margin: 0 auto;}
-main div#news h2,p{text-align:center }
-main div#news h2{font-size: 47px;margin-bottom: 22px;padding-top: 70px;}
-main div#news p{}
-main div#news ul{margin-top: 100px;background-color: #8080802e;padding: 30px;}
-main div#news ul li{margin-bottom: 10px;}
-main div#news ul li>h3{float: left;width: 200px;}
-main div#news ul li a{text-align: center;}
-main div#news ul li time{float: right;}
-main div#news a.more{}
+main div#news {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main div#news h2, p {
+  text-align: center
+}
+
+main div#news h2 {
+  font-size: 47px;
+  margin-bottom: 22px;
+  padding-top: 70px;
+}
+
+main div#news p {}
+
+main div#news ul {
+  margin-top: 100px;
+  background-color: #8080802e;
+  padding: 30px;
+}
+
+main div#news ul li {
+  margin-bottom: 10px;
+}
+
+main div#news ul li>h3 {
+  float: left;
+  width: 200px;
+}
+
+main div#news ul li a {
+  text-align: center;
+}
+
+main div#news ul li time {
+  float: right;
+}
+
+main div#news a.more {}
