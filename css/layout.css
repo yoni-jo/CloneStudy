@@ -231,7 +231,6 @@ main #issues ul li.right a::before {
 }
 
 main #issues ul li a {
-  -color: blue;
   display: block;
   position: relative;
 }
@@ -397,10 +396,12 @@ main div#showroom a.go {
   border: 1px solid;
   font-size: 13px;
 }
+
 main div#showroom a.go:hover {
   background-color: black;
   color: white;
 }
+
 main div#showroom a.go::after {
   content: ">";
   margin-left: 5px;
@@ -436,17 +437,18 @@ main div#news {
 }
 
 main div#news h2, p {
-  text-align: center
 }
 
 main div#news h2 {
   font-size: 47px;
   /*! margin-bottom: 22px; */
   margin-top: 70px;
+  text-align: center;
 }
 
 main div#news p {
   line-height: 4;
+  text-align: center;
 }
 
 main div#news ul {
@@ -472,6 +474,7 @@ main div#news ul li a {
 main div#news ul li time {
   float: right;
 }
+
 /*콘텐츠 news,case study 공통적용버튼*/
 a.more {
   position: absolute;
@@ -483,16 +486,18 @@ a.more {
   top: 10px;
   line-height: 1;
 }
-  a.more:hover{
-    background-color: black;
-    color:white;
-  }
 
- a.more:after {
+a.more:hover {
+  background-color: black;
+  color: white;
+}
+
+a.more:after {
   content: ">";
   transform: scaleX(0.5);
   margin-left: 5px;
 }
+
 /* 콘텐츠 studycase영역 */
 main #studycase {
   max-width: 1200px;
@@ -591,15 +596,38 @@ main #studycase ul li a h3+p {
   line-height: 1.6;
   text-align: left;
 }
+
 main #studycase ul li a p.go {
   position: absolute;
-  top: calc(100%/2 - 50px);
-  left: calc(100% /3);
+  top: calc(100%/3 - 20px);
   z-index: 3;
   color: white;
   opacity: 0%;
   font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
+  main #studycase ul li:first-child a p.go:before{
+    content: "3M";
+    display: block;
+    margin-bottom: 60px;
+    font-size:3em;
+    font-weight: bolder;
+  }
+   main #studycase ul li:nth-child(2) a p.go:before{
+    content: "kakaogames";
+    display: block;
+    margin-bottom: 60px;
+    font-size:3em;
+    text-align:center;
+  }
+    main #studycase ul li:last-child a p.go:before{
+    content: "unionwork";
+    display: block;
+    margin-bottom: 60px;
+    font-size:3em;
+    text-align:center;
+  }
 main #studycase ul li a:hover p.go {
   opacity: 100%;
 }
@@ -618,3 +646,6 @@ main #studycase ul li a span.go_blind {
   opacity: 0%;
   z-index: 1;
 }
+  main #studycase ul li a span.go_blind:before{
+    
+  }
