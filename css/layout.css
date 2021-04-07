@@ -457,6 +457,7 @@ main div#news {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 main div#news h2, p {
@@ -465,20 +466,21 @@ main div#news h2, p {
 
 main div#news h2 {
   font-size: 47px;
-  margin-bottom: 22px;
-  padding-top: 70px;
+  /*! margin-bottom: 22px; */
+  margin-top: 70px;
 }
 
-main div#news p {}
+main div#news p {line-height: 4;}
 
 main div#news ul {
-  margin-top: 100px;
   background-color: #8080802e;
   padding: 30px;
+  line-height: 1em;
+  margin-top: 30px;
 }
 
 main div#news ul li {
-  margin-bottom: 10px;
+  line-height: 2.5em;
 }
 
 main div#news ul li>h3 {
@@ -494,4 +496,9 @@ main div#news ul li time {
   float: right;
 }
 
-main div#news a.more {}
+main div#news a.more {position: absolute;right: 0;border: 1px solid;padding: 0px 5px 5px 5px;font-size: 18px;font-weight: bold;top: 10px;line-height: 1;}
+  main div#news a.more:after{
+    content:">";
+    transform: scaleX(0.5);
+    margin-left: 5px;
+  }
