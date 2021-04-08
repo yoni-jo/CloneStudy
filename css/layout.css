@@ -592,5 +592,25 @@ main #office_life {
   color: white;
   font-size: 14px;
 }
-main a.top{}
-footer{}
+
+/* scrollTop기능영역 */
+main a.top {
+  display: block;
+  text-align: center;
+  margin: 30px;
+  color: gray;
+  font-weight: bold;
+}
+
+main a.top::before {
+  content: "";
+  background-image: url(http://fursys.com/fur_frt/images/main_renewal/top.png);
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+  margin-top: -4px;
+  margin-right: 15px;
+}
+
+footer {}
