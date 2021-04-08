@@ -7,6 +7,18 @@
    속성 : 값;
   }
  */
+/* ------------공통스타일영역시작---------------- */
+.h2 {
+  font-size: 40px !important;
+  font-weight: 500 !important;
+}
+
+.h2p {
+  font-size: 14px;
+  line-height: 2 !important;
+}
+
+/* -------------공통스타일영역 끝------------------- */
 header {
   max-width: 1200px;
   /* 최대너비 */
