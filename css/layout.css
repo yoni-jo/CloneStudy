@@ -63,6 +63,7 @@ ul.box_place li a h3+p {
   line-height: 1.6;
   text-align: left;
 }
+
 ul.box_place li a p.go {
   position: absolute;
   top: calc(100%/2 - 50px);
@@ -91,6 +92,7 @@ ul.box_place li a span.go_blind {
   opacity: 0%;
   z-index: 1;
 }
+
 /*콘텐츠 news,case study more버튼*/
 a.more {
   position: absolute;
@@ -113,6 +115,7 @@ a.more:after {
   transform: scaleX(0.5);
   margin-left: 5px;
 }
+
 /* -------------공통스타일영역 끝------------------- */
 header {
   max-width: 1200px;
@@ -293,8 +296,6 @@ main #issues ul li.left+li a::before {
 main #issues ul li.right a::before {
   background-image: url(https://www.fursys.com/fur_frt/images/main_renewal/0404/issues_03.jpg);
 }
-
-
 
 /* 컨텐츠 office_banner영역 */
 main div#office_banner {
@@ -489,8 +490,6 @@ main div#news ul li time {
   float: right;
 }
 
-
-
 /* 콘텐츠 studycase영역 */
 main #studycase {
   max-width: 1200px;
@@ -564,15 +563,32 @@ main #studycase ul li:last-child a p.go:before {
 main #studycase ul li a:hover span.go_blind {
   opacity: 70%
 }
-/* 콘텐츠 #office_life영역 */
-main #office_life{padding: 100px 0;}
 
-#office_life div{
-width: 500px;
-margin: 0 auto;
-padding-top: 80px;
-padding-bottom: 60px;
-text-align: center;
+/* 콘텐츠 #office_life영역 */
+main #office_life {
+  padding: 100px 0;
+  background-image: url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  margin-top: 80px;
 }
-#office_life div h2{margin-bottom: 20px;}
-#office_life div a{}
+
+#office_life div {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #e11818ed;
+}
+
+#office_life div h2 {
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#office_life div a {
+  color: white;
+  font-size: 14px;
+}
