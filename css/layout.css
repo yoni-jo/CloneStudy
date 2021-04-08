@@ -597,9 +597,10 @@ main #office_life {
 main a.top {
   display: block;
   text-align: center;
-  margin: 30px;
   color: gray;
   font-weight: bold;
+  width: 179px;
+  margin: 50px auto;
 }
 
 main a.top::before {
