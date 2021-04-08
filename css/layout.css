@@ -572,7 +572,7 @@ main #office_life {
   margin-top: 80px;
 }
 
-main #office_life div {
+#office_life div {
   width: 500px;
   margin: 0 auto;
   padding-top: 80px;
@@ -581,14 +581,16 @@ main #office_life div {
   background-color: #e11818ed;
 }
 
-main #office_life div h2 {
+#office_life div h2 {
   margin-bottom: 20px;
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
 
-main #office_life div a {
+#office_life div a {
   color: white;
   font-size: 14px;
 }
+main a.top{}
+footer{}
