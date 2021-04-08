@@ -564,3 +564,15 @@ main #studycase ul li:last-child a p.go:before {
 main #studycase ul li a:hover span.go_blind {
   opacity: 70%
 }
+/* 콘텐츠 #office_life영역 */
+main #office_life{padding: 100px 0;}
+
+#office_life div{
+width: 500px;
+margin: 0 auto;
+padding-top: 80px;
+padding-bottom: 60px;
+text-align: center;
+}
+#office_life div h2{margin-bottom: 20px;}
+#office_life div a{}
