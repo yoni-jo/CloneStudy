@@ -629,10 +629,9 @@ main a.top::before {
   vertical-align: top;
   margin-top: -4px;
   margin-right: 15px;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1;
-  padding: 5px;
+  font-size: 1.3em;
+  line-height: 0.9;
+  padding: 3px 6px 8px;
 }
 
 /* footer영역 */
@@ -642,16 +641,113 @@ footer {
 }
 
 footer div.company {
+  width: 100%;
+  background-color: #e6e2e2;
+  padding: 20px 0;
 }
 
 footer div.company div {
-
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-footer div.company div h1 {
+footer div.company div div {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 20px;
+  color: gray;
 }
 
+footer div.company div div>* {
+  /* div안에 h1과 p태그에만 속성값을넣어준다 */
+  width: 100%;
+  line-height: 2;
+  display: block;
+  color:#444343;
+}
+
+footer div.company div div:nth-child(1) {
+  width: 15%;
+}
+
+footer div.company div div:nth-child(2) {
+  width: 30%;
+}
+
+footer div.company div div:nth-child(3) {
+  width: 25%;
+}
+
+footer div.company div div:nth-child(4) {
+  width: 15%;
+}
+footer div.company div div + div ul li:nth-child(1) a{
+  color:red;
+  font-weight: bold;
+}
 footer div.company_etc {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+footer div.company_etc>* {
+  /* div안에 있는 ul 과 select를 수평작업   */
+  display: inline-block;
+}
+
+footer div.company_etc ul.banner {
+  width: 55%;
+}
+
+footer div.company_etc ul.banner li a {}
+footer div.company_etc ul.banner li a img{vertical-align: sub;}
+footer div.company_etc ul li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+footer div.company_etc ul li a {
+  display: block;
+  height: 100%;
+}
+
+footer div.company_etc ul li+li {
+  margin-left: 8px;
+}
+
+footer div.company_etc ul.sns {
+  width: 30%;
+  text-align:right;
+}
+
+footer div.company_etc ul.sns li {}
+
+footer div.company_etc ul.sns li a {
+  color: white;
+}
+
+footer div.company_etc ul.sns li a i {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: gray;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 1.4em;
+}
+footer div.company_etc ul.sns li:first-child a i{
+  font-size:small;
+}
+footer div.company_etc ul.sns li a span.hide {
+  display: none;
+}
+
+footer div.company_etc select {
+  float: right;
+}
+
+footer div.company_etc select option {}
