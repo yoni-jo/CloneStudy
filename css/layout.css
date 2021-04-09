@@ -642,19 +642,16 @@ footer {
 }
 
 footer div.company {
-  width: 1200px;
-  margin: 0 auto;
 }
 
-footer div.company>div {
-  float: left;
-  width: calc(100%/4);
+footer div.company div {
+
+    width: 1200px;
+    margin: 0 auto;
 }
 
 footer div.company div h1 {
-  width: 100%;
 }
 
 footer div.company_etc {
-  width: 100%;
 }
