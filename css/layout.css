@@ -241,16 +241,20 @@ div#title h3 {
   line-height: 1;
 }
 
-div#title a {
-  color: white;
-  font-size: 15px;
-  border: 1px solid white;
+div#title a{
+  color: #fff;
+  border: 1px solid #fff;
   padding: 10px 20px;
-  display: inline-block;
-  margin-top: 20px;
-  border-bottom: border-box;
+  box-sizing: border-box;
+  line-height: 44px;
 }
 
+
+div#title a:hover{
+  background-color: black;
+  border-bottom: border-box;
+  border: 1px solid black;
+}
 div#title a:after {
   content: ">";
   margin-left: 12px;
