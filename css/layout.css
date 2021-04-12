@@ -125,19 +125,25 @@ header {
   /* 중앙정렬 */
   padding-top: 30px;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 
-h1 {
+header h1 {
   float: left;
   /* 수평정렬 */
   width: 15%;
+  position: absolute;
+  top: 15px;
+  left: ;
 }
 
 header h1 a {
-  width: 120px;
-  height: 40px;
-  display: block;
   text-align: center;
+  background-image: url(https://www.fursys.com/fur_frt/images/text/text_logo.png);
+  width: 85px;
+  height: 36px;
+  display: block;
+  text-indent: -9999px;
 }
 
 header>ul {
@@ -148,7 +154,8 @@ header>ul {
 header ul.gnb {
   /* + 인접선택자 옆에 있는 태그를 가르킴 */
   width: 70%;
-  text-align: center;
+  text-align: right;
+  padding-left: 7%;
 }
 
 ul.gnb li {
@@ -164,6 +171,8 @@ header ul.enb {
   width: 15%;
   position: relative;
   top: 10px;
+  right: 0;
+  float: right;
 }
 
 header ul.enb li {
