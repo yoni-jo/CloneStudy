@@ -163,6 +163,7 @@ ul.gnb li h2 a {
 header ul.enb {
   width: 15%;
   position: relative;
+  top: 10px;
 }
 
 header ul.enb li {
@@ -182,7 +183,7 @@ header ul.enb li:nth-child(2) {
 
 header ul.enb li:last-child {
   position: absolute;
-  top: -25px;
+  top: -40px;
   background-color: red;
   width: 100%;
   padding: 5px;
