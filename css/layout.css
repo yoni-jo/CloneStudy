@@ -39,11 +39,11 @@ ul.box_place li.right {
   float: right;
 }
 ul.box_place li.right a p.go{
-  top:calc(100% /2 - 40px)
 }
 ul.box_place li a {
   display: block;
   position: relative;
+  height: 434px;
 }
 
 ul.box_place li a::before {
@@ -53,6 +53,7 @@ ul.box_place li a::before {
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 ul.box_place li a h3 {
@@ -155,14 +156,14 @@ header>ul {
 header ul.gnb {
   /* + 인접선택자 옆에 있는 태그를 가르킴 */
   width: 70%;
-  text-align: right;
-  padding-left: 10%;
+  text-align: center;
+  margin-left: 10%;
 }
 
 ul.gnb li {
   font-size: 13px;
   display: inline-block;
-  width: calc(95%/7);
+  width: 100px;
   text-align: center;
 }
 
@@ -605,6 +606,8 @@ main #office_life {
   background-color: #e11818ed;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  height: 200px;
 }
 
 #office_life div::before {
@@ -621,7 +624,6 @@ main #office_life {
 }
 
 #office_life div h2 {
-  margin-bottom: 20px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -631,6 +633,12 @@ main #office_life {
 #office_life div a {
   color: white;
   font-size: 14px;
+  display: block;
+  position: relative;
+  width: 170px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
 }
 
 /* scrollTop기능영역 */
