@@ -215,6 +215,7 @@ ul.gnb div.submenu a{
 ul.gnb div.submenu li:hover a{
   color:red;
   background-color: rgba(255, 0, 0, 0.24);
+  font-weight: bold;
 }
 
 ul.gnb li:hover div.submenu{
