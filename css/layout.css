@@ -218,7 +218,7 @@ ul.gnb .submenu li:hover a{
   font-weight: bold;
 }
 
-ul.gnb li:hover div.submenu{
+ul.gnb li:hover .submenu{
   display: block;
 }
 /* 서브메뉴 영역 끝 */
