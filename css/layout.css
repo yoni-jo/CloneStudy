@@ -164,6 +164,7 @@ ul.gnb>li {
   width: 100px;
   text-align: center;
   position: relative;
+  padding-bottom: 20px;
 }
 
 ul.gnb li h2 a {
@@ -178,12 +179,27 @@ ul.gnb li h2 a:hover{
 ul.gnb div.submenu{
   position: absolute;
   background-color: white;
-  
   border: 1px solid #ddd7d7;
   width: 112px;
   padding: 15px;
   text-align: left;
+  margin-top: 15px;
+  left: -20px;
+  display: none;
 }
+ul.gnb div.submenu::before{
+  content:"";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top:1px solid #ccc;
+  border-left: 1px solid #ccc;
+  transform: rotate(45deg);
+  position: absolute;
+  top:-9px;
+  left:60px;
+  background: white;
+  }
 ul.gnb div.submenu h3{
   font-weight: bold;
   border-top: 2px solid;
@@ -194,6 +210,10 @@ ul.gnb div.submenu h3{
 }
 ul.gnb div.submenu a{
   line-height: 1.6;
+  display: block;
+}
+
+ul.gnb li:hover div.submenu{
   display: block;
 }
 /* 서브메뉴 영역 끝 */
