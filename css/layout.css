@@ -208,7 +208,20 @@ ul.gnb .submenu h3{
   margin-bottom: 15px;
 
 }
-ul.gnb .submenu a{
+ul.gnb li:first-child .submenu li:first-child{
+  border: none;
+  padding: 0;
+}
+ul.gnb .submenu li:first-child{
+  border-top:2px solid;
+  padding-top: 10px;
+  
+}
+ul.gnb .submenu li:last-child{
+  border-bottom:1px dotted #ccc;
+   padding-bottom: 10px;
+}
+ul.gnb .submenu li a{
   line-height: 1.6;
   display: block;
 }
