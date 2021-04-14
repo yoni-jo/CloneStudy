@@ -158,7 +158,7 @@ header ul.gnb {
   margin-left: 10%;
 }
 
-ul.gnb li {
+ul.gnb>li {
   font-size: 13px;
   display: inline-block;
   width: 100px;
@@ -179,6 +179,10 @@ ul.gnb div.submenu{
   position: absolute;
   background-color: white;
   
+  border: 1px solid #ddd7d7;
+  width: 112px;
+  padding: 15px;
+  text-align: left;
 }
 /* 서브메뉴 영역 끝 */
 header ul.enb {
