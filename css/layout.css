@@ -127,8 +127,7 @@ header {
   margin: 0 auto;
   /* 중앙정렬 */
   padding-top: 30px;
-  overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 49px;
 }
 
 header h1 {
@@ -136,7 +135,6 @@ header h1 {
   /* 수평정렬 */
   position: absolute;
   top: 15px;
-  left: ;
 }
 
 header h1 a {
@@ -165,6 +163,7 @@ ul.gnb li {
   display: inline-block;
   width: 100px;
   text-align: center;
+  position: relative;
 }
 
 ul.gnb li h2 a {
@@ -175,7 +174,13 @@ ul.gnb li h2 a {
 ul.gnb li h2 a:hover{
   border-top: 1px solid red;
 }
-
+/*서브메뉴 영역 시작  */
+ul.gnb div.submenu{
+  position: absolute;
+  background-color: white;
+  
+}
+/* 서브메뉴 영역 끝 */
 header ul.enb {
   width: 15%;
   position: relative;
