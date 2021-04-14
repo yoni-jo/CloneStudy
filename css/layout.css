@@ -176,7 +176,7 @@ ul.gnb li h2 a:hover{
   border-top: 1px solid red;
 }
 /*서브메뉴 영역 시작  */
-ul.gnb div.submenu{
+ul.gnb .submenu{
   position: absolute;
   background-color: white;
   border: 1px solid #ddd7d7;
@@ -187,7 +187,7 @@ ul.gnb div.submenu{
   left: -20px;
   display: none;
 }
-ul.gnb div.submenu::before{
+ul.gnb .submenu::before{
   content:"";
   display: block;
   width: 15px;
@@ -200,19 +200,19 @@ ul.gnb div.submenu::before{
   left:60px;
   background: white;
   }
-ul.gnb div.submenu h3{
+ul.gnb .submenu h3{
   font-weight: bold;
   border-top: 2px solid;
   border-bottom: 1px dotted;
   padding: 15px 0 25px;
   margin-bottom: 15px;
-  
+
 }
-ul.gnb div.submenu a{
+ul.gnb .submenu a{
   line-height: 1.6;
   display: block;
 }
-ul.gnb div.submenu li:hover a{
+ul.gnb .submenu li:hover a{
   color:red;
   background-color: rgba(255, 0, 0, 0.24);
   font-weight: bold;
