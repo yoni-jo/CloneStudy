@@ -212,6 +212,10 @@ ul.gnb div.submenu a{
   line-height: 1.6;
   display: block;
 }
+ul.gnb div.submenu li:hover a{
+  color:red;
+  background-color: rgba(255, 0, 0, 0.24);
+}
 
 ul.gnb li:hover div.submenu{
   display: block;
