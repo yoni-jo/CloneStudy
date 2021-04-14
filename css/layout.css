@@ -38,8 +38,9 @@ ul.box_place li.left {
 ul.box_place li.right {
   float: right;
 }
-ul.box_place li.right a p.go{
-}
+
+ul.box_place li.right a p.go {}
+
 ul.box_place li a {
   display: block;
   position: relative;
@@ -169,14 +170,16 @@ ul.gnb>li {
 
 ul.gnb li h2 a {
   padding-top: 4px;
-   box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
-ul.gnb li h2 a:hover{
+
+ul.gnb li h2 a:hover {
   border-top: 1px solid red;
 }
+
 /*서브메뉴 영역 시작  */
-ul.gnb .submenu{
+ul.gnb .submenu {
   position: absolute;
   background-color: white;
   border: 1px solid #ddd7d7;
@@ -187,53 +190,70 @@ ul.gnb .submenu{
   left: -20px;
   display: none;
 }
-ul.gnb .submenu::before{
-  content:"";
+
+ul.gnb .submenu::before {
+  content: "";
   display: block;
   width: 15px;
   height: 15px;
-  border-top:1px solid #ccc;
+  border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   transform: rotate(45deg);
   position: absolute;
-  top:-9px;
-  left:60px;
+  top: -9px;
+  left: 60px;
   background: white;
-  }
-ul.gnb .submenu h3{
+}
+
+ul.gnb li:first-child .submenu {
+  width: 500px;
+}
+
+ul.gnb .submenu .submenu_in {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: top;
+  width: 120px;
+}
+ul.gnb .submenu .submenu_in li:last-child{border:none;}
+ul.gnb .submenu h3 {
   font-weight: bold;
   border-top: 2px solid;
   border-bottom: 1px dotted;
   padding: 15px 0 25px;
   margin-bottom: 15px;
-
 }
-ul.gnb li:first-child .submenu li:first-child{
+
+ul.gnb li:first-child .submenu li:first-child {
   border: none;
   padding: 0;
 }
-ul.gnb .submenu li:first-child{
-  border-top:2px solid;
+
+ul.gnb .submenu li:first-child {
+  border-top: 2px solid;
   padding-top: 10px;
-  
 }
-ul.gnb .submenu li:last-child{
-  border-bottom:1px dotted #ccc;
-   padding-bottom: 10px;
+
+ul.gnb .submenu li:last-child {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
 }
-ul.gnb .submenu li a{
+
+ul.gnb .submenu li a {
   line-height: 1.6;
   display: block;
 }
-ul.gnb .submenu li:hover a{
-  color:red;
+
+ul.gnb .submenu li:hover a {
+  color: red;
   background-color: rgba(255, 0, 0, 0.24);
   font-weight: bold;
 }
 
-ul.gnb li:hover .submenu{
+ul.gnb li:hover .submenu {
   display: block;
 }
+
 /* 서브메뉴 영역 끝 */
 header ul.enb {
   width: 15%;
@@ -309,7 +329,7 @@ div#title h3 {
   line-height: 1;
 }
 
-div#title a{
+div#title a {
   color: #fff;
   border: 1px solid #fff;
   padding: 10px 20px;
@@ -317,12 +337,12 @@ div#title a{
   line-height: 44px;
 }
 
-
-div#title a:hover{
+div#title a:hover {
   background-color: black;
   border-bottom: border-box;
   border: 1px solid black;
 }
+
 div#title a:after {
   content: ">";
   margin-left: 12px;
@@ -754,7 +774,7 @@ footer div.company div div>* {
   width: 100%;
   line-height: 2;
   display: block;
-  color:#444343;
+  color: #444343;
 }
 
 footer div.company div div:nth-child(1) {
@@ -772,10 +792,12 @@ footer div.company div div:nth-child(3) {
 footer div.company div div:nth-child(4) {
   width: 15%;
 }
-footer div.company div div + div ul li:nth-child(1) a{
-  color:red;
+
+footer div.company div div+div ul li:nth-child(1) a {
+  color: red;
   font-weight: bold;
 }
+
 footer div.company_etc {
   width: 1200px;
   margin: 0 auto;
@@ -793,7 +815,11 @@ footer div.company_etc ul.banner {
 }
 
 footer div.company_etc ul.banner li a {}
-footer div.company_etc ul.banner li a img{vertical-align: sub;}
+
+footer div.company_etc ul.banner li a img {
+  vertical-align: sub;
+}
+
 footer div.company_etc ul li {
   display: inline-block;
   text-align: center;
@@ -811,7 +837,7 @@ footer div.company_etc ul li+li {
 
 footer div.company_etc ul.sns {
   width: 30%;
-  text-align:right;
+  text-align: right;
 }
 
 footer div.company_etc ul.sns li {}
@@ -829,9 +855,11 @@ footer div.company_etc ul.sns li a i {
   border-radius: 50%;
   font-size: 1.4em;
 }
-footer div.company_etc ul.sns li:first-child a i{
-  font-size:small;
+
+footer div.company_etc ul.sns li:first-child a i {
+  font-size: small;
 }
+
 footer div.company_etc ul.sns li a span.hide {
   display: none;
 }
