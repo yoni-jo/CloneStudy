@@ -215,7 +215,11 @@ ul.gnb .submenu .submenu_in {
   vertical-align: top;
   width: 120px;
 }
-ul.gnb .submenu .submenu_in li:last-child{border:none;}
+
+ul.gnb .submenu .submenu_in li:last-child {
+  border: none;
+}
+
 ul.gnb .submenu h3 {
   font-weight: bold;
   border-top: 2px solid;
@@ -743,6 +747,27 @@ main a.top::before {
   line-height: 0.9;
   padding: 3px 6px 8px;
 }
+
+/* quickmenu영역 */
+main #quickmenu {
+position: fixed;
+right: 50px;
+bottom: 0;
+}
+
+main #quickmenu a {
+}
+
+main #quickmenu h2 {
+}
+
+main #quickmenu h2 a {
+  text-transform: uppercase;
+}
+
+main #quickmenu li {}
+
+main #quickmenu li a {}
 
 /* footer영역 */
 footer {
