@@ -750,21 +750,23 @@ main a.top::before {
 
 /* quickmenu영역 */
 /* 퀵메뉴 */
-  #quickmenu{
-    width: 155px;
-    position: fixed;
-    right: 0;
-    bottom: 179px;
-    height: 248px;
-  }
-  #quickmenu h2{
+#quickmenu {
+  width: 155px;
+  position: fixed;
+  right: 0;
+  bottom: 179px;
+  height: 248px;
+}
+
+#quickmenu h2 {
   float: right;
   background-color: #999;
   position: relative;
   width: 31px;
   height: 100%;
-  }
-  #quickmenu h2 a{
+}
+
+#quickmenu h2 a {
   display: block;
   transform-origin: 100% 100%;
   transform: rotate(-90deg);
@@ -776,22 +778,28 @@ main a.top::before {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
-  }
-  #quickmenu ul{
+}
+
+#quickmenu ul {
   float: right;
   background-color: #333;
   padding: 20px;
   border-radius: 20px 0 0 20px;
-  }
-  #quickmenu ul li{
+}
 
-  }
-  #quickmenu ul li a{
-   color:#fff;
-   line-height: 2;
-   font-size: 13px;
-   display: block;
-  }
+#quickmenu ul li {}
+
+#quickmenu ul li a {
+  color: #fff;
+  line-height: 2;
+  font-size: 13px;
+  display: block;
+  font-weight: bold;
+}
+
+#quickmenu ul li:hover a {
+  color: red;
+}
 
 /* footer영역 */
 footer {
