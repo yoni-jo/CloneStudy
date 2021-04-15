@@ -8,6 +8,11 @@
   /*안쪽 여백    */
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   height: 100%;
 }
