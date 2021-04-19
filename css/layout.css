@@ -543,6 +543,7 @@ main div#showroom button.counsel {
   color: white;
   font-size: 16px;
   z-index: 999;
+  cursor: pointer;
 }
 
 main div#showroom button.counsel i {
@@ -785,6 +786,7 @@ main a.top::before {
   background-color: #333;
   padding: 20px;
   border-radius: 20px 0 0 20px;
+  display: none;
 }
 
 #quickmenu ul li {}
