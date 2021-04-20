@@ -426,8 +426,8 @@ main div#office_banner::before{
   position: absolute;
   left: 0;
   top: 0;
-  
-  
+
+
 }
 main div#office_banner h2 {
   font-size: 30px;
@@ -954,6 +954,7 @@ footer div.company_etc select {
   background-image: url(../img/icon/1x/outline_keyboard_arrow_down_black_24dp.png);
   background-repeat: no-repeat;
   background-position-y: center;
+  text-align: right;
 }
 
 footer div.company_etc select option {}
