@@ -1,0 +1,185 @@
+/* header영역 */
+header {
+  max-width: 1200px;
+  /* 최대너비 */
+  margin: 0 auto;
+  /* 중앙정렬 */
+  padding-top: 30px;
+  padding-bottom: 49px;
+}
+
+header h1 {
+  float: left;
+  /* 수평정렬 */
+  position: absolute;
+  top: 15px;
+}
+
+header h1 a {
+  text-align: center;
+  background-image: url(https://www.fursys.com/fur_frt/images/text/text_logo.png);
+  width: 85px;
+  height: 36px;
+  display: block;
+  text-indent: -9999px;
+}
+
+header>ul {
+  /* > 자식선택자 바로아래있는 태그를 가르킴 */
+  float: left;
+}
+
+header ul.gnb {
+  /* + 인접선택자 옆에 있는 태그를 가르킴 */
+  width: 70%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+ul.gnb>li {
+  font-size: 13px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+ul.gnb li h2 a {
+  padding-top: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+ul.gnb li h2 a:hover {
+  border-top: 1px solid red;
+}
+
+/*서브메뉴 영역 시작  */
+ul.gnb .submenu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd7d7;
+  width: 150px;
+  padding: 15px;
+  text-align: left;
+  margin-top: 15px;
+  left: -20px;
+  display: none;
+}
+
+ul.gnb .submenu::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -9px;
+  left: 60px;
+  background: white;
+}
+
+ul.gnb li:first-child .submenu {
+  width: 500px;
+}
+
+ul.gnb .submenu .submenu_in {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: top;
+  width: 120px;
+}
+
+ul.gnb .submenu .submenu_in li:last-child {
+  border: none;
+}
+
+ul.gnb .submenu h3 {
+  font-weight: bold;
+  border-top: 2px solid;
+  border-bottom: 1px dotted;
+  padding: 15px 0 25px;
+  margin-bottom: 15px;
+}
+
+ul.gnb li:first-child .submenu li:first-child {
+  border: none;
+  padding: 0;
+}
+
+ul.gnb .submenu li:first-child {
+  border-top: 2px solid;
+  padding-top: 10px;
+}
+
+ul.gnb .submenu li:last-child {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
+}
+
+ul.gnb .submenu li a {
+  line-height: 1.6;
+  display: block;
+}
+
+ul.gnb .submenu li:hover a {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.24);
+  font-weight: bold;
+}
+
+ul.gnb li:hover .submenu {
+  display: block;
+}
+
+/* 서브메뉴 영역 끝 */
+header ul.enb {
+  width: 15%;
+  position: relative;
+  top: 10px;
+  right: 0;
+  float: right;
+}
+
+header ul.enb li {
+  float: left;
+  font-size: 12px;
+}
+
+header ul.enb li:first-child {
+  width: 39%;
+  text-align: left;
+}
+
+header ul.enb li:nth-child(2) {
+  width: 61%;
+  text-align: right;
+}
+
+header ul.enb li:last-child {
+  position: absolute;
+  top: -40px;
+  background-color: red;
+  width: 100%;
+  padding: 5px;
+}
+
+header ul.enb li:last-child a {
+  color: #fff;
+  line-height: 100%;
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+header ul.enb li:last-child a i {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  vertical-align: middle;
+}
