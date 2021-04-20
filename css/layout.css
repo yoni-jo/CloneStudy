@@ -64,8 +64,10 @@ ul.box_place li a h3 {
 
 ul.box_place li a h3+p {
   font-size: 14px;
-  line-height: 1.6;
+  /*! line-height: 1.6; */
   text-align: left;
+  font-weight: 300;
+  letter-spacing: -0.2px;
 }
 
 ul.box_place li a p.go {
@@ -289,6 +291,11 @@ div#office_banner a {
   display: inline-block;
 }
 
+#showroom ul.list li:hover a{
+background-color: black;
+ color:white;
+  font-weight:bold;
+}
 #showroom ul.list li+li {
   border-left: 1px solid;
 }
@@ -296,8 +303,9 @@ div#office_banner a {
 #showroom ul.list li a {
   padding: 6px 20px;
   display: block;
+  text-align: center;
+  font-weight: lighter;
 }
-
 /* 쇼룸디테일 */
 #showroom ul.detail {
   padding-top: 30px;

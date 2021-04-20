@@ -158,7 +158,10 @@ header ul.enb li:nth-child(2) {
   width: 61%;
   text-align: right;
 }
-
+header ul.enb li a{
+  font-weight: 300;
+  color:#777;
+}
 header ul.enb li:last-child {
   position: absolute;
   top: -40px;
