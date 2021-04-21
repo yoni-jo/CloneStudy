@@ -13,25 +13,5 @@ aside {
 /* 오른쪽content 내용영역 */
 
 /* 우측메뉴 영역 시작*/
+
 /* 우측메뉴 영역 끝 */
-article.company_content {
-  max-width: 70%;
-  box-sizing: border-box;
-  float: right;
-}
-
-.company_content .company_group_img {
-  width: 100%;
-  text-align: center;
-}
-
-.company_content>p {
-  text-align: center;
-}
-
-.company_content h3 {}
-
-.title_img {
-  width: 100%;
-  text-align: center;
-}
