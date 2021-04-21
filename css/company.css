@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  padding-top: 80px;
 }
 
 /* company 콘텐츠전체영역 끝 */
@@ -14,21 +15,47 @@ aside {
   float: left;
 }
 
-aside h2 {}
+aside h2 {
+  font-size:1.5em;
+  color:red;
+  text-align: left;
+  padding: 12px 0;
+}
 
-aside ul {}
+aside ul {width: 100%;height: 100%;}
 
-aside ul.company_intro_nav {}
+aside ul.company_intro_nav {
+  margin-bottom:50px;
+}
 
-aside ul.company_intro_nav li {}
-
-aside ul.company_intro_nav li a {}
+aside ul.company_intro_nav li {font-size:14px;
+padding:5px;
+width: 100%;
+  box-sizing: border-box;
+}
+aside ul.company_intro_nav li+li{
+  border-bottom:1px dotted gray;
+}
+aside ul.company_intro_nav li:first-child{
+  
+  background-color: #f0efef;
+  border-top: 2px solid red;
+  box-sizing: border-box;
+}
+aside ul.company_intro_nav li a {
+  display:block;
+  line-height: 20px;
+  width: 100%;
+  height: 100%;
+  color: gray;
+  font-size: 0.9em;
+}
 
 aside ul.nav_left {}
 
-aside ul.nav_left li {}
+aside ul.nav_left li {padding: 10px;}
 
-aside ul.nav_left li a {}
+aside ul.nav_left li a {font-size: 1em;font-weight: lighter;display: block;/*! width: 100%; *//*! height: 100%; */}
 
 /* aside 메뉴영역끝 */
 /* ----------------------------------------------------- */
@@ -44,10 +71,12 @@ aside ul.nav_left li a {}
 
 .submain .text-center {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-s .submain figure {
+ .submain figure {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .submain figure img {}
