@@ -26,20 +26,37 @@ aside ul.company_intro_nav li a {}
 
 aside ul.nav_left {}
 
-aside ul.nav_left li{}
+aside ul.nav_left li {}
 
 aside ul.nav_left li a {}
 
 /* aside 메뉴영역끝 */
 /* ----------------------------------------------------- */
 /* 오른쪽content 내용영역 시작  */
-.submain{width:70%;float:right;}
-.submain p{}
-.submain .history{}
-.submain figure{text-align: center;}
-.submain figure img{}
-.submain article{}
-.history{text-align: center;}
+.submain {
+  width: 70%;
+  float: right;
+}
+
+.submain .history {
+  text-align: right;
+}
+
+.submain .text-center {
+  text-align: center;
+}
+
+s .submain figure {
+  text-align: center;
+}
+
+.submain figure img {}
+
+.submain article {}
+
+.history {
+  text-align: center;
+}
 
 /* 오른쪽content 내용영역 끝  */
 /* ----------------------------------------------------- */
