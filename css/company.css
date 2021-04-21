@@ -82,11 +82,16 @@ aside ul.nav_left li a {
 
 .submain .history {
   text-align: right;
+  margin-bottom: 20px;
+  font-size: 0.7em;
+  color: #999696;
 }
 
 .submain .text-center {
   text-align: center;
   margin-bottom: 50px;
+  color: gray;
+  font-size: 0.9em;
 }
 
 .submain figure {
@@ -101,17 +106,49 @@ aside ul.nav_left li a {
 .history {
   text-align: center;
 }
-article{width: 100%;}
+
+article {
+  width: 100%;
+  
+ position:relative;
+  
+}
+article h3{
+  font-size: 1.5em;color: #262626;
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+}
+article h3::before{
+  content:"";
+  background-color: red;
+  width: 45px;
+  height: 1px;
+  transform: rotate(180deg);
+  position: absolute;
+  top:0;
+  left:0;
+  
+}
 /* article .idea영역 시작 */
-.idea{}
-.idea hgroup{}
-.idea hgroup h3{}
-.idea hgroup h4{}
-.idea hgroup h4 span{}
-.idea ul{}
-.idea ul li{}
-.idea ul li h4{}
-.idea ul li p{}
+.idea {}
+
+.idea hgroup {}
+
+.idea hgroup h3 {}
+
+.idea hgroup h4 {}
+
+.idea hgroup h4 span {}
+
+.idea ul {}
+
+.idea ul li {}
+
+.idea ul li h4 {}
+
+.idea ul li p {}
+
 /* article idea영역끝*/
 /* 오른쪽content 내용영역 끝  */
 /* ----------------------------------------------------- */
