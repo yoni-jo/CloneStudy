@@ -3,13 +3,17 @@
   margin: 0 auto;
   overflow: hidden;
 }
-/* 좌측메뉴 영역 */
+/* 좌측메뉴 영역 시작*/
 aside {
   max-width: 30%;
   box-sizing: border-box;
   float: left;
 }
+/* 좌측메뉴 영역 끝*/
 /* 오른쪽content 내용영역 */
+
+/* 우측메뉴 영역 시작*/
+/* 우측메뉴 영역 끝 */
 article.company_content {
   max-width: 70%;
   box-sizing: border-box;
