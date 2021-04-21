@@ -124,10 +124,6 @@ a.more:after {
 
 /* -------------공통스타일영역 끝------------------- */
 
-hr {
-  display: none;
-}
-
 /* 타이틀영역 */
 div#title {
   padding: 200px 0 200px 0;
