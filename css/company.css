@@ -101,6 +101,17 @@ aside ul.nav_left li a {
 .history {
   text-align: center;
 }
-
+article{width: 100%;}
+/* article .idea영역 시작 */
+.idea{}
+.idea hgroup{}
+.idea hgroup h3{}
+.idea hgroup h4{}
+.idea hgroup h4 span{}
+.idea ul{}
+.idea ul li{}
+.idea ul li h4{}
+.idea ul li p{}
+/* article idea영역끝*/
 /* 오른쪽content 내용영역 끝  */
 /* ----------------------------------------------------- */
