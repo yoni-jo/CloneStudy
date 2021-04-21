@@ -3,29 +3,29 @@
   margin: 0 auto;
   overflow: hidden;
 }
-
+/* 좌측메뉴 영역 */
 aside {
-  width: 30%;
+  max-width: 30%;
   box-sizing: border-box;
   float: left;
 }
-
-article.submain {
-  width: 70%;
+/* 오른쪽content 내용영역 */
+article.company_content {
+  max-width: 70%;
   box-sizing: border-box;
   float: right;
 }
 
-.submain .company_group_img {
+.company_content .company_group_img {
   width: 100%;
   text-align: center;
 }
 
-.submain>p {
+.company_content>p {
   text-align: center;
 }
 
-.submain h3 {}
+.company_content h3 {}
 
 .title_img {
   width: 100%;
