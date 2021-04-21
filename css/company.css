@@ -107,11 +107,15 @@ aside ul.nav_left li a {
   text-align: center;
 }
 
+/* ----------------------------------------------------- */
+/* 공통영역 시작*/
 article {
   width: 100%;
 
   position: relative;
 
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 article h3 {
@@ -134,6 +138,8 @@ article h3::before {
 
 }
 
+/* 공통영역끝 */
+/* ----------------------------------------------------- */
 /* article .idea영역 시작 */
 .idea {}
 
@@ -147,12 +153,70 @@ article h3::before {
 
 .idea ul {}
 
-.idea ul li {}
+.idea ul li {
+  overflow: hidden;
+  width: 100%;
 
-.idea ul li h4 {}
+  position: relative;
+}
 
+.idea ul li::before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 250px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.idea ul li:nth-child(1)::before {
+  background: url(../img/sub/company/img_value2.jpg) no-repeat;
+}
+
+.idea ul li:nth-child(2)::before {
+  background: url(../img/sub/company/img_value2.jpg) no-repeat;
+}
+
+.idea ul li:nth-child(3)::before {
+  background: url(../img/sub/company/img_value2.jpg) no-repeat;
+}
+
+.idea ul li h4 {display: block;}
+.idea ul li h4::before{
+  content:"";
+  border-top: 2px solid black;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
 .idea ul li p {}
 
 /* article idea영역끝*/
+/* ----------------------------------------------------- */
+/* article .value영역 시작 */
+.value {}
+
+.value h3 {}
+
+.value ul {}
+
+.value ul li {}
+
+.value ul li li {}
+
+.value ul li li h4 {}
+
+.value ul li li p {}
+
+
+/* article .value영역 끝 */
+/* ----------------------------------------------------- */
 /* 오른쪽content 내용영역 끝  */
 /* ----------------------------------------------------- */
