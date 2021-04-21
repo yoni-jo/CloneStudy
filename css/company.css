@@ -1,17 +1,37 @@
+/* company 콘텐츠전체영역 시작 */
 #company {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* 좌측메뉴 영역 시작*/
+
+/* company 콘텐츠전체영역 끝 */
+/* ----------------------------------------------------- */
+/* aside 메뉴영역시작 */
 aside {
   max-width: 30%;
   box-sizing: border-box;
   float: left;
 }
-/* 좌측메뉴 영역 끝*/
-/* 오른쪽content 내용영역 */
 
-/* 우측메뉴 영역 시작*/
+aside h2 {}
 
-/* 우측메뉴 영역 끝 */
+aside ul {}
+
+aside ul.company_intro_nav {}
+
+aside ul.company_intro_nav li {}
+
+aside ul.company_intro_nav li a {}
+
+aside ul.nav_left {}
+
+aside ul.nav_left li{}
+
+aside ul.nav_left li a {}
+
+/* aside 메뉴영역끝 */
+/* ----------------------------------------------------- */
+/* 오른쪽content 내용영역 시작  */
+/* 오른쪽content 내용영역 끝  */
+/* ----------------------------------------------------- */
