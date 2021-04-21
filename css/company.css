@@ -1,14 +1,19 @@
 #company {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 aside {
   width: 30%;
+  box-sizing: border-box;
+  float: left;
 }
 
 article.submain {
   width: 70%;
+  box-sizing: border-box;
+  float: right;
 }
 
 .submain .company_group_img {
