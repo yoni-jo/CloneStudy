@@ -177,11 +177,11 @@ article h3::before {
 }
 
 .idea ul li:nth-child(2)::before {
-  background: url(../img/sub/company/img_value2.jpg) no-repeat;
+  background: url(../img/sub/company/img_value4.jpg) no-repeat;
 }
 
 .idea ul li:nth-child(3)::before {
-  background: url(../img/sub/company/img_value2.jpg) no-repeat;
+  background: url(../img/sub/company/img_value6.jpg) no-repeat;
 }
 
 .idea ul li h4 {
