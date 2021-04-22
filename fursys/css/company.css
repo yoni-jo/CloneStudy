@@ -184,9 +184,12 @@ article h3::before {
   background: url(../img/sub/company/img_value2.jpg) no-repeat;
 }
 
-.idea ul li h4 {display: block;}
-.idea ul li h4::before{
-  content:"";
+.idea ul li h4 {
+  display: block;
+}
+
+.idea ul li h4::before {
+  content: "";
   border-top: 2px solid black;
   width: 40px;
   height: 40px;
@@ -197,17 +200,59 @@ article h3::before {
   left: 0;
   text-align: center;
 }
+
 .idea ul li p {}
 
 /* article idea영역끝*/
 /* ----------------------------------------------------- */
 /* article .value영역 시작 */
-.value {height: 100%;}
+.value {}
+
+.value::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid;
+  left: calc(50% - 250px);
+  top: calc(50% - 250px);
+  z-index: -1;
+  transform: scale(1.2);
+}
+
 .value h3 {}
 
-.value ul {position: relative;text-align: center;height: 100%;width: 100%;}
+.value ul {
+  text-align: center;
+}
 
-.value ul li {display: inline-block;width: 100px;text-align: center;position: absolute;}
+.value ul li {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 50%;
+  vertical-align: top;
+  margin: 0 5%;
+  margin-bottom: 30px;
+
+  background-color: white;
+  padding: 29px;
+  box-sizing: border-box;
+}
+
+.value ul li:nth-child(3) {
+  float: left;
+
+}
+
+.value ul li:nth-child(4) {
+  float: right;
+
+}
 
 .value ul li li {}
 
