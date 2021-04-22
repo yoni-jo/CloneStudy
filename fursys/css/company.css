@@ -66,7 +66,7 @@ aside ul.company_intro_nav>li.show {
   box-sizing: border-box;
 }
 
-aside ul.company_intro_nav>li:first-child>a {
+aside ul.company_intro_nav>li.show>a {
   background-color: #f0efef;
   color: red;
   box-sizing: border-box;
