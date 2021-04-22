@@ -4,6 +4,7 @@
   margin: 0 auto;
   overflow: hidden;
   padding-top: 80px;
+  clear: both;
 }
 
 /* company 콘텐츠전체영역 끝 */
@@ -201,12 +202,12 @@ article h3::before {
 /* article idea영역끝*/
 /* ----------------------------------------------------- */
 /* article .value영역 시작 */
-.value {}
+.value {height: 100%;}
 .value h3 {}
 
-.value ul {}
+.value ul {position: relative;text-align: center;height: 100%;width: 100%;}
 
-.value ul li {}
+.value ul li {display: inline-block;width: 100px;text-align: center;position: absolute;}
 
 .value ul li li {}
 
