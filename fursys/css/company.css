@@ -28,59 +28,45 @@ aside ul {
   height: 100%;
 }
 
+
 aside ul.company_intro_nav {
   margin-bottom: 50px;
-}
-
-aside ul.company_intro_nav>ul>li {
-  font-size: 14px;
-  width: 100%;
+  border-top: 2px solid red;
   box-sizing: border-box;
-  height: 40px;
 }
 
-aside ul.company_intro_nav li+li {
+aside ul.company_intro_nav li a {
+  display: block;
+}
+
+aside ul.company_intro_nav>li+li {
   border-bottom: 1px dotted gray;
-}
-
-
-aside ul.company_intro_nav li>ul {
-  text-align: right;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-aside ul.company_intro_nav li ul>li {
-  text-align: right;
-
-}
-
-aside ul.company_intro_nav li ul li>a {
-  height: 100%;
 }
 
 aside ul.company_intro_nav>li>a {
   line-height: 40px;
   color: gray;
-}
-
-aside ul.company_intro_nav li a {
-  display: block;
-  width: 100%;
-  height: 100%;
   font-size: 0.9em;
+
+}
+aside ul.company_intro_nav li ul li:hover a{
+  color: black;
+}
+aside ul.company_intro_nav li ul li a {
+  color: gray ;
+  font-size:13px;
+  padding-right: 10px;
+  transition: all 0.3s;
 }
 
-aside ul.company_intro_nav li:first-child {
+aside ul.company_intro_nav>li:first-child {
   text-align: right;
-  border-top: 2px solid red;
   box-sizing: border-box;
 }
 
-aside ul.company_intro_nav li:first-child>a {
+aside ul.company_intro_nav>li:first-child > a {
   background-color: #f0efef;
   color: red;
-
   box-sizing: border-box;
   padding-right: 20px;
 }
@@ -95,8 +81,6 @@ aside ul.nav_left li a {
   font-size: 1em;
   font-weight: lighter;
   display: block;
-  /*! width: 100%; */
-  /*! height: 100%; */
 }
 
 aside ul.nav_left li a span {
