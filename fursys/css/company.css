@@ -148,7 +148,16 @@ article h3::before {
 
 .idea hgroup h3 {}
 
-.idea hgroup h4 {}
+.idea hgroup h4::before {
+  content: "";
+  width: 100%;
+  height: 370px;
+  background-image: url(http://fursys.com/fur_frt/images/img/img_value1.jpg);
+
+  display: block;
+  margin: 0 auto;
+  background-position: top;
+}
 
 .idea hgroup h4 span {}
 
@@ -238,27 +247,60 @@ article h3::before {
   vertical-align: top;
   margin: 0 5%;
   margin-bottom: 30px;
-
-  background-color: white;
-  padding: 29px;
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: 50% 100%;
+background-color: white;
+}
+
+.value ul li:nth-child(1) {
+
+  background-image: url(../img/icon/person_black_24dp.svg);
+}
+
+.value ul li:nth-child(2) {
+
+  background-image: url(../img/icon/groups_black_24dp.svg);
 }
 
 .value ul li:nth-child(3) {
   float: left;
 
+  background-image: url(../img/icon/groups_black_24dp.svg);
 }
 
 .value ul li:nth-child(4) {
   float: right;
 
+  background-image: url(../img/icon/groups_black_24dp.svg);
 }
 
-.value ul li li {}
+.value ul li:nth-child(5) {
 
-.value ul li li h4 {}
+  background-image: url(../img/icon/work_black_24dp.svg);
+}
 
-.value ul li li p {}
+.value ul li:nth-child(6) {
+
+  background-image: url(../img/icon/show_chart_black_24dp.svg);
+}
+
+.value ul li h4 {
+  font-size: 22px;
+  position: relative;
+  top: 27px;
+}
+
+.value ul li p {
+  font-size: 13px;
+  line-height: 2;
+  position: relative;
+  top: 47px;
+  display: block;
+  width: 80%;
+  left: 11%;
+}
 
 
 /* article .value영역 끝 */
