@@ -34,7 +34,6 @@ aside ul.company_intro_nav {
   border-top: 2px solid red;
   box-sizing: border-box;
 }
-
 aside ul.company_intro_nav li a {
   display: block;
 }
@@ -49,22 +48,25 @@ aside ul.company_intro_nav>li>a {
   font-size: 0.9em;
 
 }
-aside ul.company_intro_nav li ul li:hover a{
+
+aside ul.company_intro_nav li ul li:hover a {
   color: black;
 }
+
 aside ul.company_intro_nav li ul li a {
-  color: gray ;
-  font-size:13px;
+  color: gray;
+  font-size: 13px;
   padding-right: 10px;
   transition: all 0.3s;
+  text-align: right;
 }
 
-aside ul.company_intro_nav>li:first-child {
+aside ul.company_intro_nav>li.show {
   text-align: right;
   box-sizing: border-box;
 }
 
-aside ul.company_intro_nav>li:first-child > a {
+aside ul.company_intro_nav>li:first-child>a {
   background-color: #f0efef;
   color: red;
   box-sizing: border-box;
