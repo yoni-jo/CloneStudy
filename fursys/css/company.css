@@ -32,33 +32,45 @@ aside ul.company_intro_nav {
   margin-bottom: 50px;
 }
 
-aside ul.company_intro_nav li {
+aside ul.company_intro_nav>ul>li {
   font-size: 14px;
-  padding: 5px;
   width: 100%;
   box-sizing: border-box;
+  height: 40px;
 }
 
 aside ul.company_intro_nav li+li {
   border-bottom: 1px dotted gray;
 }
 
-aside ul.company_intro_nav li:first-child {
 
-  background-color: #f0efef;
+aside ul.company_intro_nav li>ul {text-align: right}
+aside ul.company_intro_nav li ul>li{
+ text-align: right;
+  
+}
+aside ul.company_intro_nav li ul li>a{
+  height: 100%;
+}
+aside ul.company_intro_nav>li>a {
+  line-height: 40px;
+  color: gray;}
+aside ul.company_intro_nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9em;
+}
+
+aside ul.company_intro_nav li:first-child {
+  
   border-top: 2px solid red;
   box-sizing: border-box;
 }
 
-aside ul.company_intro_nav li a {
-  display: block;
-  line-height: 20px;
-  width: 100%;
-  height: 100%;
-  color: gray;
-  font-size: 0.9em;
+aside ul.company_intro_nav li:first-child>a {
+  background-color: #f0efef;
 }
-
 aside ul.nav_left {}
 
 aside ul.nav_left li {
@@ -153,13 +165,32 @@ article h3::before {
   width: 100%;
   height: 370px;
   background-image: url(http://fursys.com/fur_frt/images/img/img_value1.jpg);
-
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   background-position: top;
+
+
 }
 
-.idea hgroup h4 span {}
+.idea hgroup h4 {
+  font-size: 18px;
+  color: #4f4d4d;
+  font-weight: normal;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.idea hgroup h4 span {
+  float: right;
+  text-align: left;
+  font-size: 2em;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  margin-top: 100px;
+}
 
 .idea ul {}
 
@@ -251,7 +282,7 @@ article h3::before {
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: 50% 100%;
-background-color: white;
+  background-color: white;
 }
 
 .value ul li:nth-child(1) {
