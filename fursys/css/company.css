@@ -83,10 +83,7 @@ aside ul.nav_left li a {
   font-size: 1em;
   font-weight: lighter;
   display: block;
-}
-
-aside ul.nav_left li a span {
-  display: inline-block;
+  background-image: url();
 }
 
 /* aside 메뉴영역끝 */
