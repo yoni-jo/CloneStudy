@@ -1,6 +1,6 @@
 /* company 콘텐츠전체영역 시작 */
 #company {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   padding-top: 80px;
@@ -34,6 +34,7 @@ aside ul.company_intro_nav {
   border-top: 2px solid red;
   box-sizing: border-box;
 }
+
 aside ul.company_intro_nav li a {
   display: block;
 }
@@ -334,8 +335,68 @@ article h3::before {
   left: 11%;
 }
 
-
-/* article .value영역 끝 */
+/* article value영역 끝 */
 /* ----------------------------------------------------- */
+/* article brand영역 시작 */
+.brand {}
+
+.brand ul {
+  /*! width: 100%; */
+  margin: 0 auto;
+  /*! overflow: hidden; */
+}
+
+.brand ul::before {
+  content: "";
+
+}
+
+.brand ul li {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.brand ul li h4 {
+  margin: 50px 0 50px 0;
+}
+
+.brand ul li>* {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 142px;
+}
+
+.brand ul li:nth-child(2)>* {
+  padding-left: 40px;
+  /*! padding-right: 100px; */
+  /*! width: ; */
+  text-indent: ;
+}
+
+.brand ul li::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/showroom/04_shoroom_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+
+.brand ul li:nth-child(2)::before {
+  float: right;
+  padding-left: 0px;
+
+}
+
+/* article brand영역 끝 */
+
+
 /* 오른쪽content 내용영역 끝  */
+
 /* ----------------------------------------------------- */
