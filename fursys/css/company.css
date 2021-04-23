@@ -284,7 +284,7 @@ article h3::before {
   margin-bottom: 30px;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  background-size: 50px;
+  background-size: 40px;
   background-position: 50% 100%;
   background-color: white;
 }
