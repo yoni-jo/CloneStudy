@@ -110,6 +110,7 @@ a.more {
   font-weight: bold;
   top: 10px;
   line-height: 1;
+  transition: all 0.1s;
 }
 
 a.more:hover {
