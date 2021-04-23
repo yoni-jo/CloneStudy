@@ -97,6 +97,7 @@ ul.box_place li a span.go_blind {
   top: 0;
   opacity: 0%;
   z-index: 1;
+  transition :all 0.2s;
 }
 
 /*콘텐츠 news,case study more버튼*/
