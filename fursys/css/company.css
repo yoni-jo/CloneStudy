@@ -141,9 +141,11 @@ article h3 {
   width: 100%;
   text-transform: uppercase;
 }
-article h3:hover::before{
+
+article h3:hover::before {
   width: 20px;
 }
+
 article h3::before {
   content: "";
   background-color: red;
@@ -153,7 +155,7 @@ article h3::before {
   position: absolute;
   top: 0;
   left: 0;
-  transition:all .2s;
+  transition: all .2s;
 
 }
 
@@ -357,7 +359,7 @@ article h3::before {
   height: 100%;
   background-color: #b0afaf;
   position: absolute;
-  left:calc(50% - 2px);
+  left: calc(50% - 2px);
 
 }
 
@@ -372,9 +374,11 @@ article h3::before {
 .brand ul li h4 {
   font-size: 34px;
 }
+
 .brand ul li>p {
   padding-top: 20px;
 }
+
 .brand ul li>* {
   width: 50%;
   float: right;
@@ -388,9 +392,11 @@ article h3::before {
   padding: 50px 50px 0 30px;
   text-align: right;
 }
-.brand ul li:nth-child(2)>p{
-  padding-top: 20px; 
+
+.brand ul li:nth-child(2)>p {
+  padding-top: 20px;
 }
+
 .brand ul li::before {
   content: "";
   width: 300px;
@@ -412,12 +418,68 @@ article h3::before {
 /* article brand영역 끝 */
 /* ----------------------------------------------------- */
 /* article stockprices영역 시작 */
-.stockprices{
+.stockprices {
+  width: 100%;
 }
-.stockprices table, th, td{border:1px solid;}
-.stockprices table{border-collapse: collapse;}
+
+.stockprices caption {
+  display: none;
+}
+
+.stockprices table,
+th,
+td {
+  border: 1px solid;
+}
+
+.stockprices table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stockprices table thead {
+  background-color: #262626;
+  line-height: 2;
+  color: white;
+}
+
+.stockprices table tr td {
+  line-height: 2;
+  color: rgb(75, 72, 72);
+}
 
 /* article stockprices영역 끝 */
+/* ----------------------------------------------------- */
+/* stock_tabs 메뉴tab 시작 */
+.stock_tabs {
+  max-width:80%;
+  margin:0 auto;
+  display: table;
+  table-layout: fixed;
+  overflow: hidden;
+}
+
+.stock_tabs li {
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  height: 30px;
+  display: table-cell;
+  background-color: rgb(223, 222, 222);
+}
+
+.stock_tabs li a {
+  padding:0 20px;
+  line-height: 30px;
+  display: block;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 13px;
+}
+
+
+/* stock_tabs 메뉴tab 끝 */
 /* ----------------------------------------------------- */
 
 /* 오른쪽content 내용영역 끝  */
