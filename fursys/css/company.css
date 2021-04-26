@@ -417,6 +417,51 @@ article h3::before {
 
 /* article brand영역 끝 */
 /* ----------------------------------------------------- */
+/* stock_tabs 메뉴tab 시작 */
+.stock_tabs {
+  max-width: 80%;
+  margin: 20px auto;
+  display: table;
+  table-layout: fixed;
+  overflow: hidden;
+
+}
+
+.stock_tabs li {
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  height: 30px;
+  display: table-cell;
+  border: 1px solid rgb(172, 172, 172);
+  border-right: none;
+  background-color: rgb(223, 222, 222);
+}
+
+.stock_tabs li.current_stock {
+  background-color: white;
+  border-bottom: transparent;
+
+}
+
+.stock_tabs li.current_stock a {
+  font-weight: 500 !important;
+}
+
+.stock_tabs li:last-child {
+  border-right: 1px solid rgb(172, 172, 172);
+}
+
+.stock_tabs li a {
+  padding: 0 20px;
+  line-height: 30px;
+  display: block;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 0.9em;
+}
+
+/* stock_tabs 메뉴tab 끝 */
+/* ----------------------------------------------------- */
 /* article stockprices영역 시작 */
 .stockprices {
   width: 100%;
@@ -451,50 +496,45 @@ td {
 }
 
 /* article stockprices영역 끝 */
+
 /* ----------------------------------------------------- */
-/* stock_tabs 메뉴tab 시작 */
-.stock_tabs {
-  max-width:80%;
-  margin:20px auto;
-  display: table;
-  table-layout: fixed;
-  overflow: hidden;
-  
+/* table.t1 내용 시작  */
+table.t1 {}
+
+table.t1 col:nth-child(1) {
+  background-color: #f0efef;
 }
 
-.stock_tabs li {
+table.t1 col:nth-child(3) {
+  background-color: #f0efef;
+}
+
+table.t1 col:nth-child(4) {
+  background-color: #f0efef;
+}
+
+table.t1 tr td:nth-child(2) {
+  text-align: right;
+  padding-right: 9px;
+}
+
+table.t1 tr td:nth-child(4) {
+  text-align: right;
+  padding-right: 9px;
+}
+
+table.t1 tr:nth-child(4) td:nth-child(4) {
   text-align: center;
-  box-sizing: border-box;
-  float: left;
-  height: 30px;
-  display: table-cell;
-  border: 1px solid rgb(172, 172, 172);
-  border-right:none;
-  background-color: rgb(223, 222, 222);
-}
-.stock_tabs li.current_stock{
-  background-color:white;
-  border-bottom:transparent;
-
-}
-.stock_tabs li.current_stock a{
-  font-weight: 500!important;
-}
-.stock_tabs li:last-child{
-  border-right:1px solid rgb(172, 172, 172);
-}
-.stock_tabs li a {
-  padding:0 20px;
-  line-height: 30px;
-  display: block;
-  border: 1px solid rgb(211, 211, 211);
-  font-size: 0.9em;
+  padding-right: 0px;
 }
 
+table.t1 tr:nth-child(4) td:nth-child(5) {
+  text-align: right;
+  padding-right: 9px;
+}
 
-/* stock_tabs 메뉴tab 끝 */
+/* table.t1 내용 끝  */
 /* ----------------------------------------------------- */
-
 /* 오른쪽content 내용영역 끝  */
 
 /* ----------------------------------------------------- */
