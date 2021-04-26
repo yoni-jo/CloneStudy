@@ -455,7 +455,7 @@ td {
 /* stock_tabs 메뉴tab 시작 */
 .stock_tabs {
   max-width:80%;
-  margin:0 auto;
+  margin:20px auto;
   display: table;
   table-layout: fixed;
   overflow: hidden;
@@ -471,6 +471,14 @@ td {
   border: 1px solid rgb(172, 172, 172);
   border-right:none;
   background-color: rgb(223, 222, 222);
+}
+.stock_tabs li.current_stock{
+  background-color:white;
+  border-bottom:transparent;
+
+}
+.stock_tabs li.current_stock a{
+  font-weight: 500!important;
 }
 .stock_tabs li:last-child{
   border-right:1px solid rgb(172, 172, 172);
