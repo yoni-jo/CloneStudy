@@ -459,6 +459,7 @@ td {
   display: table;
   table-layout: fixed;
   overflow: hidden;
+  
 }
 
 .stock_tabs li {
@@ -467,15 +468,19 @@ td {
   float: left;
   height: 30px;
   display: table-cell;
+  border: 1px solid rgb(172, 172, 172);
+  border-right:none;
   background-color: rgb(223, 222, 222);
 }
-
+.stock_tabs li:last-child{
+  border-right:1px solid rgb(172, 172, 172);
+}
 .stock_tabs li a {
   padding:0 20px;
   line-height: 30px;
   display: block;
   border: 1px solid rgb(211, 211, 211);
-  font-size: 13px;
+  font-size: 0.9em;
 }
 
 
