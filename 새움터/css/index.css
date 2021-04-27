@@ -1,7 +1,50 @@
 @charset "utf-8";
-div#hide{}
 /* ---------------------------- */
-section#hide{}
-section#architecture{}
-section#collusion{}
-section#services{}
+
+/* 컨텐츠영역 시작 */
+/* ---------------------------- */
+/* 민원신청 시작*/
+#apply {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#apply h2 {}
+
+#apply fieldset {}
+
+#apply fieldset input {}
+
+#apply fieldset button {}
+
+#apply p {}
+
+#apply strong {}
+
+#apply ul {
+}
+
+#apply ul li {
+    display: inline-block;
+}
+
+#apply ul li p {}
+
+#apply ul li button {}
+
+
+
+/* 민원신청 끝 */
+/* ---------------------------- */
+/* 건축물대장 시작 */
+#architecture {}
+
+/* 건축물대장 끝 */
+/* ---------------------------- */
+#collusion {}
+
+#services {}
+
+
+/* 컨텐츠영역 끝*/
