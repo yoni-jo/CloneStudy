@@ -13,7 +13,9 @@ header h1 {
     width: 10%;
 }
 
-header h1 a {}
+header h1 a {
+    display: block;
+}
 
 nav.gnb {
     float: right;
@@ -21,33 +23,55 @@ nav.gnb {
 }
 
 nav.gnb ul {
-    display: table;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 nav.gnb ul li {
-    display: table-cell;
+    display: inline-block;
     box-sizing: border-box;
 }
 
-nav.gnb ul li a {}
+nav.gnb ul li a {
+    display: block;
+}
 
-nav ul:first-child {
+nav ul:nth-child(1) {
     width: 70%;
     float: left;
     text-align: center;
 }
 
-nav ul:first-child li {
-    width: calc(100%/4);
+nav ul:nth-child(1) li {
+    width: calc(100%/5);
 }
 
-nav ul:last-child {
+navul:nth-child(2) {
     width: 30%;
 }
 
-nav ul:last-child li {
+nav ul:nth-child(2) li {
     text-align: right;
     box-sizing: border-box;
 }
+
+/* quick메뉴란 */
+.qnb {
+    clear: both;
+    width: 120px;
+    float: right;
+    position: fixed;
+    right:200px;
+    top:80px;
+
+}
+
+.qnb h2 {}
+
+.qnb ul {
+    display: none;
+}
+
+.qnb ul li {}
+
+.qnb ul li a {}
