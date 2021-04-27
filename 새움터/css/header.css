@@ -1,2 +1,59 @@
 @charset "utf-8";
 
+header {
+    width: 100%;
+}
+
+header div.header_wrap {
+    width: 1200px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    float: left;
+    width: 10%;
+}
+
+header h1 a {
+}
+
+nav.gnb {
+    float: left;
+    width: 90%;
+}
+
+nav.gnb ul {
+    display: table;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+nav.gnb ul li {
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+nav.gnb ul li a {}
+
+nav ul:first-child {
+    width: 70%;
+    float: left;
+    text-align: center;
+}
+
+nav ul:first-child li {
+    width: calc(100%/4);
+}
+
+nav ul:last-child {
+    float: right;
+    width: 30%;
+}
+
+nav ul:last-child li {
+    text-align: right;
+    box-sizing: border-box;
+}
