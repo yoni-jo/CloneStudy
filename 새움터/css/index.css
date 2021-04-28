@@ -14,15 +14,37 @@
     margin-bottom: 40px;
 }
 
-#apply h2 {}
+#apply h2 {
+    font-size: 2em;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
 
-#apply fieldset {}
+#apply fieldset {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
 
-#apply fieldset input {}
+#apply fieldset input {
+    width: 80%;
+    height: 100%;
+    border: 3px solid #08b4db;
+    box-sizing: border-box;
+}
 
-#apply fieldset button {}
+#apply fieldset button {
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+    background-color: #08b4db;
+    vertical-align:middle;
+}
 
-#apply p {}
+#apply p {margin:30px;}
 
 #apply strong {}
 
@@ -30,12 +52,26 @@
 
 #apply ul li {
     display: inline-block;
+    vertical-align: top;
+    width:13%;
+    height: 200px;
+    border: 1px solid white;
 }
-
+#apply ul li::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    background-image: url(https://cloud.eais.go.kr/images/main/main01_micn_01.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
 #apply ul li p {}
 
-#apply ul li button {}
-
+#apply ul li a {}
 
 
 /* 민원신청 끝 */
