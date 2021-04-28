@@ -20,8 +20,12 @@
     margin-bottom: 40px;
 }
 
+#apply h2 strong {
+    font-weight: 900;
+}
+
 #apply fieldset {
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
     height: 60px;
     line-height: 60px;
@@ -35,29 +39,70 @@
     box-sizing: border-box;
 }
 
+#apply fieldset input:focus {
+    border: 2px solid #18ccf5;
+    box-sizing: border-box;
+}
+
+#apply fieldset input[type="text"] {
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
 #apply fieldset button {
     width: 20%;
     height: 100%;
     box-sizing: border-box;
     border: 0;
     background-color: #08b4db;
-    vertical-align:middle;
+    vertical-align: top;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
-#apply p {margin:30px;}
+#apply>p {
+    margin: 30px;
 
-#apply strong {}
+}
+
+#apply p>span {
+    color: white;
+    background-color: rgb(7, 89, 136);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
 
 #apply ul {}
 
 #apply ul li {
     display: inline-block;
     vertical-align: top;
-    width:13%;
+    width: 13%;
     height: 200px;
     border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.2s;
+    cursor: pointer;
 }
-#apply ul li::before{
+
+#apply ul li:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#apply ul li:last-child {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#apply ul li:last-child:hover {
+
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#apply ul li::before {
     content: "";
     width: 80px;
     height: 80px;
@@ -68,10 +113,73 @@
     background-position: center;
     margin-top: 20px;
     background-repeat: no-repeat;
-}
-#apply ul li p {}
 
-#apply ul li a {}
+}
+
+#apply ul li:nth-child(2):before {
+    background-image: url(https://cloud.eais.go.kr/images/main/main01_micn_02.png);
+
+}
+
+#apply ul li:nth-child(3):before {
+    background-image: url(https://cloud.eais.go.kr/images/main/main01_micn_03.png);
+
+}
+
+#apply ul li:nth-child(4):before {
+    background-image: url(https://cloud.eais.go.kr/images/main/main01_micn_04.png);
+
+}
+
+#apply ul li:nth-child(5):before {
+    background-image: url(https://cloud.eais.go.kr/images/main/main01_micn_05.png);
+
+}
+
+#apply ul li:nth-child(6)::before {
+    content: "+";
+    background-image: none;
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 50px;
+    background-color: rgb(64, 64, 68);
+    line-height: 60px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+#apply ul li:nth-child(6):hover::before {
+    transform: rotateY(180deg)
+}
+
+#apply ul li p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#apply ul li a {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#apply ul li:hover a {}
+
+#apply ul li a:nth-of-type(1) {
+    background-color: red;
+}
+
+#apply ul li a:nth-of-type(2) {
+    background-color: blue;
+}
+
+#apply ul li:nth-child(6) p {
+    color: rgba(64, 64, 68, 0.7);
+    font-weight: bolder;
+}
 
 
 /* 민원신청 끝 */
