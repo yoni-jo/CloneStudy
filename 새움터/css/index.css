@@ -10,6 +10,10 @@
     text-align: center;
 }
 
+#apply .mb80 {
+    margin-bottom: 40px;
+}
+
 #apply h2 {}
 
 #apply fieldset {}
@@ -22,8 +26,7 @@
 
 #apply strong {}
 
-#apply ul {
-}
+#apply ul {}
 
 #apply ul li {
     display: inline-block;
@@ -38,13 +41,19 @@
 /* 민원신청 끝 */
 /* ---------------------------- */
 /* 건축물대장 시작 */
-#architecture {}
+#architecture {
+    background-color: #fff;
+}
 
 /* 건축물대장 끝 */
 /* ---------------------------- */
-#collusion {}
+#collusion {
+    background-color: rgb(238, 8, 8);
+}
 
-#services {}
+#services {
+    background-color: rgb(38, 4, 231);
+}
 
 
 /* 컨텐츠영역 끝*/
