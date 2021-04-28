@@ -66,7 +66,7 @@ nav ul:nth-child(2) li {
 /* quick메뉴란 */
 .qnb {
     clear: both;
-    width: 120px;
+    /*! width: 120px; */
     float: right;
     position: fixed;
     right: 200px;
@@ -74,7 +74,7 @@ nav ul:nth-child(2) li {
 
 }
 
-.qnb h2 {}
+.qnb h2 {width: 150px;background-color: #105279;color: white;height: 30px;line-height: 30px;text-align: left;font-size: 14px;padding-left: 10px;box-sizing: border-box;}
 
 .qnb ul {
     display: none;
