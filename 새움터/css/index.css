@@ -274,8 +274,11 @@
   font-size: 12px;
   height: 100px;
   padding-top: 30px;
+  opacity:0.8;
 }
-
+.architecture_wrap>ul li:hover a p {
+  opacity: 1;
+}
 .architecture_wrap>ul>li:nth-child(1) a h3 {
   height: 200px;
   background-image: url(../img/main/main02_ricn_01.png);
