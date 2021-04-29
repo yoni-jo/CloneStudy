@@ -391,7 +391,6 @@
 .slide1_wrap .slide1 p {
   color: white;
   font-size: 1.2em;
-  margin-top: 20px;
 
 }
 
@@ -401,11 +400,15 @@
 }
 
 .slide1_wrap .slide1 h2 {
-  margin: 10px 0;
+  margin: 10px 0 30px;
   font-size: 3em;
+  color: white;
+  font-weight: bold;
 }
 
-.slide1_wrap .slide1 h2 strong {}
+.slide1_wrap .slide1 h2 strong {
+  color: #6abff2;
+}
 
 .slide1_wrap .slide1 a {}
 
@@ -420,18 +423,20 @@
 .arrowbtn a {
   display: inine-block;
   padding: 30px;
-  background-color: #fff;
-
+  background-image: url(../img/collusion_slide/main_slide_arrow.png);
+  text-indent: -99999px;
 }
 
 .arrowbtn a:first-child {
   float: left;
   margin-left: 200px;
+  background-position: 0 0;
 }
 
 .arrowbtn a:last-child {
   float: right;
   margin-right: 200px;
+  background-position: -99px 0;
 }
 
 /* 슬라이드 하단버튼 */
