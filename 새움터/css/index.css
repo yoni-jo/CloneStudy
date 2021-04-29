@@ -216,7 +216,7 @@
 /* ---------------------------- */
 /* 건축물대장 시작 */
 #architecture {
-  background-color: rgb(151, 195, 231);
+  background-color: rgb(159, 190, 196);
 
 }
 
@@ -266,10 +266,6 @@
   height: 100%;
 }
 
-.architecture_wrap>ul li a h3 {
-  width: 100%;
-}
-
 .architecture_wrap>ul li a p {
   font-size: 12px;
   height: 100px;
@@ -285,7 +281,7 @@
   height: 200px;
   background-image: url(../img/main/main02_ricn_01.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 80%;
   background-size: 50%;
   background-color: rgb(116, 202, 241);
   line-height: 100px;
@@ -294,9 +290,9 @@
 
 .architecture_wrap>ul>li:nth-child(2) a h3 {
   height: 200px;
-  background-image: url(../img/main/main02_ricn_01.png);
+  background-image: url(../img/main/main02_ricn_02.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 80%;
   background-size: 50%;
   background-color: rgb(116, 202, 241);
   line-height: 100px;
@@ -307,19 +303,23 @@
   overflow: hidden;
 }
 
-.architecture_wrap>ul li>ul li {
+.architecture_wrap>ul li ul li {
   height: calc(100%/2 - 5px);
   text-align: left;
   line-height: 145px;
 
 
 }
-
-.architecture_wrap>ul li>ul li::after {
-  content: "";
-
+.architecture_wrap ul li ul>li a h3 {
+  height: 100%;
+  background-image: url(../img/main/main02_ricn_03.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  padding-left:10%;
 }
-
+.architecture_wrap ul li ul>li:last-child a h3{
+  background-image: url(../img/main/main02_ricn_04.png);
+}
 .architecture_wrap>ul li>ul li:first-child {
   margin-bottom: 15px;
 
@@ -389,9 +389,11 @@
   color: white;
   transition: all 0.2s;
 }
-.slide1_wrap .slide1 .title a:hover{
+
+.slide1_wrap .slide1 .title a:hover {
   background-color: black;
 }
+
 .slide1_wrap .slide1 p {
   color: white;
   font-size: 1.2em;
