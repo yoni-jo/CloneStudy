@@ -274,11 +274,13 @@
   font-size: 12px;
   height: 100px;
   padding-top: 30px;
-  opacity:0.8;
+  opacity: 0.8;
 }
+
 .architecture_wrap>ul li:hover a p {
   opacity: 1;
 }
+
 .architecture_wrap>ul>li:nth-child(1) a h3 {
   height: 200px;
   background-image: url(../img/main/main02_ricn_01.png);
@@ -312,6 +314,7 @@
 
 
 }
+
 .architecture_wrap>ul li>ul li::after {
   content: "";
 
@@ -338,15 +341,47 @@
 .architecture_wrap span a+a {
   margin-left: 10px;
 }
-.architecture_wrap>p{
+
+.architecture_wrap>p {
   margin-top: 30px;
 }
+
 /* 건축물대장 끝 */
 /* ---------------------------- */
-#collusion {
-  background-color: rgb(238, 8, 8);
+/* 사이버통합협의시스템 외 슬라이드 부분 시작 */
+#collusion {}
+
+.slide1_wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #2d78de;
+  text-align: center;
 }
 
+.slide1_wrap .slide1 {}
+
+.slide1_wrap .slide1 p {}
+
+.slide1_wrap .slide1 h2 {}
+
+.slide1_wrap .slide1 h2 strong {}
+
+.slide1_wrap .slide1 a {}
+
+/* prev next버튼 */
+.slide1_wrap .slide1 .arrowbtn {}
+
+.slide1_wrap .slide1 .arrowbtn a {}
+
+
+.slide1_wrap .slide1 .list {}
+
+.slide1_wrap .slide1 .list li {}
+
+.slide1_wrap .slide1 .list li a {}
+
+/* 사이버통합협의시스템 외 슬라이드 부분 끝 */
+/* ---------------------------- */
 #services {
   background-color: rgb(38, 4, 231);
 }
