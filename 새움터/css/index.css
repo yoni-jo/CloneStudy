@@ -16,8 +16,7 @@
   margin-bottom: 40px;
 }
 
-#apply h2 strong {
-}
+#apply h2 strong {}
 
 #apply fieldset {
   max-width: 60%;
@@ -218,7 +217,7 @@
 /* 건축물대장 시작 */
 #architecture {
   background-color: rgb(151, 195, 231);
-  
+
 }
 
 .architecture_wrap {
@@ -232,8 +231,15 @@
   margin-bottom: 20px;
 }
 
+.architecture_wrap p {
+  font-size: 13px;
+  color: rgb(68, 68, 68);
+}
+
 .architecture_wrap>ul {
   margin-top: 50px;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .architecture_wrap ul li a {
@@ -277,8 +283,8 @@
   background-position: center;
   background-size: 50%;
   background-color: rgb(116, 202, 241);
-  line-height:100px;
-  
+  line-height: 100px;
+
 }
 
 .architecture_wrap>ul>li:nth-child(2) a h3 {
@@ -288,10 +294,8 @@
   background-position: center;
   background-size: 50%;
   background-color: rgb(116, 202, 241);
-  line-height:100px;
+  line-height: 100px;
 }
-
-
 
 .architecture_wrap>ul li>ul {
   height: 100%;
@@ -300,15 +304,41 @@
 
 .architecture_wrap>ul li>ul li {
   height: calc(100%/2 - 5px);
+  text-align: left;
+  line-height: 145px;
+
+
+}
+
+.architecture_wrap>ul li>ul li::after {
+  content: "";
 
 }
 
 .architecture_wrap>ul li>ul li:first-child {
   margin-bottom: 15px;
+
 }
 
-.architecture_wrap>ul li>ul li a {}
+.architecture_wrap span {
+  display: block;
+}
 
+.architecture_wrap span a {
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px 50px;
+  border-radius: 30px;
+  border: 1px solid;
+  font-size: 13px;
+}
+
+.architecture_wrap span a+a {
+  margin-left: 10px;
+}
+.architecture_wrap>p{
+  margin-top: 30px;
+}
 /* 건축물대장 끝 */
 /* ---------------------------- */
 #collusion {
