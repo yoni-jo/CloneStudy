@@ -30,3 +30,7 @@ h2 {
 strong {
     font-weight: 900;
 }
+
+button {
+    cursor: pointer
+}
