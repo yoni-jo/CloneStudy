@@ -350,12 +350,13 @@
 /* ---------------------------- */
 /* 사이버통합협의시스템 외 슬라이드 부분 시작 */
 #collusion {
-
+  padding-top: 0;
   position: relative;
+  background-color: #2d78de;
 }
 
 .slide1_wrap {
-  width: 100%;
+  /*! width: 100%; */
   height: 100%;
   background-color: #2d78de;
 
@@ -386,8 +387,11 @@
   display: inline-block;
   margin-top: 40px;
   color: white;
+  transition: all 0.2s;
 }
-
+.slide1_wrap .slide1 .title a:hover{
+  background-color: black;
+}
 .slide1_wrap .slide1 p {
   color: white;
   font-size: 1.2em;
