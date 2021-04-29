@@ -349,36 +349,117 @@
 /* 건축물대장 끝 */
 /* ---------------------------- */
 /* 사이버통합협의시스템 외 슬라이드 부분 시작 */
-#collusion {}
+#collusion {
+
+  position: relative;
+}
 
 .slide1_wrap {
   width: 100%;
   height: 100%;
   background-color: #2d78de;
-  text-align: center;
+
 }
 
-.slide1_wrap .slide1 {}
+/* slide 첫번째  */
+.slide1_wrap .slide1 {
+  padding-top: 15%;
+  width: 55%;
+  height: 60%;
+  margin: 0 auto;
+  background-image: url(../img/collusion_slide/main03_vis_cybersys.jpg);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 110% center;
+  box-sizing: content-box;
 
-.slide1_wrap .slide1 p {}
+}
 
-.slide1_wrap .slide1 h2 {}
+.slide1_wrap .slide1 .title {
+  box-sizing: border-box;
+  margin-left: 50px;
+}
+
+.slide1_wrap .slide1 .title a {
+  padding: 15px 20px;
+  border: 1px solid white;
+  display: inline-block;
+  margin-top: 40px;
+  color: white;
+}
+
+.slide1_wrap .slide1 p {
+  color: white;
+  font-size: 1.2em;
+  margin-top: 20px;
+
+}
+
+.slide1_wrap .slide1 p:last-of-type {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.slide1_wrap .slide1 h2 {
+  margin: 10px 0;
+  font-size: 3em;
+}
 
 .slide1_wrap .slide1 h2 strong {}
 
 .slide1_wrap .slide1 a {}
 
 /* prev next버튼 */
-.slide1_wrap .slide1 .arrowbtn {}
+.arrowbtn {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 57%;
+}
 
-.slide1_wrap .slide1 .arrowbtn a {}
+.arrowbtn a {
+  display: inine-block;
+  padding: 30px;
+  background-color: #fff;
 
+}
 
-.slide1_wrap .slide1 .list {}
+.arrowbtn a:first-child {
+  float: left;
+  margin-left: 200px;
+}
 
-.slide1_wrap .slide1 .list li {}
+.arrowbtn a:last-child {
+  float: right;
+  margin-right: 200px;
+}
 
-.slide1_wrap .slide1 .list li a {}
+/* 슬라이드 하단버튼 */
+.list_btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  left: 25%;
+  bottom: 10%;
+  text-align: center;
+
+}
+
+.list_btn li {
+  border-top: 2px solid white;
+  width: calc(100%/3);
+}
+
+.list_btn li+li {
+  margin-left: 20px;
+}
+
+.list_btn li a {
+  display: block;
+  color: white;
+  padding: 20px;
+}
 
 /* 사이버통합협의시스템 외 슬라이드 부분 끝 */
 /* ---------------------------- */
