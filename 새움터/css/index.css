@@ -479,10 +479,10 @@
 /* ---------------------------- */
 /* 유용한서비스 시작*/
 #services {
-
   text-align: center;
 }
 
+/* 아이콘리스트부분 */
 .sevices_iconslist {
   max-width: 1000px;
   margin: 50px auto;
@@ -493,21 +493,158 @@
 .sevices_iconslist li {
   float: left;
   width: 15%;
-  height: 140px;
+  height: 130px;
   box-sizing: border-box;
-  background-image: url(../img/main/event/main04_sev_icn_01.png);
   background-repeat: no-repeat;
   background-position: top center;
+
+  position: relative;
+}
+
+.sevices_iconslist li:nth-child(1) {
+
+  background-image: url(../img/main/event/main04_sev_icn_01.png);
+}
+
+.sevices_iconslist li:nth-child(2) {
+
+  background-image: url(../img/main/event/main04_sev_icn_02.png);
+}
+
+.sevices_iconslist li:nth-child(3) {
+
+  background-image: url(../img/main/event/main04_sev_icn_03.png);
+}
+
+.sevices_iconslist li:nth-child(4) {
+
+  background-image: url(../img/main/event/main04_sev_icn_04.png);
+}
+
+.sevices_iconslist li:nth-child(5) {
+
+  background-image: url(../img/main/event/main04_sev_icn_05.png);
+}
+
+.sevices_iconslist li:nth-child(6) {
+
+  background-image: url(../img/main/event/main04_sev_icn_06.png);
 }
 
 .sevices_iconslist li+li {
   margin-left: 2%;
 }
 
+.sevices_iconslist li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-left: 2px dotted #c1c4c7;
+  left: -10px;
+
+}
+
+.sevices_iconslist li:first-child::before {
+  display: none;
+}
+
+
+.sevices_iconslist li:hover a {
+  text-decoration: underline;
+  color: #000;
+}
+
 .sevices_iconslist li a {
   display: block;
-  padding-top: 100px;
+  padding-top: 90px;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #535961;
+}
 
+/* 서비스게시판리스트부분 */
+.service_noticewrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service_noticewrap ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.service_noticewrap .service_noticelist li {
+  float: left;
+}
+
+.service_noticewrap .service_noticelist a {
+  display: block;
+}
+
+.service_noticewrap .service_noticelist>li {
+  width: 32%;
+  height: 280px;
+}
+
+.service_noticewrap .service_noticelist>li+li {
+  margin-left: 2%;
+}
+
+.service_noticewrap .service_noticelist .eventlist {
+  position: relative;
+
+}
+
+.service_noticewrap .service_noticelist .eventlist>a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/main/event/raymond-pang-5zv1aiqu0YA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.service_noticewrap .service_noticelist .eventlist>a p{
+  margin-top: 20px;
+  
+}
+.service_noticewrap .service_noticelist .eventlist>a span {
+  padding: 10px 25px;
+  display: inline-block;
+  background: #000;
+  border-radius: 18px;
+  margin: 50px 0;
+  font-size: 12px;
+}
+
+.service_noticewrap .service_noticelist .eventlist a h3 {
+  padding: 50px 0 20px;
+  box-sizing: border-box;
+}
+
+.service_noticewrap .service_noticelist .num {
+  position: absolute;
+}
+
+.service_noticewrap .service_noticelist .num li {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.service_noticewrap .service_noticelist .num li a {
+  line-height: 20px;
+  font-size: 10px;
+  background-color: #fff;
+}
+.service_noticewrap .service_noticelist .num li:hover a {
+  background-color: #000;
+  color: #fff;
 }
 
 /* 유용한서비스 끝*/
