@@ -668,9 +668,8 @@ margin-bottom: 20px;
 .service_noticewrap .service_noticelist .notice {}
 
 .service_noticewrap .service_noticelist .notice h3 {
-  text-align-last: left;
+  text-align: left;
 }
-
 .service_noticewrap .service_noticelist .notice ul {}
 
 .service_noticewrap .service_noticelist .notice ul li {}
