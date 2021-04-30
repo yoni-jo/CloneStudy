@@ -591,12 +591,12 @@
   margin-left: 2%;
 }
 
-.service_noticewrap .service_noticelist .eventlist {
+.service_noticewrap .service_noticelist .eventslide {
   position: relative;
 
 }
 
-.service_noticewrap .service_noticelist .eventlist>a {
+.service_noticewrap .service_noticelist .eventslide>a {
   display: block;
   height: 100%;
   width: 100%;
@@ -609,11 +609,11 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.service_noticewrap .service_noticelist .eventlist>a p{
+.service_noticewrap .service_noticelist .eventslide>a p{
   margin-top: 20px;
   
 }
-.service_noticewrap .service_noticelist .eventlist>a span {
+.service_noticewrap .service_noticelist .eventslide>a span {
   padding: 10px 25px;
   display: inline-block;
   background: #000;
@@ -622,7 +622,7 @@
   font-size: 12px;
 }
 
-.service_noticewrap .service_noticelist .eventlist a h3 {
+.service_noticewrap .service_noticelist .eventslide a h3 {
   padding: 50px 0 20px;
   box-sizing: border-box;
 }
