@@ -310,16 +310,19 @@
 
 
 }
+
 .architecture_wrap ul li ul>li a h3 {
   height: 100%;
   background-image: url(../img/main/main02_ricn_03.png);
   background-repeat: no-repeat;
   background-position: 90% center;
-  padding-left:10%;
+  padding-left: 10%;
 }
-.architecture_wrap ul li ul>li:last-child a h3{
+
+.architecture_wrap ul li ul>li:last-child a h3 {
   background-image: url(../img/main/main02_ricn_04.png);
 }
+
 .architecture_wrap>ul li>ul li:first-child {
   margin-bottom: 15px;
 
@@ -474,9 +477,21 @@
 
 /* 사이버통합협의시스템 외 슬라이드 부분 끝 */
 /* ---------------------------- */
+/* 유용한서비스 시작*/
 #services {
-  background-color: rgb(38, 4, 231);
+
+  text-align: center;
 }
 
+.sevices_iconslist {
+  display: flex;
+  justify-content: center;
+}
 
+.sevices_iconslist li {}
+
+.sevices_iconslist li a {}
+
+/* 유용한서비스 끝*/
+/* ---------------------------- */
 /* 컨텐츠영역 끝*/
