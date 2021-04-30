@@ -484,13 +484,31 @@
 }
 
 .sevices_iconslist {
-  display: flex;
-  justify-content: center;
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.sevices_iconslist li {}
+.sevices_iconslist li {
+  float: left;
+  width: 15%;
+  height: 140px;
+  box-sizing: border-box;
+  background-image: url(../img/main/event/main04_sev_icn_01.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 
-.sevices_iconslist li a {}
+.sevices_iconslist li+li {
+  margin-left: 2%;
+}
+
+.sevices_iconslist li a {
+  display: block;
+  padding-top: 100px;
+
+}
 
 /* 유용한서비스 끝*/
 /* ---------------------------- */
