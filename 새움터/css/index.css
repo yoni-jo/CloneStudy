@@ -863,19 +863,24 @@
   padding: 10px;
   border: 1px solid #cecdcd;
 }
-
+#services .QA fieldset ul li:first-child a{
+  color:#082ec4;
+  font-weight: bolder;
+}
 #services .QA fieldset ul li a {
   display: block;
   width: 100%;
   height: 100%;
   font-size: 20px;
   letter-spacing: -1px;
+  color: blue;
 }
 
 #services .QA fieldset ul li a p {
   font-size: 11px;
   margin-top: 5px;
 
+  color: #535961;
 }
 
 /* ---------------------------- */
