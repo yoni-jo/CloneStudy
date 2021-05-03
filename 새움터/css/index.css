@@ -770,24 +770,66 @@
 /* 자주묻는 질문 */
 #services .QA {
   max-width: 1000px;
-  margin: 0 auto;
-
+  margin: 50px auto;
+  overflow: hidden;
+  height: 50px;
+  box-sizing: border-box;
 }
 
 #services .QA fieldset {
+  height: 100%;
+  box-sizing: border-box;
 }
 
-#services .QA fieldset legend {}
+#services .QA fieldset legend {
+  float: left;
+  height: 100%;
+  line-height: 50px;
+  text-align: right;
+  padding-left: 50px;
+}
 
-#services .QA fieldset input {}
+#services .QA fieldset input {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  /*! clear: left; */
+  float: left;
+}
 
-#services .QA fieldset button {}
+#services .QA fieldset button {
+  float: left;
+  width: 50px;
+  height: 100%;
+  border: 0;
+}
 
-#services .QA fieldset ul {}
+#services .QA fieldset ul {
+  float: right;
+  height: 100%;
+}
 
-#services .QA fieldset ul li {}
+#services .QA fieldset ul li {
+  float: left;
+  height: 100%;
+  width: calc(100%/2 - 10px);
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #cecdcd;
+}
 
-#services .QA fieldset ul li a {}
+#services .QA fieldset ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+#services .QA fieldset ul li a p {
+  font-size: 11px
+}
 
 /* ---------------------------- */
 /* 유용한서비스 끝*/
