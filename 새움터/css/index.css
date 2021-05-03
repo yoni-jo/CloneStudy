@@ -593,6 +593,10 @@
   margin-bottom: 20px;
 }
 
+.service_noticewrap .service_noticelist li:not(li:first-child)>h3{
+  font-weight: 900;
+  font-size: 20px;
+}
 .service_noticewrap .service_noticelist a {
   display: block;
 }
