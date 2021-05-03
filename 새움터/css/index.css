@@ -578,6 +578,7 @@
 .service_noticewrap .service_noticelist li {
   float: left;
   text-align: left;
+  width: 100%;
 }
 
 .service_noticewrap .service_noticelist ul>li {
@@ -618,7 +619,7 @@
 }
 
 .service_noticewrap .service_noticelist a {
-  display: block;
+  display: inline-block;
 }
 
 .service_noticewrap .service_noticelist>li {
@@ -741,11 +742,20 @@
   color: #6c6a6a;
 }
 
-.service_noticewrap .service_noticelist .error ul li time {
-  font-size: 14px;
-  color: darkgray;
+.service_noticewrap .service_noticelist .error ul li span {
+  color: #fff;
+  font-size: 12px;
+  vertical-align: middle;
+  border-radius: 10px;
+  padding: 5px 10px;
+  float: right;
 }
-
+.service_noticewrap .service_noticelist .error ul li .con_fail{
+  background-color:rgb(187, 6, 6);
+}
+.service_noticewrap .service_noticelist .error ul li .restoration{
+  background-color: rgb(5, 60, 179);
+}
 /* 유용한서비스 끝*/
 /* ---------------------------- */
 /* 컨텐츠영역 끝*/
