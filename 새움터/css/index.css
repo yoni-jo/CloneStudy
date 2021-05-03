@@ -863,10 +863,17 @@
   padding: 10px;
   border: 1px solid #cecdcd;
 }
-#services .QA fieldset ul li:first-child a{
-  color:#082ec4;
+
+#services .QA fieldset ul li:first-child a {
+  color: #082ec4;
   font-weight: bolder;
 }
+
+#services .QA fieldset ul li:last-child a {
+  font-weight: bolder;
+  color: #2499c8;
+}
+
 #services .QA fieldset ul li a {
   display: block;
   width: 100%;
@@ -959,17 +966,24 @@ footer {
   display: inline-block;
 }
 
-.footer_bottom .footer_info .logo {line-height: 100px;}
+.footer_bottom .footer_info .logo {
+  line-height: 100px;
+}
 
 .footer_bottom .footer_info .logo a {
   display: block;
 }
 
-.footer_bottom .footer_info address {vertical-align: top;line-height: 2;margin-top: 20px;margin-left: 20px;}
+.footer_bottom .footer_info address {
+  vertical-align: top;
+  line-height: 2;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 
 .footer_bottom .callcenter {
   float: right;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
 /* ---------------------------- */
