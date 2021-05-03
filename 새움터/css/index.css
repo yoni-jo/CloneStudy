@@ -596,6 +596,22 @@
 .service_noticewrap .service_noticelist li:not(li:first-child)>h3{
   font-weight: 900;
   font-size: 20px;
+  position: relative;
+}
+.service_noticewrap .service_noticelist li:not(li:first-child)>h3::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 2px;
+  background-color:crimson;
+transition: all 0.3s;
+
+}
+.service_noticewrap .service_noticelist li:not(li:first-child):hover>h3::after{
+  width: 35px;
+  transition: all 0.5s;
 }
 .service_noticewrap .service_noticelist a {
   display: block;
