@@ -1,9 +1,15 @@
 @charset "utf-8";
 /* ---------------------------- */
 
+
+
+
+
+/* ---------------------------- */
 /* 컨텐츠영역 시작 */
 /* ---------------------------- */
 /* 민원신청 시작*/
+/* ---------------------------- */
 #apply {
   max-width: 1200px;
   margin: 0 auto;
@@ -12,7 +18,6 @@
 
 
 #apply h2 {
-  /*! padding-top: 50px; */
   margin-bottom: 40px;
 }
 
@@ -113,8 +118,6 @@
   background-color: white;
 }
 
-#apply ul {}
-
 #apply ul li {
   display: inline-block;
   vertical-align: top;
@@ -198,7 +201,7 @@
 }
 
 #apply ul li:hover>a {
- background-color: rgba(240, 8, 8, 1);
+  background-color: rgba(240, 8, 8, 1);
 }
 
 #apply ul li a:nth-of-type(1) {
@@ -214,9 +217,13 @@
   font-weight: bolder;
 }
 
+/* ---------------------------- */
 /* 민원신청 끝 */
 /* ---------------------------- */
+
+/* ---------------------------- */
 /* 건축물대장 시작 */
+/* ---------------------------- */
 #architecture {
   background-color: rgb(159, 190, 196);
 
@@ -351,9 +358,14 @@
   margin-top: 30px;
 }
 
+/* ---------------------------- */
 /* 건축물대장 끝 */
 /* ---------------------------- */
+
+/* ---------------------------- */
 /* 사이버통합협의시스템 외 슬라이드 부분 시작 */
+/* ---------------------------- */
+
 #collusion {
   padding-top: 0;
   position: relative;
@@ -361,7 +373,6 @@
 }
 
 .slide1_wrap {
-  /*! width: 100%; */
   height: 100%;
   background-color: #2d78de;
 
@@ -477,9 +488,13 @@
   padding: 20px;
 }
 
+/* ---------------------------- */
 /* 사이버통합협의시스템 외 슬라이드 부분 끝 */
 /* ---------------------------- */
+
+/* ---------------------------- */
 /* 유용한서비스 시작*/
+/* ---------------------------- */
 #services {
   text-align: center;
 }
@@ -565,8 +580,13 @@
   color: #535961;
 }
 
+/* ---------------------------- */
 /* 서비스게시판리스트부분 */
+/* ---------------------------- */
+
+/* ---------------------------- */
 /* 공통 */
+/* ---------------------------- */
 .service_noticewrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -652,7 +672,9 @@
   transition: all 0.3s;
 }
 
+/* ---------------------------- */
 /* eventslide 부분시작 */
+/* ---------------------------- */
 .service_noticewrap .service_noticelist .eventslide {
   position: relative;
 
@@ -691,7 +713,9 @@
   box-sizing: border-box;
 }
 
+/* ---------------------------- */
 /* eventslide부분 num  */
+/* ---------------------------- */
 .service_noticewrap .service_noticelist .num {
   position: absolute;
 }
@@ -715,7 +739,9 @@
   color: #fff;
 }
 
+/* ---------------------------- */
 /* 공지사항 */
+/* ---------------------------- */
 .service_noticewrap .service_noticelist .notice {
 
   background-color: #ecf3f4;
@@ -736,7 +762,9 @@
   color: darkgray;
 }
 
+/* ---------------------------- */
 /* error */
+/* ---------------------------- */
 .service_noticewrap .service_noticelist .error {
 
   background-color: #d4d6d7;
@@ -771,6 +799,7 @@
 
 /* ---------------------------- */
 /* 자주묻는 질문 */
+/* ---------------------------- */
 #services .QA {
   max-width: 1200px;
   margin: 50px auto;
@@ -802,18 +831,20 @@
   float: left;
   margin-left: 30px;
 }
-#services .QA fieldset input[type="text"]{
-  font-size:18px;
+
+#services .QA fieldset input[type="text"] {
+  font-size: 18px;
   padding-left: 10px;
 }
+
 #services .QA fieldset button {
   float: left;
   width: 60px;
   height: 100%;
   border: 0;
   background-color: #262626;
-  color:white;
-  font-size:20px;
+  color: white;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -844,11 +875,102 @@
 #services .QA fieldset ul li a p {
   font-size: 11px;
   margin-top: 5px;
-    
+
 }
 
 /* ---------------------------- */
 /* 유용한서비스 끝*/
 /* ---------------------------- */
 
+/* ---------------------------- */
 /* 컨텐츠영역 끝*/
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+/* footer시작*/
+/* ---------------------------- */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #e8e3e3;
+}
+
+/* ---------------------------- */
+/* footer_top영역 */
+/* ---------------------------- */
+
+.footer_wrap {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer_wrap .footer_top {
+  overflow: hidden;
+}
+
+.footer_wrap .footer_top ul {
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer_wrap .footer_top ul:first-child {
+  float: left;
+}
+
+.footer_wrap .footer_top ul:last-child {
+  float: right;
+}
+
+.footer_wrap .footer_top ul li {
+  float: left;
+  line-height: 76px;
+  margin-right: 20px;
+}
+
+.footer_wrap .footer_top ul li a {
+  display: block;
+  color: #262626;
+}
+
+/* ---------------------------- */
+/* footer_top끝 */
+/* ---------------------------- */
+/* ---------------------------- */
+/* footer_bottom 시작 */
+/* ---------------------------- */
+.footer_bottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer_bottom .footer_info {
+  float: left;
+  height: 100px;
+}
+
+.footer_bottom .footer_info>* {
+  display: inline-block;
+}
+
+.footer_bottom .footer_info .logo {line-height: 100px;}
+
+.footer_bottom .footer_info .logo a {
+  display: block;
+}
+
+.footer_bottom .footer_info address {vertical-align: top;line-height: 2;margin-top: 20px;margin-left: 20px;}
+
+.footer_bottom .callcenter {
+  float: right;
+  padding-top:30px;
+}
+
+/* ---------------------------- */
+/* footer_bottom 끝 */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* footer끝 */
+/* ---------------------------- */
