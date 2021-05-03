@@ -564,6 +564,7 @@
 }
 
 /* 서비스게시판리스트부분 */
+/* 공통 */
 .service_noticewrap {
   max-width: 1000px;
   margin: 0 auto;
@@ -593,26 +594,29 @@
   margin-bottom: 20px;
 }
 
-.service_noticewrap .service_noticelist li:not(li:first-child)>h3{
+.service_noticewrap .service_noticelist li:not(li:first-child)>h3 {
   font-weight: 900;
   font-size: 20px;
   position: relative;
 }
-.service_noticewrap .service_noticelist li:not(li:first-child)>h3::after{
-  content:"";
+
+.service_noticewrap .service_noticelist li:not(li:first-child)>h3::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 0px;
+  width: 10px;
   height: 2px;
-  background-color:crimson;
-transition: all 0.3s;
+  background-color: crimson;
+  transition: all 0.3s;
 
 }
-.service_noticewrap .service_noticelist li:not(li:first-child):hover>h3::after{
+
+.service_noticewrap .service_noticelist li:not(li:first-child):hover>h3::after {
   width: 35px;
   transition: all 0.5s;
 }
+
 .service_noticewrap .service_noticelist a {
   display: block;
 }
@@ -620,10 +624,22 @@ transition: all 0.3s;
 .service_noticewrap .service_noticelist>li {
   width: 32%;
   height: 280px;
+  position: relative;
 }
 
 .service_noticewrap .service_noticelist>li+li {
   margin-left: 2%;
+}
+
+.more {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  background-image: url(../img/main/event/icn_plusl.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 20px;
+  height: 20px;
 }
 
 /* eventslide 부분시작 */
@@ -675,34 +691,60 @@ transition: all 0.3s;
   height: 20px;
   padding: 5px;
 }
+
 .service_noticewrap .service_noticelist .num li a {
   line-height: 20px;
   font-size: 10px;
   background-color: #fff;
   text-align: center;
 }
+
 .service_noticewrap .service_noticelist .num li:hover a {
   background-color: #000;
   color: #fff;
 }
 
 /* 공지사항 */
-.service_noticewrap .service_noticelist .notice {}
+.service_noticewrap .service_noticelist .notice {
+
+  background-color: #ecf3f4;
+}
 
 .service_noticewrap .service_noticelist .notice h3 {
   text-align: left;
 }
 
-.service_noticewrap .service_noticelist .notice ul {}
-
-.service_noticewrap .service_noticelist .notice ul li {}
-
 .service_noticewrap .service_noticelist .notice ul li a {
   font-size: 15px;
   font-weight: bold;
+  color: #262626;
 }
 
-.service_noticewrap .service_noticelist .notice ul li a time {}
+.service_noticewrap .service_noticelist .notice ul li time {
+  font-size: 14px;
+  color: darkgray;
+}
+
+/* error */
+.service_noticewrap .service_noticelist .error {
+
+  background-color: #d4d6d7;
+}
+
+.service_noticewrap .service_noticelist .error h3 {
+  text-align: left;
+}
+
+.service_noticewrap .service_noticelist .error ul li a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #6c6a6a;
+}
+
+.service_noticewrap .service_noticelist .error ul li time {
+  font-size: 14px;
+  color: darkgray;
+}
 
 /* 유용한서비스 끝*/
 /* ---------------------------- */
