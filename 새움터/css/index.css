@@ -893,7 +893,50 @@
 /* ---------------------------- */
 /* 유용한서비스 끝*/
 /* ---------------------------- */
+/* 하단 관공서 슬라이드메뉴 시작*/
+/* ---------------------------- */
+#company_slidebanner {
+  position: relative;
+  padding-top: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 50px;
+}
 
+#company_slidebanner ul {
+  height: 50px;
+  overflow: hidden;
+}
+
+#company_slidebanner ul li {
+  text-align: center;
+  float: left;
+  width: calc(100%/7);
+  box-sizing: border-box;
+
+}
+
+#company_slidebanner ul li a {
+  display: block;
+  height: 100%;
+}
+
+#company_slidebanner ul li img {
+  width: 80%;
+
+}
+
+#company_slidebanner span {
+  position: absolute;
+  top:calc(50% - 33px);
+  left: 50%;
+}
+
+#company_slidebanner span a {}
+
+/* ---------------------------- */
+/* 하단 관공서 슬라이드메뉴 끝*/
 /* ---------------------------- */
 /* 컨텐츠영역 끝*/
 /* ---------------------------- */
@@ -1012,17 +1055,21 @@ footer {
   padding-top: 25px;
   line-height: 1.5;
 }
-.footer_bottom .callcenter p span{
-  color:#2d78de;
+
+.footer_bottom .callcenter p span {
+  color: #2d78de;
   font-weight: bold;
 }
-.footer_bottom .callcenter p:first-child{
-  color:#262626;
+
+.footer_bottom .callcenter p:first-child {
+  color: #262626;
 }
-.footer_bottom .callcenter p:last-child{
+
+.footer_bottom .callcenter p:last-child {
   text-align: right;
-  color:#6c6a6a;
+  color: #6c6a6a;
 }
+
 /* ---------------------------- */
 /* footer_bottom 끝 */
 /* ---------------------------- */
