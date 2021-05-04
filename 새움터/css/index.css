@@ -896,20 +896,25 @@
 /* 하단 관공서 슬라이드메뉴 시작*/
 /* ---------------------------- */
 #company_slidebanner {
-  position: relative;
   padding-top: 0;
+  height: 100%;
+  background-color: #e8e3e3;
+}
+
+#company_slidebanner .comslide_wrap {
+
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  height: 100%;
-  padding-bottom: 50px;
 }
 
-#company_slidebanner ul {
+#company_slidebanner .comslide_wrap ul {
   height: 50px;
   overflow: hidden;
+  margin: 0 40px;
 }
 
-#company_slidebanner ul li {
+#company_slidebanner .comslide_wrap ul li {
   text-align: center;
   float: left;
   width: calc(100%/7);
@@ -917,23 +922,41 @@
 
 }
 
-#company_slidebanner ul li a {
+#company_slidebanner .comslide_wrap ul li a {
   display: block;
   height: 100%;
 }
 
-#company_slidebanner ul li img {
+#company_slidebanner .comslide_wrap ul li img {
   width: 80%;
 
 }
 
-#company_slidebanner span {
+#company_slidebanner .comslide_wrap span {
   position: absolute;
-  top:calc(50% - 33px);
-  left: 50%;
+  top: calc(50% - 15px);
+  width: 100%;
 }
 
-#company_slidebanner span a {}
+#company_slidebanner .comslide_wrap span a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/main/하단슬라이드/icn_prev_lgray.png);
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#company_slidebanner span a:first-child {
+  float: left;
+
+}
+
+#company_slidebanner span a:last-child {
+  float: right;
+  transform: rotate(180deg);
+}
 
 /* ---------------------------- */
 /* 하단 관공서 슬라이드메뉴 끝*/
