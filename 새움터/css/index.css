@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* ---------------------------- */
 
-
-
-
-
 /* ---------------------------- */
 /* 컨텐츠영역 시작 */
 /* ---------------------------- */
@@ -15,13 +11,9 @@
   margin: 0 auto;
   text-align: center;
 }
-
-
 #apply h2 {
   margin-bottom: 40px;
 }
-
-#apply h2 strong {}
 
 #apply fieldset {
   max-width: 60%;
@@ -384,7 +376,7 @@
   width: 55%;
   height: 60%;
   margin: 0 auto;
-  background-image: url(../img/collusion_slide/main03_vis_cybersys.jpg);
+  background-image: url(../img/main/collusion_slide/main03_vis_cybersys.jpg);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 110% center;
@@ -445,7 +437,7 @@
 .arrowbtn a {
   display: inine-block;
   padding: 30px;
-  background-image: url(../img/collusion_slide/main_slide_arrow.png);
+  background-image: url(../img/main/collusion_slide/main_slide_arrow.png);
   text-indent: -99999px;
 }
 
@@ -965,138 +957,3 @@
 /* ---------------------------- */
 
 
-/* ---------------------------- */
-/* footer시작*/
-/* ---------------------------- */
-footer {
-  width: 100%;
-  background-color: #e8e3e3;
-  font-size: 14px;
-  padding-bottom: 40px;
-}
-
-/* ---------------------------- */
-/* footer_top영역 */
-/* ---------------------------- */
-
-.footer_wrap {
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.footer_wrap .footer_top {
-  overflow: hidden;
-}
-
-.footer_wrap .footer_top ul {
-  text-align: center;
-  overflow: hidden;
-}
-
-.footer_wrap .footer_top ul:first-child {
-  float: left;
-}
-
-.footer_wrap .footer_top ul:last-child {
-  float: right;
-  box-sizing: border-box;
-}
-
-.footer_wrap .footer_top ul li {
-  float: left;
-  line-height: 76px;
-  margin-right: 20px;
-}
-
-.footer_wrap .footer_top ul:last-child li {
-  background-color: #fff;
-  box-sizing: border-box;
-  margin-right: 14px;
-  border: 1px solid #ccc7c7;
-  margin-top: 17px;
-  padding: 1px 7px;
-}
-
-.footer_wrap .footer_top ul:last-child li a {
-  height: 100%;
-  line-height: 40px;
-  /*! background-color: #fff; */
-  width: 100%;
-}
-
-
-.footer_wrap .footer_top ul li a {
-  display: block;
-  color: #262626;
-}
-
-/* ---------------------------- */
-/* footer_top끝 */
-/* ---------------------------- */
-/* ---------------------------- */
-/* footer_bottom 시작 */
-/* ---------------------------- */
-.footer_bottom {
-  width: 100%;
-  overflow: hidden;
-}
-
-.footer_bottom .footer_info {
-  float: left;
-  height: 80px;
-}
-
-.footer_bottom .footer_info>* {
-  display: inline-block;
-}
-
-.footer_bottom .footer_info .logo {
-  line-height: 80px;
-  width: 135px;
-  text-align: center;
-}
-
-.footer_bottom .footer_info .logo a {
-  display: block;
-  background-image: url(../img/main/footer/molit_logo.svg);
-  background-repeat: no-repeat;
-  text-indent: -99999px;
-  background-position: center;
-}
-
-.footer_bottom .footer_info address {
-  vertical-align: top;
-  line-height: 1.5;
-  margin-top: 20px;
-  margin-left: 20px;
-  color: #262626;
-}
-
-.footer_bottom .callcenter {
-  float: right;
-  padding-top: 25px;
-  line-height: 1.5;
-}
-
-.footer_bottom .callcenter p span {
-  color: #2d78de;
-  font-weight: bold;
-}
-
-.footer_bottom .callcenter p:first-child {
-  color: #262626;
-}
-
-.footer_bottom .callcenter p:last-child {
-  text-align: right;
-  color: #6c6a6a;
-}
-
-/* ---------------------------- */
-/* footer_bottom 끝 */
-/* ---------------------------- */
-
-/* ---------------------------- */
-/* footer끝 */
-/* ---------------------------- */
