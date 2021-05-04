@@ -88,7 +88,7 @@ nav ul:nth-child(1) li:hover a::after {
 }
 
 nav>ul:nth-child(2) {
-    width: 30%;
+    width: 40%;
     float: right;
 }
 
@@ -97,6 +97,57 @@ nav ul:nth-child(2) li {
     box-sizing: border-box;
 }
 
+nav ul:nth-child(2) li+li {
+    margin-right: 10px;
+}
+
+nav ul:nth-child(2) li a {
+    font-size: 14px;
+}
+
+nav ul:nth-child(2) li a span {
+    background-color: #08b4db;
+    padding: 3px 20px;
+    border-radius: 20px;
+    color: #fff;
+    margin:0 10px;
+
+}
+
+/* 회원가입 및 로그인 */
+nav ul .member a {
+    display: inline;
+    border: 1px solid;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+nav ul .join a {
+    color: #4b4a4a;
+}
+
+nav ul .join:hover a {
+    color: #000;
+}
+
+nav ul .login a {
+    color: #08b4db;
+    font-weight: bold;
+}
+
+nav ul .login:hover a {
+    background-color: #08b4db;
+    color: #fff;
+}
+
+/* my */
+.my {}
+
+.my a {background-image: url();}
+
+/* 햄버거버튼 */
 /* quick메뉴란 */
 .qnb {
     clear: both;
