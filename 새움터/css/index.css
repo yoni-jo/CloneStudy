@@ -933,7 +933,6 @@ footer {
 
 .footer_wrap .footer_top ul:last-child {
   float: right;
-  width: 300px;
   box-sizing: border-box;
 }
 
@@ -944,16 +943,19 @@ footer {
 }
 
 .footer_wrap .footer_top ul:last-child li {
-  width: calc(100%/2 - 16px);
+  background-color: #fff;
   box-sizing: border-box;
   margin-right: 14px;
-  border: 1px solid;
-  margin-top: 20px;
+  border: 1px solid #ccc7c7;
+  margin-top: 10px;
+  padding: 1px 7px;
 }
 
 .footer_wrap .footer_top ul:last-child li a {
-  height: 40px;
+  height: 100%;
   line-height: 40px;
+  /*! background-color: #fff; */
+  width: 100%;
 }
 
 
