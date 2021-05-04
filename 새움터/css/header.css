@@ -15,13 +15,17 @@ header .header_wrap {
     margin: 0 auto;
 }
 
-header h1 {
+header h1.logo {
     float: left;
     width: 10%;
 }
 
-header h1 a {
+header h1.logo a {
     display: block;
+    background-image: url(../img/header/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
 }
 
 nav.gnb {
