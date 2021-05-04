@@ -942,13 +942,21 @@ footer {
   line-height: 76px;
   margin-right: 20px;
 }
-.footer_wrap .footer_top ul:last-child li{
-  
+
+.footer_wrap .footer_top ul:last-child li {
   width: calc(100%/2 - 16px);
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin-right: 14px;
   border: 1px solid;
+  margin-top: 20px;
 }
+
+.footer_wrap .footer_top ul:last-child li a {
+  height: 40px;
+  line-height: 40px;
+}
+
+
 .footer_wrap .footer_top ul li a {
   display: block;
   color: #262626;
