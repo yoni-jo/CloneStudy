@@ -110,7 +110,7 @@ nav ul:nth-child(2) li a span {
     padding: 3px 20px;
     border-radius: 20px;
     color: #fff;
-    margin:0 10px;
+    margin: 0 10px;
 
 }
 
@@ -145,9 +145,74 @@ nav ul .login:hover a {
 /* my */
 .my {}
 
-.my a {background-image: url();}
+.my a {
+    background-image: url();
+}
 
 /* 햄버거버튼 */
+
+/* 풀다운메뉴 */
+.fulldown_menu {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 50px;
+    display:none;
+}
+
+.fulldown_menu .fulldown_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fulldown_menu .fulldown_wrap>* {
+    float: left;
+}
+
+.fulldown_menu .fulldown_wrap h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.fulldown_menu .fulldown_wrap p {
+    position: absolute;
+    top: 128px;
+    font-size: 14px;
+    text-align: left;
+    color: #939292;
+}
+.fulldown_menu .fulldown_wrap .fulldown_top>li+li{
+    margin-left: 30px;
+}
+.fulldown_menu .fulldown_wrap .fulldown_top {
+    float: right;
+    width: 80%;
+    overflow: hidden;
+}
+
+.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub {
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+
+.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub h3{
+    font-size:1em;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid;
+}
+.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub li a {
+    display: block;
+    font-size:13px;
+    color:#262626;
+}
+
 /* quick메뉴란 */
 .qnb {
     clear: both;
