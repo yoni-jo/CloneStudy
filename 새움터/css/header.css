@@ -13,6 +13,7 @@ header {
 header .header_wrap {
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 header h1.logo {
@@ -33,18 +34,18 @@ nav.gnb {
     width: 90%;
 }
 
-nav.gnb ul {
+nav.gnb>ul {
     box-sizing: border-box;
     overflow: hidden;
 }
 
-nav.gnb ul li {
+nav.gnb>ul > li {
     display: inline-block;
     box-sizing: border-box;
     height: 100%;
 }
 
-nav.gnb ul li a {
+nav.gnb > ul > li>a {
     display: block;
 }
 
@@ -58,13 +59,12 @@ nav ul:nth-child(1) {
 
 }
 
-nav ul:nth-child(1) li {
+nav ul:nth-child(1)>li {
     text-align: center;
     display: table-cell;
-    letter-spacing: -1;
 }
 
-nav ul:nth-child(1) li a {
+nav>ul:nth-child(1)>li>a {
     font-size: 1.1em;
     font-weight: bold;
     box-sizing: border-box;
@@ -74,10 +74,8 @@ nav ul:nth-child(1) li a {
 
 nav ul:nth-child(1) li:hover a {
     color: #08b4db;
-
 }
-
-nav ul:nth-child(1) li:hover a::after {
+nav>ul:nth-child(1)>li:hover>a::after {
     content: "";
     width: 100%;
     height: 2px;
@@ -92,7 +90,7 @@ nav>ul:nth-child(2) {
     float: right;
 }
 
-nav ul:nth-child(2) li {
+nav>ul:nth-child(2) > li {
     text-align: right;
     box-sizing: border-box;
 }
@@ -101,11 +99,11 @@ nav ul:nth-child(2) li+li {
     margin-right: 10px;
 }
 
-nav ul:nth-child(2) li a {
+nav>ul:nth-child(2)>li>a {
     font-size: 14px;
 }
 
-nav ul:nth-child(2) li a span {
+nav>ul:nth-child(2)>li>a span {
     background-color: #08b4db;
     padding: 3px 20px;
     border-radius: 20px;
@@ -157,6 +155,9 @@ nav ul .login:hover a {
     background-color: #fff;
     overflow: hidden;
     padding-bottom: 50px;
+    position: absolute;
+    left: 0;
+    display: none;
 }
 
 .fulldown_menu .fulldown_wrap {
@@ -171,18 +172,22 @@ nav ul .login:hover a {
 .fulldown_menu .fulldown_wrap h2 {
     font-size: 1.5em;
     font-weight: bold;
+    /*! margin: 50px 0; */
 }
 
 .fulldown_menu .fulldown_wrap p {
     position: absolute;
-    top: 128px;
+    top: 74px;
     font-size: 14px;
     text-align: left;
     color: #939292;
+    line-height: 1.2;
 }
-.fulldown_menu .fulldown_wrap .fulldown_top>li+li{
+
+.fulldown_menu .fulldown_wrap .fulldown_top>li+li {
     margin-left: 30px;
 }
+
 .fulldown_menu .fulldown_wrap .fulldown_top {
     float: right;
     width: 80%;
@@ -195,21 +200,24 @@ nav ul .login:hover a {
     text-align: left;
 }
 
-.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub h3{
-    font-size:1em;
+.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub h3 {
+    font-size: 1em;
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid;
 }
+
 .fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub li {
     height: 30px;
-    line-height: 30px;
+    /*! line-height: 30px; */
+    width: 100%;
+    text-align: left;
 }
 
 .fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub li a {
     display: block;
-    font-size:13px;
-    color:#262626;
+    font-size: 13px;
+    color: #262626;
 }
 
 /* quick메뉴란 */
