@@ -39,13 +39,13 @@ nav.gnb>ul {
     overflow: hidden;
 }
 
-nav.gnb>ul > li {
+nav.gnb>ul>li {
     display: inline-block;
     box-sizing: border-box;
     height: 100%;
 }
 
-nav.gnb > ul > li>a {
+nav.gnb>ul>li>a {
     display: inline-block;
 }
 
@@ -75,6 +75,7 @@ nav>ul:nth-child(1)>li>a {
 nav ul:nth-child(1) li:hover a {
     color: #08b4db;
 }
+
 nav>ul:nth-child(1)>li:hover>a::after {
     content: "";
     width: 100%;
@@ -90,8 +91,8 @@ nav>ul:nth-child(2) {
     float: right;
 }
 
-nav>ul:nth-child(2) > li {
-    
+nav>ul:nth-child(2)>li {
+
     box-sizing: border-box;
 }
 
@@ -154,8 +155,9 @@ nav ul .login:hover a {
 }
 
 /* 햄버거버튼 */
-.menu{}
-.menu a{
+.menu {}
+
+.menu a {
     background-image: url(../img/header/icn_menu.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -165,6 +167,7 @@ nav ul .login:hover a {
     height: 34px;
     line-height: 34px;
 }
+
 /* 풀다운메뉴 */
 .fulldown_menu {
     width: 100%;
@@ -282,4 +285,71 @@ nav ul .login:hover a {
     font-size: 12px;
     padding-left: 10px;
     color: #105279;
+}
+
+/*상단 지자체 장애현황표 */
+
+.error_current {
+    position: fixed;
+    top: 10%;
+    /*! width: 200px; */
+    background-color: #fff;
+    left: 5%;
+    box-shadow: 10px 10px 19px #cac8c882;
+}
+
+.error_current h2 {
+    font-size: 14px;
+    line-height: 1.8;
+    background-color: #262626;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.error_current h2 a {
+    float: right;
+    margin-right: 4px;
+    background-image: url(../img/popup/btn_xl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+.error_current ul {padding: 7px;}
+
+.error_current ul li {
+    font-size: 13px;
+    text-align: left;
+    line-height: 0;
+    padding: 7px 15px;
+}
+
+.error_current ul li span {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.error_current ul li a {
+    display: inline-block;
+}
+
+.fail {
+    color: #f00808cc;
+}
+
+.res {
+    color: #08b4db;
 }
