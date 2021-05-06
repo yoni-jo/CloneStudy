@@ -46,7 +46,7 @@ nav.gnb>ul > li {
 }
 
 nav.gnb > ul > li>a {
-    display: block;
+    display: inline-block;
 }
 
 nav ul:nth-child(1) {
@@ -141,10 +141,19 @@ nav ul .login:hover a {
 }
 
 /* my */
-.my {}
+.my {
+
+}
 
 .my a {
-    background-image: url();
+    background-image: url(../img/header/icn_user.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
 }
 
 /* 햄버거버튼 */
