@@ -91,7 +91,7 @@ nav>ul:nth-child(2) {
 }
 
 nav>ul:nth-child(2) > li {
-    text-align: right;
+    
     box-sizing: border-box;
 }
 
@@ -141,9 +141,6 @@ nav ul .login:hover a {
 }
 
 /* my */
-.my {
-
-}
 
 .my a {
     background-image: url(../img/header/icn_user.png);
@@ -157,7 +154,17 @@ nav ul .login:hover a {
 }
 
 /* 햄버거버튼 */
-
+.menu{}
+.menu a{
+    background-image: url(../img/header/icn_menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-indent: -99999px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+}
 /* 풀다운메뉴 */
 .fulldown_menu {
     width: 100%;
