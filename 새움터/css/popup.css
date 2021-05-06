@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+#popup {
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 150px);
+    top: 20%;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+}
+
+#popup>div {
+    padding: 30px
+}
+
+#popup div.left {
+    background-color: #fff;
+}
+
+#popup div.left h2 {}
+
+#popup div.left h2>a {
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: -3px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#popup div.left p {
+    font-size: 13px;
+}
+
+#popup div.left ul {
+    font-size: 13px;}
+
+#popup div.left ul li {}
+
+#popup div.left span {}
+
+#popup div.left span time {}
+
+#popup div.left span a {}
+
+
+
+#popup div.right {}
+
+#popup div.right ul {}
+
+#popup div.right ul li {}
+
+#popup div.right ul li a {}
