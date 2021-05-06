@@ -608,7 +608,7 @@ iframe {
 }
 
 .service_noticewrap .service_noticelist ul>li {
-  margin-bottom: 20px;
+  margin: 13px 0 15px -1px;
 }
 
 .service_noticewrap .service_noticelist:nth-of-type(1)>li:not(.eventslide) {

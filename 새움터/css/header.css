@@ -260,7 +260,9 @@ nav ul .login:hover a {
     padding-left: 10px;
     box-sizing: border-box;
 }
-
+.qnb h2:hover {
+    
+}
 .qnb ul {
     display: none;
     overflow: hidden;
