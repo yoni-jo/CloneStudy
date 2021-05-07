@@ -1,2 +1,156 @@
 @charset "utf-8";
 
+#introduce {
+    padding: 0;
+}
+
+/* 히스토리 */
+
+.history {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 20px;
+}
+
+.history_wrap {
+    width: 100%;
+    border-bottom: 1px solid #262626;
+}
+
+.history>ul {
+    display: flex;
+}
+
+.history ul:last-child {
+    margin-right: 20%;
+}
+
+.history ul li {
+    font-size: 14px;
+}
+
+.history ul li+li {
+    margin-left: 20px;
+}
+
+.history ul:not(ul:last-child)>li+li::before {
+    content: ">";
+    margin-right: 15px;
+}
+
+.history ul button {
+    border: none;
+
+}
+
+/* intro_1 */
+
+.intro_1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.intro_1 h2 {
+    padding: 0 0 50px;
+    font-weight: bold;
+}
+
+/* 탭메뉴리스트 */
+.intro_1 ul.tap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.intro_1 ul.tap li {
+    width: calc(100%/4);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #4b4a4a;
+    box-sizing: border-box;
+}
+
+.intro_1 ul.tap li:hover a {
+    text-decoration: underline;
+}
+
+.intro_1 ul.tap li+li {
+    border-left: none;
+}
+
+.intro_1 ul.tap li.on a {
+    color: #fff;
+    background-color: #2c4494;
+    font-weight: bold;
+}
+
+.intro_1 ul.tap li a {
+    display: block;
+}
+
+.intro_1 .intro_page {}
+
+.intro_1 .intro_page h3 {
+    color: dodgerblue;
+    margin-bottom: 30px;
+}
+
+.intro_1 .intro_page>p {
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.intro_1 .intro_page>p strong {
+    font-weight: bolder;
+}
+
+.intro_1 .intro_page ul {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.intro_1 .intro_page ul li {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+
+}
+
+.intro_1 .intro_page ul li h4 {
+    background-color: dodgerblue;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: pre-line;
+    line-height: 30px;
+    padding: 35px 10px;
+    box-sizing: border-box;
+}
+
+.intro_1 .intro_page ul li p {
+    margin-left: 30px;
+    height: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+.intro_1 .intro_page ul li p strong {
+    color: #0461be;
+}
