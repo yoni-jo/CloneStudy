@@ -27,6 +27,7 @@ header h1.logo a {
     background-repeat: no-repeat;
     background-position: center;
     text-indent: -9999px;
+    background-size: contain;
 }
 
 nav.gnb {
