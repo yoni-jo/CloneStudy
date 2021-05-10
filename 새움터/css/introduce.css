@@ -54,6 +54,11 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../img/introduce/intro_bg01.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 
 .intro_1 h2 {
@@ -161,6 +166,10 @@
 
 .intro_2 {
     width: 100%;
+    margin: 50px 0;
+}
+
+.intro_2 .banner_wrap {
     background-color: #f7f2f2;
 }
 
@@ -169,6 +178,7 @@
     margin: 0 auto;
     height: 300px;
     background-image: url(../img/introduce/intro_vision_view.png);
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -178,6 +188,8 @@
     white-space: pre-line;
     letter-spacing: -2px;
     font-weight: bold;
+    font-size: 0.9em;
+
 }
 
 .intro_2 .banner div:first-child {
@@ -185,7 +197,7 @@
     color: green;
     position: absolute;
     bottom: 22%;
-    left:18%
+    left: 18%
 }
 
 .intro_2 .banner div:last-child {
@@ -193,5 +205,68 @@
     position: absolute;
     right: 18%;
     top: 22%;
-    color:midnightblue;
+    color: midnightblue;
+}
+
+.intro_2 ul {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_2 li {
+    width: calc(100%/5);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center center;
+
+}
+
+.intro_2 li:nth-child(1) {
+    background-image: url(../img/introduce/intro_vision_vv01.png);
+}
+
+.intro_2 li:nth-child(2) {
+    background-image: url(../img/introduce/intro_vision_vv02.png);
+}
+
+.intro_2 li:nth-child(3) {
+    background-image: url(../img/introduce/intro_vision_vv03.png);
+}
+
+.intro_2 li:nth-child(4) {
+    background-image: url(../img/introduce/intro_vision_vv04.png);
+}
+
+.intro_2 li+li {
+    position: relative;
+}
+
+.intro_2 li+li::before {
+    content: "";
+    display: block;
+    background-color: #e2e1e1;
+    width: 1px;
+    height: 60%;
+    position: absolute;
+    top: 30%;
+
+}
+
+.intro_2 li h4 {
+    color: midnightblue;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.intro_2 li p {
+    font-size: 0.8em;
+    font-weight: bold;
 }
