@@ -905,7 +905,7 @@ iframe {
   height: 100%;
   background-color: #e8e3e3;
 }
-
+#company_slidebanner h2{font-size:0}
 #company_slidebanner .comslide_wrap {
 
   position: relative;
