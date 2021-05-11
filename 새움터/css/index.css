@@ -7,9 +7,9 @@
 /* 민원신청 시작*/
 /* ---------------------------- */
 iframe {
-  width:100%;
+  width: 100%;
   height: 100%;
-  background-color: rgba(38, 38, 38,0.8);
+  background-color: rgba(38, 38, 38, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -374,6 +374,7 @@ iframe {
   padding-top: 0;
   position: relative;
   background-color: #2d78de;
+  z-index: -1;
 }
 
 .slide1_wrap {
@@ -905,7 +906,11 @@ iframe {
   height: 100%;
   background-color: #e8e3e3;
 }
-#company_slidebanner h2{font-size:0}
+
+#company_slidebanner h2 {
+  font-size: 0
+}
+
 #company_slidebanner .comslide_wrap {
 
   position: relative;
@@ -965,6 +970,99 @@ iframe {
 
 /* ---------------------------- */
 /* 하단 관공서 슬라이드메뉴 끝*/
+/* ---------------------------- */
+/* aside메뉴시작 */
+aside {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  width: 120px;
+}
+
+aside ul {
+  margin-bottom: 10px;
+}
+
+aside ul li {}
+
+aside ul li a {
+  font-size: 0.9em;
+  line-height: 30px;
+}
+
+aside ul.side_top {
+  color: dimgrey;
+}
+
+aside ul.side_top li {
+  height: 30px;
+  list-style-type: disc;
+}
+
+aside ul.side_top li:hover a {
+  color: #fff;
+  background-color: dimgrey;
+  border-radius: 20px;
+}
+
+aside ul.side_top li a {
+  display: block;
+  color: dimgrey;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+aside ul.side_bottom {
+  margin-top: 50px;
+}
+
+aside ul.side_bottom li {
+  height: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left center;
+  padding: 20px 0;
+}
+
+aside ul.side_bottom li+li {
+  border-top: 1px solid #08b4db;
+}
+
+aside ul.side_bottom li:nth-child(1) {
+  background-image: url(../img/main/aside/main_icn_local01.png);
+}
+
+aside ul.side_bottom li:nth-child(2) {
+  background-image: url(../img/main/aside/main_icn_local02.png);
+}
+
+aside ul.side_bottom li:nth-child(3) {
+  background-image: url(../img/main/aside/main_icn_local03.png);
+}
+
+aside ul.side_bottom li:nth-child(4) {
+  background-image: url(../img/main/aside/main_icn_local04.png);
+  background-color: #08b4db;
+  
+  padding: 0;
+}
+aside ul.side_bottom li:nth-child(4) a{
+  
+  padding: 0 2px;
+}
+aside ul.side_bottom li a {
+  white-space: pre-line;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* aside메뉴끝 */
+/* ---------------------------- */
 /* ---------------------------- */
 /* 컨텐츠영역 끝*/
 /* ---------------------------- */
