@@ -2,23 +2,137 @@
 
 
 /* 회원로그인 */
-
+/* 공통 */
 #login {}
 
-.login_wrap {
+#login .login_wrap {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
-.login_wrap div {}
+#login .login_wrap>div {
 
-.login_wrap div h2 {}
+    border-top: 1px solid black;
+    width: calc(100%/2);
+    margin-top: 50px;
+    padding: 50px;
+}
 
-.login_wrap div form {}
+#login .login_wrap div+div {
+    border-left: 1px solid;
+}
 
-.login_wrap div form fieldset {
+#login .login_wrap div form {
+    padding: 50px;
+}
+
+#login .login_wrap div form fieldset {
     display: flex;
     flex-direction: column;
 }
+
+#login .login_wrap div form fieldset h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#login .login_wrap div form fieldset button {
+    border: none;
+}
+
+#login .login_wrap div form fieldset ul {
+    margin-top: 20px;
+}
+
+#login .login_wrap div form fieldset ul li {
+    list-style-type: disc;
+}
+
+#login .login_wrap div form fieldset p {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#login .login_wrap div form fieldset a {
+    font-size: 0.9em;
+    color: #137ae2
+}
+
+
+/* id_login */
+
+.id_login form fieldset>input {
+    height: 50px;
+}
+
+.id_login form fieldset>div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.id_login form fieldset>div>input {
+    margin-right: 10px;
+}
+
+.id_login form fieldset>input:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.id_login form fieldset input:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+.id_login form fieldset input label {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.id_login form fieldset button {
+    background-color: #137ae2;
+    height: 50px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.id_login form fieldset ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* cert-login */
+
+.cert_login {}
+
+.cert_login form {}
+
+.cert_login form fieldset {}
+
+.cert_login form fieldset h2 {}
+
+.cert_login form fieldset>button:nth-of-type(1) {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.cert_login form fieldset>button:nth-of-type(2) {
+    height: 50px;
+}
+
+.cert_login form fieldset ul {}
+
+.cert_login form fieldset ul li {
+    margin-bottom: 10px;
+}
+
+.cert_login form fieldset ul li p {}
+
+.cert_login form fieldset ul li p a span{text-decoration: underline;}

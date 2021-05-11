@@ -99,18 +99,22 @@
   <!-- 회원로그인콘텐츠 -->
   <section id="login">
     <div class="login_wrap">
-      <div>
-        <h2>아이디 로그인</h2>
+      <div class="id_login">
+
         <form action="">
           <fieldset>
+            <h2>아이디 로그인</h2>
             <input type="text" name="" id="id" placeholder="아이디">
             <input type="password" name="" id="pw" placeholder="비밀번호">
-            <input type="checkbox" name="" id="checkbox"><label for="checkbox">아이디저장</label>
+
+            <div><input type="checkbox" name="" id="checkbox">
+              <label for="checkbox">아이디저장</label>
+            </div>
             <button>로그인</button>
             <ul>
               <li>
                 <p>아직 세움터 회원이 아니신가요?</p>
-                <a href="">회원가입</a>
+                <a href="join.html">회원가입</a>
               </li>
               <li>
                 <p>아이디 혹은 비밀번호를 잊으셨나요?</p>
@@ -121,10 +125,12 @@
           </fieldset>
         </form>
       </div>
-      <div>
-        <h2>인증서로그인</h2>
+      <div class="cert_login">
+
         <form action="">
+
           <fieldset>
+            <h2>인증서로그인</h2>
             <button>인증서로그인</button>
             <button>인증서안내</button>
             <ul>
