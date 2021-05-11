@@ -1,1 +1,24 @@
 @charset "utf-8";
+
+
+/* 회원로그인 */
+
+#login {}
+
+.login_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_wrap div {}
+
+.login_wrap div h2 {}
+
+.login_wrap div form {}
+
+.login_wrap div form fieldset {
+    display: flex;
+    flex-direction: column;
+}
