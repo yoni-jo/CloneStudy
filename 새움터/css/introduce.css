@@ -270,3 +270,100 @@
     font-size: 0.8em;
     font-weight: bold;
 }
+
+/* intro_3 */
+
+.intro_3 {
+    max-width: 1000px;
+    margin: 200px auto;
+}
+
+.intro_3 h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.intro_3 ul li {
+    display: flex;
+    justify-content: left;
+}
+
+/* 주요내용  */
+.intro_3 ul.primary{margin-bottom: 120px;}
+.intro_3 ul.primary li {
+
+    white-space: pre-line;
+}
+
+.intro_3 ul.primary li hgroup {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_3 ul.primary li hgroup h4 {
+    color: dodgerblue;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.intro_3 ul.primary li hgroup h5 {
+    color: #2c4494;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+.intro_3 ul.primary li>div {
+    width: 70%;
+    font-size: 1.1em;
+}
+
+.intro_3 ul.primary li div p {
+    font-weight: bold;
+}
+
+
+
+.intro_3 ul.primary li div pre {
+    background-color: #f3f3f3;
+    padding: 20px 30px;
+    text-align: left;
+    white-space: pre-line;
+    font-size: 0.9em;
+    line-height: 1.2
+}
+
+.intro_3 ul.primary li div strong {
+    color: red;
+}
+
+.intro_3 ul.primary li div pre span {
+    font-weight: bold;
+    color: #2c4494;
+}
+
+/* 대상업무 */
+
+.intro_3 ul.tar_work {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+
+.intro_3 ul.tar_work li {
+    border-bottom: 1px solid #d6d5d5;
+    font-size: 0.9em;
+}
+
+.intro_3 ul.tar_work li hgroup {
+    
+    padding: 13px;
+    width: 30%;
+    display: block;
+    background-color: #f3f3f3;
+}
+
+.intro_3 ul.tar_work li p {
+    width: 70%;
+    padding: 13px;
+}
