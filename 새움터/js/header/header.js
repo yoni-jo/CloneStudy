@@ -1,20 +1,26 @@
-
-
 $(document).ready(
     function () {
-      // quickmenu 슬라이드 토글
-      $(".qnb>h2").click(function () {
-        $(".qnb>ul").slideToggle();
-      });
+        // quickmenu 슬라이드 토글
+        $(".qnb>h2").mouseover(function () {
+            const ul = $(this).siblings("ul")
 
-      // gnb안에 풀다운메뉴
-      $(".gnb>ul>li").hover(function(){
-        $(this).children(".fulldown_menu").slideToggle();
-      })
+            ul.slideDown();
+            ul.mouseleave(function () {
+                $(this).slideUp();
+            })
+        });
 
-      // 지자체장애현황 x박스 
+        // gnb안에 풀다운메뉴
+        $(".gnb>ul:first-child>li>a").mouseover(function () {
+            const fulldown_menu = $(this).parent().children(".fulldown_menu")
+            fulldown_menu.slideDown();
+            $(this).mouseleave(function () {
+                fulldown_menu.slideUp();
+            })
+        })
 
-      $(".error_current>h2>a").click(function(){
-        $(".error_current").css("display","none")
-      })
+        // 지자체장애현황팝업창 x박스 
+        $(".error_current>h2>a").click(function () {
+            $(".error_current").css("display", "none")
+        })
     });
