@@ -14,7 +14,8 @@ $(document).ready(
         $(".gnb>ul:first-child>li>a").mouseover(function () {
             const fulldown_menu = $(this).parent().children(".fulldown_menu")
             fulldown_menu.slideDown();
-            $(this).mouseleave(function () {
+            
+            fulldown_menu.mouseleave(function () {
                 fulldown_menu.slideUp();
             })
         })
