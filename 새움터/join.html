@@ -106,7 +106,9 @@
         <fieldset>
           <div>
             <input type="checkbox">
-            <label for="">세움터 이용약관 동의<span><필수></span>
+            <label for="">세움터 이용약관 동의<span>
+                <필수>
+              </span>
             </label>
           </div>
         </fieldset>
@@ -147,9 +149,11 @@
           <legend><span>필수</span>입력사항</legend>
           <div>
             <label for="id">아이디</label><input type="text" id="id">
-            <button>중복확인</button></div>
+            <button>중복확인</button>
+            <p>6~12자의 영문소문자와 숫자 혼합으로만 가능합니다.</p>
+          </div>
           <div>
-            <label for="pw"></label>비밀번호</label><input type="password" id="pw">
+            <label for="pw">비밀번호</label><input type="password" id="pw">
           </div>
           <div>
             <label for="pwr">비밀번호확인</label><input type="password" id="pwr">
@@ -176,7 +180,11 @@
               <option value="">ttt</option>
               <option value="">ttt</option>
             </select></div>
-          <div>자동입력방지문자 <input type="text"><button>새로고침</button></div>
+          <div>
+            <label for="autotext">자동입력방지문자</label>
+            <input type="text" id="autotext">
+            <button>새로고침</button>
+          </div>
         </fieldset>
       </form>
     </div>
