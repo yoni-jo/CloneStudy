@@ -65,7 +65,9 @@ footer {
     display: block;
     color: #262626;
   }
-  
+.footer_wrap .footer_top ul:nth-of-type(1) li:hover a{
+  text-decoration: underline;
+}
   /* ---------------------------- */
   /* footer_top끝 */
   /* ---------------------------- */
