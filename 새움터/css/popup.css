@@ -2,7 +2,6 @@
 
 #popup {
     position: absolute;
-    /*! width: 400px; */
     left: calc(50% - 220px);
     top: 20%;
     z-index: 9;
