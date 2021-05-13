@@ -1031,7 +1031,13 @@ aside ul.side_bottom li {
   background-position: left center;
   padding: 20px 0;
 }
-
+aside ul.side_bottom li:not(:last-child):hover{
+  background-color:#fff;
+}
+aside ul.side_bottom  li:not(:last-child):hover a{
+  color:#08b4db;
+  font-weight: bold;
+}
 aside ul.side_bottom li+li {
   border-top: 1px solid #08b4db;
 }
