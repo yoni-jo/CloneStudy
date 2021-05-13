@@ -21,3 +21,7 @@ a {
     font-size: normal;
     color: black;
 }
+
+a,p,pre,span,h1,h2,h3,h4,h5,h6,li{
+    font-family: 'Nanum Gothic', sans-serif;
+}
