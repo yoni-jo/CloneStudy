@@ -344,8 +344,17 @@ nav ul .login:hover a {
     text-align: left;
     line-height: 0;
     padding: 7px 15px;
+    transition: 0.1s
 }
 
+.error_current ul li:hover{
+    background-color: #61d6f0;
+}
+.error_current ul li:hover a{
+    
+    color:#fff;
+   
+}
 .error_current ul li span {
     display: inline-block;
     background-color: #fff;
