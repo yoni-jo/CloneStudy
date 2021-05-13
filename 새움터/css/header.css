@@ -87,14 +87,16 @@ nav>ul:nth-child(1)>li:hover>a::after {
     left: 0;
 }
 
-nav>ul:nth-child(1)>li:nth-of-type(3) h3{
+nav>ul:nth-child(1)>li:nth-of-type(3) h3 {
     font-weight: bold;
     border: none !important;
 }
-nav>ul:nth-child(1)>li:nth-of-type(4) h3{
+
+nav>ul:nth-child(1)>li:nth-of-type(4) h3 {
     font-weight: bold;
     border: none !important;
 }
+
 nav>ul:nth-child(2) {
     width: 40%;
     float: right;
@@ -164,8 +166,6 @@ nav ul .login:hover a {
 }
 
 /* 햄버거버튼 */
-.menu {}
-
 .menu a {
     background-image: url(../img/header/icn_menu.png);
     background-position: center;
@@ -247,6 +247,10 @@ nav ul .login:hover a {
     font-size: 13px;
     color: #262626;
 }
+.fulldown_menu .fulldown_wrap .fulldown_top .fulldown_sub  a:hover{
+    color: #08b4db;
+    text-decoration: underline;
+}
 
 /* quick메뉴란 */
 .qnb {
@@ -269,6 +273,7 @@ nav ul .login:hover a {
     padding-left: 10px;
     box-sizing: border-box;
 }
+
 .qnb ul {
     display: none;
     overflow: hidden;
@@ -330,7 +335,9 @@ nav ul .login:hover a {
     margin-top: 3px;
 }
 
-.error_current ul {padding: 7px;}
+.error_current ul {
+    padding: 7px;
+}
 
 .error_current ul li {
     font-size: 13px;

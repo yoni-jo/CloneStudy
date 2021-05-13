@@ -1048,13 +1048,15 @@ aside ul.side_bottom li:nth-child(3) {
 aside ul.side_bottom li:nth-child(4) {
   background-image: url(../img/main/aside/main_icn_local04.png);
   background-color: #08b4db;
-  
+
   padding: 0;
 }
-aside ul.side_bottom li:nth-child(4) a{
-  
+
+aside ul.side_bottom li:nth-child(4) a {
+
   padding: 0 2px;
 }
+
 aside ul.side_bottom li a {
   white-space: pre-line;
   display: inline-block;
