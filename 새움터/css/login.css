@@ -3,8 +3,6 @@
 
 /* 회원로그인 */
 /* 공통 */
-#login {}
-
 #login .login_wrap {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,7 +57,7 @@
 
 #login .login_wrap div form fieldset a {
     font-size: 0.9em;
-    color: #137ae2
+    color: #137ae2;
 }
 
 
@@ -79,7 +77,7 @@
 
 .id_login form fieldset>div>input {
     margin-right: 10px;
-    
+
 }
 
 .id_login form fieldset>input:nth-of-type(1) {
@@ -111,15 +109,6 @@
 }
 
 /* cert-login */
-
-.cert_login {}
-
-.cert_login form {}
-
-.cert_login form fieldset {}
-
-.cert_login form fieldset h2 {}
-
 .cert_login form fieldset>button:nth-of-type(1) {
     height: 80px;
     margin-bottom: 10px;
@@ -137,12 +126,11 @@
     color: #262626;
 }
 
-.cert_login form fieldset ul {}
-
 .cert_login form fieldset ul li {
     margin-bottom: 10px;
 }
 
-.cert_login form fieldset ul li p {}
 
-.cert_login form fieldset ul li p a span{text-decoration: underline;}
+.cert_login form fieldset ul li p a span {
+    text-decoration: underline;
+}
