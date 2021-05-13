@@ -9,27 +9,70 @@
 #join div {}
 
 #join div h2 {
-    text-align: center;}
+    text-align: center;
+}
 
 #join div p {
-    
+    text-align: center;
+
 }
 
 #join div form {
     width: 100%;
 }
 
-/* 이용약관 */
+/* 이용약관체크란 */
+#join div fieldset.terms_check {
+    width: 100%;
+    text-align: center;
+}
+
+#join div fieldset.terms_check div {}
+
+#join div fieldset.terms_check div input {}
+
+#join div fieldset.terms_check div label {}
+
+#join div fieldset.terms_check div label span {
+    color: red;
+}
+
+/*이용약관내용  */
 #join div fieldset.terms {
     width: 100%;
+    text-align: center;
 }
 
 #join div fieldset.terms div {}
 
-#join div fieldset.terms div input {}
+#join div fieldset.terms div textarea {
+    width: 100%;
+}
 
-#join div fieldset.terms div label {}
+/*회원가입입력창  */
 
-#join div fieldset.terms div label span {
+#join div fieldset.join_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#join div fieldset.join_cont legend {
+    text-align: right;
+}
+
+#join div fieldset.join_cont legend span {
     color: red;
 }
+
+#join div fieldset.join_cont div {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#join div fieldset.join_cont div label {}
+
+#join div fieldset.join_cont div p {}
+
+#join div fieldset.join_cont div p {}
