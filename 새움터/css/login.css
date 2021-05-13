@@ -17,10 +17,11 @@
     width: calc(100%/2);
     margin-top: 50px;
     padding: 50px;
+    border-bottom: 1px solid #cac8c8;
 }
 
 #login .login_wrap div+div {
-    border-left: 1px solid;
+    border-left: 1px solid #cac8c8;
 }
 
 #login .login_wrap div form {
