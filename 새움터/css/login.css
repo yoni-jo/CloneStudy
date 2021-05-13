@@ -67,6 +67,7 @@
 
 .id_login form fieldset>input {
     height: 50px;
+    font-size: 1em;
 }
 
 .id_login form fieldset>div {
@@ -78,6 +79,7 @@
 
 .id_login form fieldset>div>input {
     margin-right: 10px;
+    
 }
 
 .id_login form fieldset>input:nth-of-type(1) {
