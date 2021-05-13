@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px 20px;
+    padding: 0px 5px 20px;
 }
 
 .history_wrap {
@@ -26,7 +26,12 @@
 }
 
 .history ul:last-child {
-    margin-right: 20%;
+    margin-right: 13%;
+}
+
+.history ul:last-child li {
+
+    position: relative;
 }
 
 .history ul li {
@@ -44,7 +49,38 @@
 
 .history ul button {
     border: none;
+    width: 30px;
+    height: 30px;
 
+}
+
+.history ul:last-child li:nth-of-type(1) button {
+    background-image: url(../img/introduce/history/icn_print.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999999px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.history ul:last-child li:nth-of-type(2)::before {
+    content: "";
+    width: 1px;
+    height: 70%;
+    display: block;
+    background-color: #d6d5d5;
+    position: absolute;
+    left: -13px;
+    top: 5px;
+}
+
+.history ul:last-child li:nth-of-type(2) button {
+    border: 1px solid #d6d5d5;
+    background-color: #fff;
+}
+
+.history ul:last-child li:nth-of-type(2) button:last-child {
+    border-left: none;
 }
 
 /* intro_1 */
@@ -282,13 +318,17 @@
     font-size: 1.3em;
     font-weight: bold;
 }
+
 .intro_3 ul li {
     display: flex;
     justify-content: left;
 }
 
 /* 주요내용  */
-.intro_3 ul.primary{margin-bottom: 120px;}
+.intro_3 ul.primary {
+    margin-bottom: 120px;
+}
+
 .intro_3 ul.primary li {
 
     white-space: pre-line;
@@ -356,7 +396,7 @@
 }
 
 .intro_3 ul.tar_work li hgroup {
-    
+
     padding: 13px;
     width: 30%;
     display: block;
