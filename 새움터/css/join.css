@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 회원가입 */
+#join {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#join div {}
+
+#join div h2 {
+    text-align: center;}
+
+#join div p {
+    
+}
+
+#join div form {
+    width: 100%;
+}
+
+/* 이용약관 */
+#join div fieldset.terms {
+    width: 100%;
+}
+
+#join div fieldset.terms div {}
+
+#join div fieldset.terms div input {}
+
+#join div fieldset.terms div label {}
+
+#join div fieldset.terms div label span {
+    color: red;
+}
