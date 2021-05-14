@@ -1,5 +1,19 @@
 @charset "utf-8";
 
+body {
+    position: relative;
+}
+
 hr.hide {
     border: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100%;
 }
