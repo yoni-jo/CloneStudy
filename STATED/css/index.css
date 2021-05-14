@@ -1,0 +1,166 @@
+:root {
+    /* color */
+    --white: #fff;
+    --black: #000;
+    --p_basic: #00bfa5;
+    --p_dark: #008e76;
+    --p_light: #5df2d6;
+    --s_basic: #66bb6a;
+    --s_dark: #338a3e;
+    --s_light: #98ee99;
+    --text_bg: #f8f0f0;
+    --text_h3: #33691e;
+    --text_p: #707070;
+    --text_h: #e7d003;
+    /* font */
+    --font1: "Brygada 1918";
+    --font2: "Roboto";
+    --font3: "Sans";
+}
+
+/* =============================================== */
+/* 헤더 */
+/* =============================================== */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+header .header_wrap {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header_wrap .logo a {
+    font-family: var(--font3);
+    font-weight: bolder;
+    color: var(--white);
+}
+
+header .header_wrap .gnb {
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header_wrap .gnb li {}
+
+header .header_wrap .gnb li a {
+    font-family: var(--font1);
+    color: var(--white);
+}
+
+/* =============================================== */
+/* .title 영역 */
+/* =============================================== */
+
+.title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: pre-line;
+    text-align: center;
+    position: absolute;
+    top: 0;
+
+    background-image: url(../img/title/todd-kent-178j8tJrNlc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title h2 {
+    font-size: 3em;
+    color: var(--white);
+    font-family: var(--font1);
+    font-weight: bold;
+    z-index: 999;
+}
+
+.title p {
+    margin-top: 20px;
+    font-size: 1em;
+    color: var(--white);
+    z-index: 999;
+}
+
+/* =============================================== */
+/* #top 영역 */
+/* =============================================== */
+#top_opactie {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    position: relative;
+    z-index: 2;
+    top: 0;
+}
+
+/* =============================================== */
+/* #how_work 영역 */
+/* =============================================== */
+#how_work {
+    height: auto;
+    background-color: var(--text_bg);
+}
+
+#how_work .how_work_wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#how_work h3 {
+    padding: 30px;
+    text-align: center;
+
+}
+
+#how_work ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#how_work ul li {
+    max-width: calc(100%/3);
+    height: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 50px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+#how_work ul li h4{
+    color:var(--p_dark);
+    
+}
+ion-icon{
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top:15%;
+    left:calc(50% - 65px);
+    color:var(--text_h3);
+}
+
+/* =============================================== */
+/* #properties 영역 */
+/* =============================================== */
+#properties{}
+#properties .properties_title{display: flex;}
+#properties .properties_title h3{}
+#properties .properties_title span{}
+#properties .properties_title span button{}

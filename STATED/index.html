@@ -6,9 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans&family=Roboto:wght@100;400;500;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
   <title>STATED</title>
 </head>
 
@@ -36,33 +45,40 @@
   <!-- ===================================== -->
   <hr class="hide">
   <div class="title">
-    <h2>Buy and sell real estate properties</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere
-      deleniti fuga officia.</p>
+    <h2>Buy and sell real estate
+      properties</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      assumenda ea quo cupiditate facere deleniti fuga officia.</p>
   </div>
   <main>
+    <div id="top_opactie"></div>
     <section id="how_work">
-      <h2>
-        How It Works
-      </h2>
-      <ul>
-        <li>
-          <h3>Find Property.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-        </li>
-        <li>
-          <h3>Buy Property.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </li>
-        <li>
-          <h3>Make Investment.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </li>
-      </ul>
+      <div class="how_work_wrap">
+        <h3>
+          How It Works
+        </h3>
+        <ul>
+          <li>
+            <ion-icon name="search-circle-outline"></ion-icon>
+            <h4>Find Property.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </li>
+          <li>
+            <ion-icon name="cash-outline"></ion-icon>
+            <h4>Buy Property.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li>
+            <ion-icon name="home-outline"></ion-icon>
+            <h4>Make Investment.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="properties">
       <div class="properties_title">
-        <h2>Properties</h2>
+        <h3>Properties</h3>
         <span class="arrow_btn"><button class="prev">prev</button><button class="next">next</button></span>
       </div>
       <ul class="proper_list">
@@ -151,7 +167,7 @@
           </span>
         </figure>
         <div>
-          <h2></h2>
+          <h3></h3>
           <p></p>
           <p></p>
           <ul>
@@ -169,7 +185,7 @@
       <div class="says_wrap">
         <ul>
           <li>
-            <h2></h2>
+            <h3></h3>
             <p></p>
             <figure><img src="" alt="">
               <p></p>
@@ -181,7 +197,7 @@
     </section>
     <section id="contact">
       <div class="contact_wrap">
-        <h2></h2>
+        <h3></h3>
         <form action="">
           <fieldset>
             <legend>Contect Form</legend>
@@ -193,11 +209,11 @@
             <button>Send Message</button>
           </fieldset>
           <fieldset>
-            <h3></h3>
+            <h4></h4>
             <p></p>
-            <h3></h3>
+            <h4></h4>
             <a href=""></a>
-            <h3></h3>
+            <h4></h4>
             <a href=""></a>
           </fieldset>
         </form>
