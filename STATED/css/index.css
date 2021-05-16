@@ -94,9 +94,9 @@ header .header_wrap .gnb li a {
 }
 
 /* =============================================== */
-/* #top 영역 */
+/* #titleopacity 영역 */
 /* =============================================== */
-#top_opactie {
+#title_opactie {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.596);
@@ -143,24 +143,70 @@ header .header_wrap .gnb li a {
 }
 
 
-#how_work ul li h4{
-    color:var(--p_dark);
-    
+#how_work ul li h4 {
+    color: var(--p_dark);
+
 }
-ion-icon{
+
+ion-icon {
     width: 35%;
     height: 35%;
     position: absolute;
-    top:15%;
-    left:calc(50% - 65px);
-    color:var(--text_h3);
+    top: 15%;
+    left: calc(50% - 65px);
+    color: var(--text_h3);
 }
 
 /* =============================================== */
 /* #properties 영역 */
 /* =============================================== */
-#properties{}
-#properties .properties_title{display: flex;}
-#properties .properties_title h3{}
-#properties .properties_title span{}
-#properties .properties_title span button{}
+#properties {}
+
+#properties .properties_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#properties .properties_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#properties .properties_title h3 {}
+
+#properties .properties_title span {}
+
+#properties .properties_title span button {}
+
+#properties .proper_list {
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+}
+
+#properties .proper_list li {
+    width: calc(100%/4);
+    height:400px;
+    margin-left: 3%;
+}
+#properties .proper_list li:hover img{
+    
+    height:100%;
+    object-position:  -100px;
+    
+}
+
+
+
+#properties .proper_list li a {
+    width: 100%;
+    display: inline-block;
+    height: 350px;
+    overflow: hidden;
+}
+#properties .proper_list li a>img{
+    height:95%;
+    object-fit:fill;
+    transition:all 0.5s;
+
+}
