@@ -148,7 +148,7 @@ header .header_wrap .gnb li a {
 
 }
 
-ion-icon {
+#how_work ion-icon{
     width: 35%;
     height: 35%;
     position: absolute;
@@ -168,16 +168,7 @@ ion-icon {
     display: block;
     margin: 50px auto;
     height: 50px;
-    font-size: 1.1em;
-    background-color: var(--text_h3);
-    color: var(--white);
     padding: 0 30px;
-    box-sizing: border-box;
-    border-radius: 50px;
-}
-
-#properties .properties_wrap>button.more:hover {
-    background-color: var(--s_basic);
 }
 
 #properties .properties_title {
@@ -189,7 +180,21 @@ ion-icon {
 
 #properties .properties_title span {}
 
-#properties .properties_title span button {}
+#properties .properties_title span button {
+    background-color: var(--white);
+    font-size: 1.2em;
+    transition: all .2s;
+}
+
+#properties .properties_title span button+button {
+    margin-left: 20px;
+    position: relative;
+}
+
+#properties .properties_title span button:hover {
+    text-decoration: underline;
+    color: var(--s_dark);
+}
 
 #properties .proper_list {
     margin-top: 50px;
@@ -206,7 +211,7 @@ ion-icon {
 
 #properties .proper_list>li:hover img {
     object-position: -110px;
-    height: 105%;
+    height: 102%;
 
 }
 
@@ -263,4 +268,94 @@ ion-icon {
     left: -50%;
     top: 0;
 
+}
+
+/* =============================================== */
+/* #about 영역 */
+/* =============================================== */
+#about {}
+
+#about .about_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about_wrap figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10% 0 0;
+    box-sizing: border-box;
+}
+
+#about .about_wrap figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about .about_wrap figure span {
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 45px);
+}
+
+#about .about_wrap figure span button {
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid;
+    transition: all .2s;
+    box-sizing: border-box;
+}
+
+#about .about_wrap figure span button:hover {
+    color: #fff;
+    background-color: var(--p_basic);
+}
+
+#about .about_wrap figure span button+button {
+    border-left: 2px solid rgba(255, 255, 255, 0);
+
+
+}
+
+#about .about_wrap figure span button+button:hover {
+    border-left: 2px solid;
+    box-sizing: border-box;
+}
+
+#about .about_wrap>div {
+    white-space: pre-line;
+    width: 100%;
+}
+
+#about .about_wrap>div h3 {}
+#about .about_wrap>div p{
+    line-height:2;
+}
+#about .about_wrap>div p:nth-of-type(1){
+    font-size:1.3em ;
+}
+#about .about_wrap>div p+p {
+    line-height:1.5;
+   
+}
+
+#about .about_wrap>div ul {}
+
+#about .about_wrap>div ul li {}
+
+#about .about_wrap>div>button.more {
+    padding:20px 40px;
+    margin-left: 10px;
+}
+
+#about ion-icon{
+    color:var(--p_dark);
+    font-size: 1.2em;
+    margin-right: 10px;
 }
