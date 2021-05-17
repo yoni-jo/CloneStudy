@@ -50,3 +50,15 @@ button {
     font-weight: 900;
     cursor: pointer;
 }
+button.more{
+    color:var(--white);
+    display:inline-block;
+    background-color: var(--text_h3);
+    border-radius:50px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: all .2s;
+}
+button.more:hover {
+    background-color: var(--s_basic);
+}
