@@ -41,4 +41,12 @@ p {
 section>div {
     max-width: 1200px;
     margin: 0 auto;
+    height: 100%;
+}
+
+button {
+    border: none;
+    font-family: var(--text-3);
+    font-weight: 900;
+    cursor: pointer;
 }
