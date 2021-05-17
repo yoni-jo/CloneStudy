@@ -111,6 +111,7 @@ header .header_wrap .gnb li a {
 #how_work {
     height: auto;
     background-color: var(--text_bg);
+    margin-top: 0;
 }
 
 #how_work .how_work_wrap {
@@ -292,8 +293,14 @@ header .header_wrap .gnb li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+    object-position: -280px;
+    transition: ease-out 0.5s;
 }
-
+#about .about_wrap figure img:hover{
+    
+    object-position: -180px;
+}
 #about .about_wrap figure span {
     position: absolute;
     bottom: 0;
@@ -369,7 +376,6 @@ header .header_wrap .gnb li a {
 }
 
 #says_.says_wrap {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -378,7 +384,6 @@ header .header_wrap .gnb li a {
 #says_.says_wrap ul {}
 
 #says .says_wrap ul li {
-    padding: 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,7 +394,7 @@ header .header_wrap .gnb li a {
 
 #says_.says_wrap ul li h3 {}
 
-#says .says_wrap ul li p {
+#says .says_wrap ul li>p {
     margin-top: 50px;
     white-space: pre-line;
     font-size: 1.5em;
@@ -398,7 +403,25 @@ header .header_wrap .gnb li a {
     text-align: center;
     font-weight: 500;
 }
-
+#says .says_wrap ul li figure{
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+}
+#says .says_wrap ul li figure div{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 80px;
+    margin-right: 10px;
+    
+}
+#says .says_wrap ul li figure p{ vertical-align: middle;}
+#says .says_wrap ul li figure img{
+    object-position: 0 -30px;
+    object-fit: fill;
+    width: 100%;
+}
 /* =============================================== */
 /* #contact 영역 */
 /* =============================================== */
@@ -413,10 +436,11 @@ header .header_wrap .gnb li a {
 
 #contact .contact_wrap h3 {
     text-align: center;
+    padding-top: 50px
 }
 
 #contact .contact_wrap form {
-    margin: 50px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
 }
