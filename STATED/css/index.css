@@ -163,8 +163,6 @@ ion-icon {
 #properties {}
 
 #properties .properties_wrap {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 #properties .properties_title {
@@ -184,13 +182,13 @@ ion-icon {
     justify-content: center;
 }
 
-#properties .proper_list li {
+#properties .proper_list>li {
     width: calc(100%/4);
     height: 400px;
     margin-left: 3%;
 }
 
-#properties .proper_list li:hover img {
+#properties .proper_list>li:hover img {
     object-position: -110px;
     height: 105%;
 
@@ -198,18 +196,55 @@ ion-icon {
 
 
 
-#properties .proper_list li a {
+#properties .proper_list>li a {
     width: 100%;
     display: inline-block;
     height: 350px;
     overflow: hidden;
 }
 
-#properties .proper_list li a>img {
+#properties .proper_list>li a>img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     transition: all 0.5s;
     object-position: -160px;
+
+}
+
+#properties .proper_list li>.detail {
+    margin: 0 20px;
+}
+
+#properties .proper_list li>.detail strong {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#properties .proper_list li>.detail p {
+    font-size:0.9em;
+    letter-spacing:-0.5px;
+}
+
+#properties .proper_list li>.detail ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#properties .proper_list li>.detail ul li {
+    position: relative;
+    margin: 20px 0;
+}
+
+#properties .proper_list li>.detail ul>li+li::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text_p);
+    left: -50%;
+    top: 0;
 
 }
