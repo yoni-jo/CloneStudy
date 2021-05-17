@@ -45,7 +45,7 @@ header .header_wrap .logo a {
 header .header_wrap .gnb {
     min-width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header .header_wrap .gnb li {}
