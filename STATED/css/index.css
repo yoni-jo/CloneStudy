@@ -475,7 +475,7 @@ header .header_wrap .gnb li:hover  a{
 
 #contact .contact_wrap form fieldset {
     width: 100%;
-    padding: 30px;
+    padding: 50px 30px;
     box-sizing: border-box;
     background-color: var(--white);
     position: relative;
@@ -483,18 +483,20 @@ header .header_wrap .gnb li:hover  a{
 
 #contact .contact_wrap form fieldset+fieldset {
     margin-left: 20px;
+    padding: 30px;
 }
 
 #contact .contact_wrap form fieldset legend {
     font-size: 1.5em;
     font-family: var(--font1);
     position: absolute;
-    top: 5px;
+    top: 30px;
 }
 
 #contact .contact_wrap form fieldset span {
     float: left;
     width: calc(100%/2);
+    margin: 10px 0;
 }
 
 #contact .contact_wrap form fieldset span>input {
@@ -503,7 +505,9 @@ header .header_wrap .gnb li:hover  a{
     margin: 10px 0;
 
 }
-
+#contact .contact_wrap form fieldset span>label{
+    margin: 10px 0 0;
+}
 #contact .contact_wrap form fieldset span+span {
     float: right;
 }
