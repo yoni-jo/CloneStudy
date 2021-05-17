@@ -539,6 +539,7 @@ header .header_wrap .gnb li:hover  a{
     border: 1px solid;
     padding: 15px;
     box-sizing: border-box;
+    resize:none;
 
 }
 
