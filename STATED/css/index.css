@@ -282,7 +282,6 @@ header .header_wrap .gnb li a {
 
 #about .about_wrap figure {
     width: 100%;
-    height: 100%;
     overflow: hidden;
     position: relative;
     padding: 0 10% 0 0;
@@ -513,16 +512,94 @@ header .header_wrap .gnb li a {
 /* =============================================== */
 /* footer 영역 */
 /* =============================================== */
-footer {}
-
-.footer_wrap {
-    width: 1200px;
-    margin: 0 auto;
+footer {
+    background-color: #262626;
 }
 
-.footer_wrap div {}
+.footer_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    box-sizing: border-box;
 
-.footer_wrap div {}
+}
 
+.footer_wrap>div:nth-of-type(1) {
+    flex: 3;
+}
 
+.footer_wrap>div:nth-of-type(2) {
 
+    flex: 1;
+}
+
+.footer_wrap>div:nth-of-type(3) {
+    flex: 2;
+}
+
+.footer_wrap>div h4 {
+    line-height: 3;
+}
+
+.footer_wrap>div p {
+    white-space: pre-line;
+    line-height: 1.5
+}
+
+.footer_wrap div ul {}
+
+.footer_wrap div ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    color: var(--white);
+    color: var(--text_p);
+    transition: all 0.3s;
+}
+
+.footer_wrap div:nth-of-type(2)>ul li a:hover {
+    color: var(--white);
+}
+
+.footer_wrap div ul li input {
+    width: 80%;
+    box-sizing: border-box;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.footer_wrap div ul li>button {
+    width: 20%;
+    box-sizing: border-box;
+    line-height: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    vertical-align: bottom;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+
+.footer_wrap div ul li span {
+    display: flex;
+}
+.footer_wrap div ul li span a{
+    display: block;
+    text-align: left;
+    flex:0.1;
+    
+}
+.footer_wrap ion-icon{
+    font-size:1.2em;
+    transition: all .3s;
+}
+.footer_wrap ion-icon:hover{
+    color:var(--white)
+}
