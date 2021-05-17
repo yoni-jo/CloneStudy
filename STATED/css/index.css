@@ -162,7 +162,22 @@ ion-icon {
 /* =============================================== */
 #properties {}
 
-#properties .properties_wrap {
+#properties .properties_wrap {}
+
+#properties .properties_wrap>button.more {
+    display: block;
+    margin: 50px auto;
+    height: 50px;
+    font-size: 1.1em;
+    background-color: var(--text_h3);
+    color: var(--white);
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+#properties .properties_wrap>button.more:hover {
+    background-color: var(--s_basic);
 }
 
 #properties .properties_title {
@@ -180,6 +195,7 @@ ion-icon {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    height: 500px;
 }
 
 #properties .proper_list>li {
@@ -224,8 +240,8 @@ ion-icon {
 }
 
 #properties .proper_list li>.detail p {
-    font-size:0.9em;
-    letter-spacing:-0.5px;
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
 }
 
 #properties .proper_list li>.detail ul {
