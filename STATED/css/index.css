@@ -32,11 +32,12 @@ header {
 header .header_wrap {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
     display: flex;
     justify-content: space-between;
 }
-
+header .header_wrap .logo{
+    padding: 30px;
+}
 header .header_wrap .logo a {
     font-family: var(--font3);
     font-weight: bolder;
@@ -45,15 +46,31 @@ header .header_wrap .logo a {
 
 header .header_wrap .gnb {
     min-width: 50%;
-    display: flex;
-    justify-content: space-around;
+    display: table;
+    table-layout: fixed;
+    
+    
 }
 
-header .header_wrap .gnb li {}
+header .header_wrap .gnb li {
+    display:inline-block;
+    margin: 0 -3px;
+    padding: 30px;
+}
 
 header .header_wrap .gnb li a {
     font-family: var(--font1);
     color: var(--white);
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: all 0.3s;
+}
+
+header .header_wrap .gnb li:hover  a{
+
+    opacity: 1;
 }
 
 /* =============================================== */
@@ -294,14 +311,16 @@ header .header_wrap .gnb li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
     object-position: -280px;
     transition: ease-out 0.5s;
 }
-#about .about_wrap figure img:hover{
-    
+
+#about .about_wrap figure img:hover {
+
     object-position: -180px;
 }
+
 #about .about_wrap figure span {
     position: absolute;
     bottom: 0;
@@ -367,6 +386,7 @@ header .header_wrap .gnb li a {
     color: var(--p_dark);
     font-size: 1.2em;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* =============================================== */
@@ -404,25 +424,32 @@ header .header_wrap .gnb li a {
     text-align: center;
     font-weight: 500;
 }
-#says .says_wrap ul li figure{
+
+#says .says_wrap ul li figure {
     display: flex;
-    align-items:center;
+    align-items: center;
     margin-top: 30px;
 }
-#says .says_wrap ul li figure div{
+
+#says .says_wrap ul li figure div {
     width: 60px;
     height: 60px;
     overflow: hidden;
     border-radius: 80px;
     margin-right: 10px;
-    
+
 }
-#says .says_wrap ul li figure p{ vertical-align: middle;}
-#says .says_wrap ul li figure img{
+
+#says .says_wrap ul li figure p {
+    vertical-align: middle;
+}
+
+#says .says_wrap ul li figure img {
     object-position: 0 -30px;
     object-fit: fill;
     width: 100%;
 }
+
 /* =============================================== */
 /* #contact 영역 */
 /* =============================================== */
@@ -615,16 +642,19 @@ footer {
 .footer_wrap div ul li span {
     display: flex;
 }
-.footer_wrap div ul li span a{
+
+.footer_wrap div ul li span a {
     display: block;
     text-align: left;
-    flex:0.1;
-    
+    flex: 0.1;
+
 }
-.footer_wrap ion-icon{
-    font-size:1.2em;
+
+.footer_wrap ion-icon {
+    font-size: 1.2em;
     transition: all .3s;
 }
-.footer_wrap ion-icon:hover{
-    color:var(--white)
+
+.footer_wrap ion-icon:hover {
+    color: var(--white)
 }
