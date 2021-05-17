@@ -148,7 +148,7 @@ header .header_wrap .gnb li a {
 
 }
 
-#how_work ion-icon{
+#how_work ion-icon {
     width: 35%;
     height: 35%;
     position: absolute;
@@ -333,32 +333,73 @@ header .header_wrap .gnb li a {
     width: 100%;
 }
 
-#about .about_wrap>div h3 {}
-#about .about_wrap>div p{
-    line-height:2;
-}
-#about .about_wrap>div p:nth-of-type(1){
-    font-size:1.3em ;
-}
-#about .about_wrap>div p+p {
-    line-height:1.5;
-   
+#about .about_wrap>div p {
+    line-height: 2;
 }
 
-#about .about_wrap>div ul {}
+#about .about_wrap>div p:nth-of-type(1) {
+    font-size: 1.3em;
+}
+
+#about .about_wrap>div p+p {
+    line-height: 1.5;
+
+}
 
 #about .about_wrap>div ul li {
-    color:var(--text_p);
+    color: var(--text_p);
     font-size: 1.1em;
 }
 
 #about .about_wrap>div>button.more {
-    padding:20px 40px;
+    padding: 20px 40px;
     margin-left: 10px;
 }
 
-#about ion-icon{
-    color:var(--p_dark);
+#about ion-icon {
+    color: var(--p_dark);
     font-size: 1.2em;
     margin-right: 10px;
 }
+
+/* =============================================== */
+/* #say 영역 */
+/* =============================================== */
+#says {
+    height: auto;
+}
+
+#says_.says_wrap {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#says_.says_wrap ul {}
+
+#says .says_wrap ul li {
+    padding:150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+#says_.says_wrap ul li h3 {}
+
+#says .says_wrap ul li p {
+    margin-top:50px;
+    white-space: pre-line;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* =============================================== */
+/* #contact 영역 */
+/* =============================================== */
