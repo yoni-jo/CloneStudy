@@ -370,7 +370,7 @@ header .header_wrap .gnb li a {
 }
 
 #says_.says_wrap {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,7 +379,7 @@ header .header_wrap .gnb li a {
 #says_.says_wrap ul {}
 
 #says .says_wrap ul li {
-    padding:150px 0;
+    padding: 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,7 +391,7 @@ header .header_wrap .gnb li a {
 #says_.says_wrap ul li h3 {}
 
 #says .says_wrap ul li p {
-    margin-top:50px;
+    margin-top: 50px;
     white-space: pre-line;
     font-size: 1.5em;
     font-style: italic;
@@ -403,3 +403,102 @@ header .header_wrap .gnb li a {
 /* =============================================== */
 /* #contact 영역 */
 /* =============================================== */
+
+#contact {
+    background-color: #f1f1f1;
+    
+
+}
+
+#contact .contact_wrap {}
+
+#contact .contact_wrap h3 {
+    text-align: center;
+}
+
+#contact .contact_wrap form {
+    margin:50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .contact_wrap form fieldset {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color:var(--white);
+    position: relative;
+}
+#contact .contact_wrap form fieldset+fieldset{
+    margin-left: 20px;
+}
+#contact .contact_wrap form fieldset legend {
+    font-size: 1.5em;
+    font-family: var(--font1);
+    position:absolute;
+    top:5px;
+}
+
+#contact .contact_wrap form fieldset span {
+    float: left;
+    width: calc(100%/2);
+}
+
+#contact .contact_wrap form fieldset span>input {
+    display: inline-block;
+    width: 98%;
+    margin: 10px 0;
+
+}
+
+#contact .contact_wrap form fieldset span+span {
+    float: right;
+}
+
+#contact .contact_wrap form fieldset label {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+
+#contact .contact_wrap form fieldset input {
+box-sizing: border-box;
+    padding: 10px ;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid var(--text_p);
+    font-size: 1.1em;
+}
+
+#contact .contact_wrap form fieldset div>input {
+    width: 100%;
+}
+
+#contact .contact_wrap form fieldset div {
+    width: 100%;
+}
+#contact .contact_wrap form fieldset div textarea {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+#contact .contact_wrap form fieldset>h4{
+    padding:30px 0 10px 0;
+}
+#contact .contact_wrap form fieldset>a{
+    color:var(--text_h3);
+    font-weight: bold;
+    transition: all .2s;
+}
+#contact .contact_wrap form fieldset>a:hover{
+    color:var(--p_dark);
+}
+#contact button.more{
+    padding: 10px 20px;
+    margin-top: 30px;
+}
