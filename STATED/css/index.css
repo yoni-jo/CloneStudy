@@ -347,7 +347,10 @@ header .header_wrap .gnb li a {
 
 #about .about_wrap>div ul {}
 
-#about .about_wrap>div ul li {}
+#about .about_wrap>div ul li {
+    color:var(--text_p);
+    font-size: 1.1em;
+}
 
 #about .about_wrap>div>button.more {
     padding:20px 40px;
