@@ -66,6 +66,7 @@ header .header_wrap .gnb li a {
     height: 100%;
     opacity: .5;
     transition: all 0.3s;
+    text-transform: capitalize;
 }
 
 header .header_wrap .gnb li:hover  a{
