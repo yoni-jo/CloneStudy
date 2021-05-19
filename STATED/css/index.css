@@ -35,7 +35,7 @@ header .header_wrap {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    
+
     height: 80px;
 }
 
@@ -51,7 +51,7 @@ header .header_wrap .logo a {
 }
 
 header .header_wrap .gnb {
-    width:50%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,7 +150,7 @@ header .header_wrap .gnb li:hover a {
 }
 
 #how_work ul li {
-    max-width: calc(100%/3);
+    min-width: calc(100%/3);
     height: 250px;
     display: flex;
     text-align: center;
@@ -168,12 +168,14 @@ header .header_wrap .gnb li:hover a {
 }
 
 #how_work ion-icon {
-    min-width: 35%;
-    min-height: 35%;
+    width: 6em;
+    height: 6em;
     position: absolute;
     top: 3em;
-    left: calc(100%/3 - 0.09em);
+    left: calc(100%/3 - -0.5em);
     color: var(--text_h3);
+    min-width: 3em;
+    min-height: 3em;
 }
 
 /* =============================================== */
@@ -182,7 +184,7 @@ header .header_wrap .gnb li:hover a {
 
 #properties .properties_wrap>button.more {
     display: block;
-    margin: 50px auto;
+    margin: 150px auto;
     height: 50px;
     padding: 0 30px;
 }
@@ -215,15 +217,15 @@ header .header_wrap .gnb li:hover a {
 #properties .proper_list {
     margin-top: 50px;
     display: flex;
-    justify-content: center;
-    height: 500px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #properties .proper_list>li {
-    max-width: calc(100%/4);
-    height: 400px;
-    margin-left: 3%;
+
+    max-width: 280px;
 }
+
 
 #properties .proper_list>li:hover img {
     object-position: -110px;
@@ -235,8 +237,8 @@ header .header_wrap .gnb li:hover a {
 
 #properties .proper_list>li a {
     max-width: 100%;
-    display: inline-block;
-    height: 350px;
+    display: block;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -250,7 +252,7 @@ header .header_wrap .gnb li:hover a {
 }
 
 #properties .proper_list li>.detail {
-    margin: 0 20px;
+    margin: 20px;
 }
 
 #properties .proper_list li>.detail strong {
@@ -698,5 +700,22 @@ footer {
         background-color: var(--white);
     }
 
+    #properties .proper_list>li {
+        max-width: calc(100%/2);
+    }
 
+    #properties .proper_list>li a {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #how_work ul {
+        flex-wrap: wrap;
+    }
+
+    #properties .proper_list>li {
+
+        max-width: calc(100% - 1em);
+    }
 }
