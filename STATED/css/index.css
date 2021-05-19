@@ -35,9 +35,11 @@ header .header_wrap {
     display: flex;
     justify-content: space-between;
 }
-header .header_wrap .logo{
+
+header .header_wrap .logo {
     padding: 30px;
 }
+
 header .header_wrap .logo a {
     font-family: var(--font3);
     font-weight: bolder;
@@ -45,15 +47,15 @@ header .header_wrap .logo a {
 }
 
 header .header_wrap .gnb {
-    min-width: 50%;
+    max-width: 50%;
     display: table;
     table-layout: fixed;
-    
-    
+
+
 }
 
 header .header_wrap .gnb li {
-    display:inline-block;
+    display: inline-block;
     margin: 0 -3px;
     padding: 30px;
 }
@@ -62,14 +64,14 @@ header .header_wrap .gnb li a {
     font-family: var(--font1);
     color: var(--white);
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     opacity: .5;
     transition: all 0.3s;
     text-transform: capitalize;
 }
 
-header .header_wrap .gnb li:hover  a{
+header .header_wrap .gnb li:hover a {
 
     opacity: 1;
 }
@@ -89,7 +91,7 @@ header .header_wrap .gnb li:hover  a{
     text-align: center;
     position: absolute;
     top: 0;
-
+    min-height: 400px;
     background-image: url(../img/title/todd-kent-178j8tJrNlc-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -116,12 +118,13 @@ header .header_wrap .gnb li:hover  a{
 /* #titleopacity 영역 */
 /* =============================================== */
 #title_opactie {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.596);
     position: relative;
     z-index: 2;
     top: 0;
+    min-height: 400px;
 }
 
 /* =============================================== */
@@ -134,7 +137,7 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #how_work .how_work_wrap {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -169,11 +172,11 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #how_work ion-icon {
-    width: 35%;
-    height: 35%;
+    min-width: 35%;
+    min-height: 35%;
     position: absolute;
-    top: 15%;
-    left: calc(50% - 65px);
+    top: 3em;
+    left: calc(100%/3 - 0.09em);
     color: var(--text_h3);
 }
 
@@ -224,7 +227,7 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #properties .proper_list>li {
-    width: calc(100%/4);
+    max-width: calc(100%/4);
     height: 400px;
     margin-left: 3%;
 }
@@ -238,14 +241,14 @@ header .header_wrap .gnb li:hover  a{
 
 
 #properties .proper_list>li a {
-    width: 100%;
+    max-width: 100%;
     display: inline-block;
     height: 350px;
     overflow: hidden;
 }
 
 #properties .proper_list>li a>img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.5s;
@@ -282,7 +285,7 @@ header .header_wrap .gnb li:hover  a{
 #properties .proper_list li>.detail ul>li+li::before {
     content: "";
     position: absolute;
-    width: 1px;
+    max-width: 1px;
     height: 100%;
     background-color: var(--text_p);
     left: -50%;
@@ -301,7 +304,7 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #about .about_wrap figure {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
     padding: 0 10% 0 0;
@@ -309,7 +312,7 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #about .about_wrap figure img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 
@@ -357,7 +360,7 @@ header .header_wrap .gnb li:hover  a{
 
 #about .about_wrap>div {
     white-space: pre-line;
-    width: 100%;
+    max-width: 100%;
 }
 
 #about .about_wrap>div p {
@@ -433,7 +436,7 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #says .says_wrap ul li figure div {
-    width: 60px;
+    max-width: 60px;
     height: 60px;
     overflow: hidden;
     border-radius: 80px;
@@ -448,7 +451,7 @@ header .header_wrap .gnb li:hover  a{
 #says .says_wrap ul li figure img {
     object-position: 0 -30px;
     object-fit: fill;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* =============================================== */
@@ -475,7 +478,7 @@ header .header_wrap .gnb li:hover  a{
 }
 
 #contact .contact_wrap form fieldset {
-    width: 100%;
+    max-width: 100%;
     padding: 50px 30px;
     box-sizing: border-box;
     background-color: var(--white);
@@ -498,26 +501,28 @@ header .header_wrap .gnb li:hover  a{
 
 #contact .contact_wrap form fieldset span {
     float: left;
-    width: calc(100%/2);
+    max-width: calc(100%/2);
     margin: 10px 0;
 }
 
 #contact .contact_wrap form fieldset span>input {
     display: inline-block;
-    width: 98%;
+    max-width: 98%;
     margin: 10px 0;
 
 }
-#contact .contact_wrap form fieldset span>label{
+
+#contact .contact_wrap form fieldset span>label {
     margin: 10px 0 0;
 }
+
 #contact .contact_wrap form fieldset span+span {
     float: right;
 }
 
 #contact .contact_wrap form fieldset label {
     display: block;
-    width: 100%;
+    max-width: 100%;
     margin: 10px;
     font-weight: bold;
 
@@ -531,21 +536,22 @@ header .header_wrap .gnb li:hover  a{
     border: 1px solid var(--text_p);
     font-size: 1.1em;
 }
+
 #contact .contact_wrap form fieldset div>input {
-    width: 100%;
+    max-width: 100%;
 }
 
 #contact .contact_wrap form fieldset div {
-    width: 100%;
+    max-width: 100%;
 }
 
 #contact .contact_wrap form fieldset div textarea {
-    width: 100%;
+    max-width: 100%;
     border-radius: 20px;
     border: 1px solid;
     padding: 15px;
     box-sizing: border-box;
-    resize:none;
+    resize: none;
 
 }
 
@@ -576,7 +582,7 @@ footer {
 }
 
 .footer_wrap {
-    max-width: 1200px;
+    max-max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
     display: flex;
@@ -612,22 +618,24 @@ footer {
 
 .footer_wrap div ul li a {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     margin: 30px 0;
     color: var(--white);
     color: var(--text_p);
     transition: all 0.3s;
 }
-.footer_wrap div:nth-of-type(2)>ul>li:nth-of-type(1) a{
+
+.footer_wrap div:nth-of-type(2)>ul>li:nth-of-type(1) a {
     margin: 0;
 }
+
 .footer_wrap div:nth-of-type(2)>ul li a:hover {
     color: var(--white);
 }
 
 .footer_wrap div ul li input {
-    width: 80%;
+    max-width: 80%;
     box-sizing: border-box;
     height: 50px;
     border-top-left-radius: 25px;
@@ -637,7 +645,7 @@ footer {
 }
 
 .footer_wrap div ul li>button {
-    width: 20%;
+    max-width: 20%;
     box-sizing: border-box;
     line-height: 50px;
     border-top-right-radius: 25px;
@@ -666,4 +674,36 @@ footer {
 
 .footer_wrap ion-icon:hover {
     color: var(--white)
+}
+
+/* ======================================== */
+/* 반응형 */
+/* ======================================== */
+
+
+/* 1200px줄었을때 */
+@media screen and (max-width:1200px) {
+
+    /* ham버튼 */
+    header .header_wrap .gnb {
+        display: none;
+    }
+
+    header .ham {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 30px;
+        height: 30px;
+        margin: 1.5em;
+        cursor: pointer;
+    }
+
+    header .ham span {
+        max-width: 100%;
+        height: 2px;
+        background-color: var(--white);
+    }
+
+
 }
