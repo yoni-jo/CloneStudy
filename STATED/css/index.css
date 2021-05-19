@@ -479,11 +479,13 @@ header .header_wrap .gnb li:hover  a{
     box-sizing: border-box;
     background-color: var(--white);
     position: relative;
+    border-radius: 50px;
 }
 
 #contact .contact_wrap form fieldset+fieldset {
     margin-left: 20px;
     padding: 30px;
+    height: 50%;
 }
 
 #contact .contact_wrap form fieldset legend {
@@ -522,13 +524,12 @@ header .header_wrap .gnb li:hover  a{
 
 #contact .contact_wrap form fieldset input {
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 20px;
     border: 1px solid var(--text_p);
     font-size: 1.1em;
 }
-
 #contact .contact_wrap form fieldset div>input {
     width: 100%;
 }
@@ -612,12 +613,14 @@ footer {
     display: block;
     width: 100%;
     height: 100%;
-    margin: 20px 0;
+    margin: 30px 0;
     color: var(--white);
     color: var(--text_p);
     transition: all 0.3s;
 }
-
+.footer_wrap div:nth-of-type(2)>ul>li:nth-of-type(1) a{
+    margin: 0;
+}
 .footer_wrap div:nth-of-type(2)>ul li a:hover {
     color: var(--white);
 }
