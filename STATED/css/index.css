@@ -90,7 +90,7 @@ header .header_wrap .gnb li:hover a {
     position: absolute;
     top: 0;
     min-height: 400px;
-    background-image: url(../img/title/todd-kent-178j8tJrNlc-unsplash.jpg);
+    background-image: url(../img/title/title.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -305,20 +305,20 @@ header .header_wrap .gnb li:hover a {
     overflow: hidden;
     position: relative;
     padding: 0 2em;
-    box-sizing: border-box;
+    /*! box-sizing: border-box; */
 }
 
 #about .about_wrap figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: center;
     transition: ease-out 0.5s;
 }
 
 #about .about_wrap figure img:hover {
 
-    object-position:  10px;
+    object-position:right;
 }
 
 #about .about_wrap figure span {
