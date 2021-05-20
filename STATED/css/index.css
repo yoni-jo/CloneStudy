@@ -42,6 +42,8 @@ header .header_wrap {
 header .header_wrap .logo {
     line-height: 80px;
     margin-left: 1em;
+    display: block;
+    width: 100%;
 }
 
 header .header_wrap .logo a {
@@ -51,7 +53,7 @@ header .header_wrap .logo a {
 }
 
 header .header_wrap .gnb {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,14 +170,14 @@ header .header_wrap .gnb li:hover a {
 }
 
 #how_work ion-icon {
-    width: 6em;
-    height: 6em;
+    width: 35%;
+    height: 35%;
     position: absolute;
-    top: 3em;
-    left: calc(100%/3 - -0.5em);
+    top: 15%;
+    left: 32%;
     color: var(--text_h3);
-    min-width: 3em;
-    min-height: 3em;
+    /*! min-width: 3em; */
+    /*! min-height: 3em; */
 }
 
 /* =============================================== */
@@ -236,14 +238,14 @@ header .header_wrap .gnb li:hover a {
 
 
 #properties .proper_list>li a {
-    max-width: 100%;
+    width: 100%;
     display: block;
-    height: 50vh;
+    height: 100%;
     overflow: hidden;
 }
 
 #properties .proper_list>li a>img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.5s;
@@ -299,19 +301,18 @@ header .header_wrap .gnb li:hover a {
 }
 
 #about .about_wrap figure {
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 0 10% 0 0;
+    padding: 0 2em;
     box-sizing: border-box;
 }
 
 #about .about_wrap figure img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-
-    object-position: -280px;
+    object-position: -9em;
     transition: ease-out 0.5s;
 }
 
@@ -323,11 +324,11 @@ header .header_wrap .gnb li:hover a {
 #about .about_wrap figure span {
     position: absolute;
     bottom: 0;
-    right: calc(50% - 45px);
+    right: calc(50% - 6em);
 }
 
 #about .about_wrap figure span button {
-    padding: 30px;
+    height: 5em;
     display: inline-block;
     text-align: center;
     font-size: 1.3em;
@@ -335,6 +336,7 @@ header .header_wrap .gnb li:hover a {
     border: 2px solid;
     transition: all .2s;
     box-sizing: border-box;
+    width: 5em;
 }
 
 #about .about_wrap figure span button:hover {
@@ -355,7 +357,7 @@ header .header_wrap .gnb li:hover a {
 
 #about .about_wrap>div {
     white-space: pre-line;
-    max-width: 100%;
+    width: 100%;
 }
 
 #about .about_wrap>div p {
@@ -469,19 +471,22 @@ header .header_wrap .gnb li:hover a {
 #contact .contact_wrap form {
     padding: 50px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #contact .contact_wrap form fieldset {
-    max-width: 100%;
-    padding: 50px 30px;
-    box-sizing: border-box;
-    background-color: var(--white);
-    position: relative;
     border-radius: 50px;
+    background-color: var(--white);
+    max-width: 100%;
 }
 
-#contact .contact_wrap form fieldset+fieldset {
+#contact .contact_wrap form fieldset:nth-child(1) {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#contact .contact_wrap form fieldset:nth-child(2) {
     margin-left: 20px;
     padding: 30px;
     height: 50%;
@@ -495,14 +500,16 @@ header .header_wrap .gnb li:hover a {
 }
 
 #contact .contact_wrap form fieldset span {
-    float: left;
-    max-width: calc(100%/2);
-    margin: 10px 0;
+    width: 100%;
+}
+
+#contact .contact_wrap form fieldset div span+span {
+    margin-left: 1em
 }
 
 #contact .contact_wrap form fieldset span>input {
     display: inline-block;
-    max-width: 98%;
+    width: 100%;
     margin: 10px 0;
 
 }
@@ -511,9 +518,7 @@ header .header_wrap .gnb li:hover a {
     margin: 10px 0 0;
 }
 
-#contact .contact_wrap form fieldset span+span {
-    float: right;
-}
+
 
 #contact .contact_wrap form fieldset label {
     display: block;
@@ -533,15 +538,20 @@ header .header_wrap .gnb li:hover a {
 }
 
 #contact .contact_wrap form fieldset div>input {
-    max-width: 100%;
+    width: 100%;
 }
 
 #contact .contact_wrap form fieldset div {
     max-width: 100%;
 }
 
+#contact .contact_wrap form fieldset>div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
 #contact .contact_wrap form fieldset div textarea {
-    max-width: 100%;
+    width: 100%;
     border-radius: 20px;
     border: 1px solid;
     padding: 15px;
@@ -577,28 +587,16 @@ footer {
 }
 
 .footer_wrap {
-    max-max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
     display: flex;
     justify-content: space-between;
     color: var(--white);
     box-sizing: border-box;
-
+    flex-wrap: wrap;
 }
 
-.footer_wrap>div:nth-of-type(1) {
-    flex: 3;
-}
-
-.footer_wrap>div:nth-of-type(2) {
-
-    flex: 1;
-}
-
-.footer_wrap>div:nth-of-type(3) {
-    flex: 2;
-}
 
 .footer_wrap>div h4 {
     line-height: 3;
@@ -609,7 +607,10 @@ footer {
     line-height: 1.5
 }
 
-.footer_wrap div ul {}
+.footer_wrap div+div {
+    margin-left: 10em
+}
+
 
 .footer_wrap div ul li a {
     display: block;
@@ -679,6 +680,11 @@ footer {
 /* 1200px줄었을때 */
 @media screen and (max-width:1200px) {
 
+    
+    h3 {
+        text-align: center;
+    }
+
     /* ham버튼 */
     header .header_wrap .gnb {
         display: none;
@@ -700,22 +706,114 @@ footer {
         background-color: var(--white);
     }
 
+    #properties .properties_title {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    #properties .properties_title h3 {
+        text-align: left;
+    }
+
+    #properties .properties_title span {
+        padding-left: 3em;
+    }
+
     #properties .proper_list>li {
-        max-width: calc(100%/2);
+        max-width: calc(100%/2 - 1em);
+    }
+
+    #properties .proper_list>li+li {
+        margin-right: 1em;
     }
 
     #properties .proper_list>li a {
         height: 70vh;
     }
+
+    #properties .proper_list>li a>img {
+
+        object-position: 0 1px;
+    }
+
+    #properties .proper_list>li:hover img {
+        object-position: -90px;
+        height: 102%;
+    }
+
+
+   
+    #contact .contact_wrap form fieldset {
+        margin: 1em;
+    }
+
+    #contact .contact_wrap form fieldset:nth-of-type(2) {
+        margin-top: 1em;
+
+    }
+
+    .footer_wrap div+div {
+        margin-left: 0em;
+    }
 }
 
 @media screen and (max-width:768px) {
+    
+    h2,
+    h3
+     {
+      scale: 0.5;
+    }
+    
     #how_work ul {
         flex-wrap: wrap;
     }
 
     #properties .proper_list>li {
+        max-width: 100%;
+        margin: 1em;
+    }
 
-        max-width: calc(100% - 1em);
+    #properties .proper_list>li a {
+        height: 80vh;
+    }
+    #contact .contact_wrap form {
+        flex-wrap: wrap;
+    }
+
+    #contact .contact_wrap form fieldset > div:nth-of-type(1) {
+        flex-wrap: wrap;
+    }
+    #contact .contact_wrap form fieldset div span + span {
+        margin-left: 0em;
+    }
+    #about .about_wrap {
+        flex-wrap: wrap;
+    }
+
+    #about .about_wrap figure {
+        padding: 1em;
+    }
+
+    #about .about_wrap figure img {
+        height: 80vh;
+    }
+    #about .about_wrap > div{
+        padding-left: 1em;
+    }
+    .footer_wrap {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer_wrap>div p {
+        white-space: normal;
+        width: 100%;
+    }
+
+    .footer_wrap div:not(ul:last-child) ul:nth-child(2) {
+        width: 100%;
+        padding: 1.5em;
     }
 }
