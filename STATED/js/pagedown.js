@@ -32,14 +32,14 @@ function slideanimation(e) {
 
 
 }
-
+// 스크롤 이벤트설정
 document.addEventListener("scroll", headerShow)
 
 
 function headerShow() {
     let headerheight = header.offsetHeight;
-    console.log(document.documentElement.scrollTop)
 
+    //스크롤값이 0 일경우 
     if (document.documentElement.scrollTop == 0) {
         header.style.backgroundColor = "rgba(255,255,255,0)";
         menu.forEach((menus) => {
@@ -47,7 +47,7 @@ function headerShow() {
             logo.style.color = "white"
         })
 
-
+        //gnb크기보다 스크롤값이 커질경우
     } else {
         header.style.backgroundColor = "white";
 
