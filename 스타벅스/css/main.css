@@ -1,4 +1,106 @@
-body{
-    font-size:120px;
+/* COMMON */
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {}
+
+header .inner {
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: orange;
+    position: relative;
+}
+
+header .logo {
+    height: 75px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+header .sub-menu {
+    
+    display: flex;
+}
+
+header .sub-menu ul.menu {
+    display: flex;
+    font-family: Arial,sans-serif;
+}
+
+header .sub-menu ul.menu li {
+    position: relative;
+}
+
+header .sub-menu ul.menu li::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+header .sub-menu ul.menu li:first-child::before{
+    display: none;
+}
+header .sub-menu ul.menu li a {
+    display: block;
+    padding: 11px 16px;
+    color: #656565;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+header .sub-menu ul.menu li a:hover {
+    color: #000;
+}
+
+header .sub-menu .search {
+    height: 34px;
+    position: relative;
+
+}
+
+header .sub-menu .search input {
+    width: 36px;
+    height: 34px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline:none;
+    background-color: #fff;
+    transition: width .4s;
+    font-style: 12px;
+}
+header .sub-menu .search input:focus{
+    width: 190px;
+    border-color: #669900;
+} 
+header .sub-menu .search div.material-icons {
+    height: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin:auto;
 }
