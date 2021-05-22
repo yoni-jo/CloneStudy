@@ -5,15 +5,19 @@ const title = document.querySelector("#title_opactie").offsetTop
 const header = document.querySelector("header")
 const menu = document.querySelectorAll(".gnb>li>a")
 const logo = document.querySelector(".logo>a")
+const ham = document.querySelectorAll(".ham>span")
 // gnb메뉴 클릭했을때 이벤트 설정
 nav.addEventListener("click", slideanimation)
 // gnb메뉴 클릭했을때 함수실행
 function slideanimation(e) {
+
+  
     // home 메뉴 클릭시 실행
     if (e.target.text === "home") {
         window.scrollTo({
             top: title,
             behavior: "smooth"
+           
         })
         // home 버튼을 제외한 메뉴 클릭시 실행
     } else {
@@ -45,6 +49,9 @@ function headerShow() {
         menu.forEach((menus) => {
             menus.style.color = "white"
             logo.style.color = "white"
+            ham.forEach((hams) =>{
+                hams.style.backgroundColor = "white"
+            } )
         })
 
         //gnb크기보다 스크롤값이 커질경우
@@ -54,6 +61,9 @@ function headerShow() {
         menu.forEach((menus) => {
             menus.style.color = "black"
             logo.style.color = "black"
+            ham.forEach((hams) =>{
+                hams.style.backgroundColor = "black"
+            } )
         })
     }
 }
