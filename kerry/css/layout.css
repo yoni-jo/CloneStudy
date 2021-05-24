@@ -1,2 +1,40 @@
 @charset "UTF-8";
 
+/* HEADER */
+
+header {
+  width: 100%;
+  text-transform: capitalize;
+  line-height: 5em;
+  background-color: #000;
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {}
+
+header .logo a {
+  color: #fff;
+}
+
+header nav {
+ 
+}
+
+header nav .gnb {
+  display: flex;
+}
+
+header nav .gnb li {
+  margin-right: 2em;
+}
+
+header nav .gnb li a {
+  color: #fff;
+}
+
+/* MAIN */
+/* FOOTER */
