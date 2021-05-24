@@ -18,10 +18,9 @@ header .logo {}
 
 header .logo a {
   color: #fff;
-}
-
-header nav {
- 
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
 }
 
 header nav .gnb {
@@ -34,6 +33,7 @@ header nav .gnb li {
 
 header nav .gnb li a {
   color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* MAIN */

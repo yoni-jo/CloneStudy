@@ -3,7 +3,7 @@ html{
   font-size:16px;
 }
 h1,h2,h3,h4,h5,h6,a,p,span,input,button,li,strong,address{
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Nanum Gothic','Nunito', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
  font-weight: 400; 
