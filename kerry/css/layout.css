@@ -3,10 +3,11 @@
 /* HEADER */
 
 header {
+  z-index: 999;
   width: 100%;
   text-transform: capitalize;
   line-height: 5em;
-  background-color: #000;
+  position: fixed;
 }
 
 header .wrap {
@@ -34,6 +35,65 @@ header nav .gnb li {
 header nav .gnb li a {
   color: #fff;
   font-family: 'Nunito', sans-serif;
+}
+
+
+/* TITLE */
+
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/title/tim-bogdanov-4uojMEdcwI8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 2;
+  color: #fff;
+  
+ 
+}
+
+.title h2 {
+  font-size: 2rem;
+  text-align: center;
+  
+}
+.title>*{z-index: 999;}
+.title h2 strong {
+  font-weight: 900;
+  font-size: 3.5rem;
+  display: block;
+
+}
+
+.title p {
+  font-size: 1rem;
+  display: block;
+  max-width: 500px;
+}
+
+.title button {
+  background-color: rgb(255, 255, 255, 0);
+  border: 2px solid #fff;
+  width: 200px;
+  height: 50px;
+  border-radius: 40px;
+  margin-top: 1em;
+  color: #fff;
+}
+
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.5);
 }
 
 /* MAIN */
