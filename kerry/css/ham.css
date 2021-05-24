@@ -8,9 +8,9 @@
   position: absolute;
   z-index: 3;
   right: 0;
-  top: 16px;
-  display: none;
+  top: 2.5em;
   transition: all 1s;
+  display: none;
 }
 .ham::before{
   content: "";
