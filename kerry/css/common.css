@@ -4,9 +4,7 @@ html {
     font-size: 16px;
 }
 
-body {
-    position: relative
-}
+body {position: relative}
 
 .wrap {
     max-width: 1200px;
@@ -19,4 +17,14 @@ a {
 
 button {
     cursor: pointer
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
 }
