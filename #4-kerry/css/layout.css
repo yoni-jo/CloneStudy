@@ -233,6 +233,8 @@ section#about .block_center .right .sns li {
 /* service */
 section#sevice {
   text-align: center;
+  
+  line-height: 1.5;
 }
 
 section#sevice .wrap h3 {}
@@ -243,10 +245,22 @@ section#sevice .wrap>p {
 }
 
 section#sevice .wrap ul {
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
-section#sevice .wrap ul li {}
+section#sevice .wrap ul li {
+  max-width: calc(100%/3 - 2em);
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border:1px solid;
+  box-sizing: border-box;
+  margin:1em;
+  padding:1em;
+}
 
 section#sevice .wrap ul li h4 {}
 
