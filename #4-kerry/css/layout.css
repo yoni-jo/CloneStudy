@@ -16,8 +16,6 @@ header .wrap {
   justify-content: space-between;
 }
 
-header .logo {}
-
 header .logo a {
   color: #fff;
   font-family: 'Nanum Gothic', sans-serif;
@@ -83,6 +81,7 @@ header nav .gnb li a {
   font-size: 1rem;
   display: block;
   max-width: 500px;
+  color: white !important;
 }
 
 .title button {
@@ -233,7 +232,7 @@ section#about .block_center .right .sns li {
 /* service */
 section#sevice {
   text-align: center;
-  
+
   line-height: 1.5;
 }
 
@@ -252,20 +251,42 @@ section#sevice .wrap ul {
 
 section#sevice .wrap ul li {
   max-width: calc(100%/3 - 2em);
-  height: 320px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border:1px solid;
+  border: 1px solid;
   box-sizing: border-box;
-  margin:1em;
-  padding:1em;
+  margin: 1em;
+  padding: 1em;
 }
 
-section#sevice .wrap ul li h4 {}
-
+section#sevice .wrap ul li h4 {
+  font-weight: 600;
+  line-height: 3;
+  transition: 0.4s;
+}
+section#sevice .wrap ul li:hover h4{
+  background: linear-gradient(-45deg,  #ffffff 0%, #8a2be2 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section#sevice .wrap ul li ion-icon {
+  margin: 0 auto;
+  font-size: 3em;
+  color:rgb(138, 43, 226);
+}
+section#sevice .wrap ul li:hover ion-icon{
+  animation:jumping .7s infinite;
+}
 section#sevice .wrap ul li p {}
 
+
+@keyframes jumping {
+  0%{margin-bottom: 10px;}
+  50%{margin-bottom: 0px;}
+  100%{margin-bottom: 10px;}
+}
 /* =============== */
 /* FOOTER */
 /* =============== */

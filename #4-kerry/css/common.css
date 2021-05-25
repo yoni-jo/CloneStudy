@@ -17,18 +17,8 @@ a {
     display: block;
 }
 
-h3 {
-    font-size: 2em;
-    font-weight: 700;
-}
-
-h4 {
-    font-size: 1.5em;
-    font-weight: 500;
-}
-
 button {
-    cursor: pointer
+    cursor: pointer;
 }
 
 main {
