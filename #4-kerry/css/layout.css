@@ -326,7 +326,7 @@ section#freelancer button {
 /* client */
 section#client {
   margin-top: 0;
-background-color: #eeeeee;
+  background-color: #eeeeee;
   line-height: 2;
   text-align: center;
   height: auto;
@@ -334,16 +334,18 @@ background-color: #eeeeee;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:50px 0;
+  padding: 50px 0;
 }
 
 section#client>p {
   max-width: 500px;
 }
-section#client>p>strong{
+
+section#client>p>strong {
   font-weight: 600;
-  color:black;
+  color: black;
 }
+
 section#client figure {
   margin-top: 50px;
 }
@@ -351,6 +353,74 @@ section#client figure {
 section#client figure img {
   border-radius: 50%;
 }
+
+/* ourwork */
+section#ourworks {
+  text-align: center;
+}
+
+section#ourworks .wrap {}
+
+section#ourworks .wrap h3 {}
+
+section#ourworks .wrap p {}
+
+section#ourworks .wrap ul {
+  display: flex;
+  justify-content: center;
+}
+
+section#ourworks .wrap ul.listMenu {}
+
+section#ourworks .wrap ul.list {
+  flex-wrap: wrap;
+}
+
+section#ourworks .wrap ul.list li {
+  max-width: calc(100%/3 - 2em);
+  margin: 1em;
+  border: 1px solid;
+  box-sizing: border-box;
+  position: relative;
+}
+
+section#ourworks .wrap ul.list li a {}
+
+section#ourworks .wrap ul.list li a img {
+  width: 100%;
+  object-fit: fill;
+}
+
+section#ourworks .wrap ul.list li:hover .blind {
+
+  opacity: 0.8;
+}
+
+.blind {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.blind p {}
+
+.blind h5 {
+  color: white;
+  font-weight: bold;
+  font-size:1.2em;
+  line-height: 1.5;
+}
+
+section#ourworks .wrap ul li a {}
 
 /* =============== */
 /* FOOTER */
