@@ -213,10 +213,10 @@ section#about .block_center .right .sns li a {}
 
 section#about .block_center .right .sns li a span {}
 
-ion-icon {
-  font-size: 1.5em;
-  display: block;
-}
+
+/* service */
+
+
 
 /* =============== */
 /* FOOTER */
