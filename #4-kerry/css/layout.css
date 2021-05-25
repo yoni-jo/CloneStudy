@@ -232,8 +232,9 @@ section#about .block_center .right .sns li {
 /* service */
 section#sevice {
   text-align: center;
-
+  background-color: #eeeeee;
   line-height: 1.5;
+  padding-top: 100px;
 }
 
 section#sevice .wrap h3 {}
@@ -266,26 +267,59 @@ section#sevice .wrap ul li h4 {
   line-height: 3;
   transition: 0.4s;
 }
-section#sevice .wrap ul li:hover h4{
-  background: linear-gradient(-45deg,  #ffffff 0%, #8a2be2 91%);
+
+section#sevice .wrap ul li:hover h4 {
+  background: linear-gradient(-45deg, #ffffff 0%, #8a2be2 91%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 section#sevice .wrap ul li ion-icon {
   margin: 0 auto;
   font-size: 3em;
-  color:rgb(138, 43, 226);
+  color: #8a2be2;
 }
-section#sevice .wrap ul li:hover ion-icon{
-  animation:jumping .7s infinite;
-}
-section#sevice .wrap ul li p {}
 
+section#sevice .wrap ul li:hover ion-icon {
+  animation: jumping .7s infinite;
+}
 
 @keyframes jumping {
-  0%{margin-bottom: 10px;}
-  50%{margin-bottom: 0px;}
-  100%{margin-bottom: 10px;}
+  0% {
+    margin-bottom: 10px;
+  }
+
+  50% {
+    margin-bottom: 0px;
+  }
+
+  100% {
+    margin-bottom: 10px;
+  }
+}
+
+/* freelancer */
+
+section#freelancer{
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  padding:150px 0;
+  margin-top: 0;
+}
+section#freelancer button{
+  height: 50px;
+  width: 150px;
+  margin-top: 1em;
+  background-color: rgb(138, 43, 226,0);
+  color:#8a2be2;
+  font-size: 1em;
+  border:3px solid ;
+  border-radius: 10px;
+  text-transform:uppercase ;
+
 }
 /* =============== */
 /* FOOTER */
