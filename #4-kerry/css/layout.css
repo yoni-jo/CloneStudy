@@ -436,8 +436,6 @@ section#ourworks .wrap ul.list li:hover .blind {
   transition: all 0.3s ease-in-out;
 }
 
-.blind p {}
-
 .blind h5 {
   color: white;
   font-weight: bold;
