@@ -237,11 +237,20 @@ section#sevice {
 
 section#sevice .wrap h3 {}
 
-section#sevice .wrap p {
+section#sevice .wrap>p {
   max-width: 500px;
   margin: 0 auto;
 }
 
+section#sevice .wrap ul {
+  display:flex;
+}
+
+section#sevice .wrap ul li {}
+
+section#sevice .wrap ul li h4 {}
+
+section#sevice .wrap ul li p {}
 
 /* =============== */
 /* FOOTER */
