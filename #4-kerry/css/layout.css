@@ -97,13 +97,13 @@ header nav .gnb li a {
 
 .title .scrolldown {
   position: absolute;
-  bottom:3em;
+  bottom: 3em;
   display: block;
   width: 30px;
   height: 50px;
   border: 2px solid;
   border-radius: 20px;
-  animation:updown 1.5s 1.5s  infinite ;
+  animation: updown 1.5s 1.5s infinite;
 }
 
 .title .scrolldown::after {
@@ -124,16 +124,37 @@ header nav .gnb li a {
 }
 
 
-@keyframes updown{
-  0%{bottom:3em}
-  25%{bottom:4em}
-  35%{bottom:1em}
-  50%{bottom:1.8em}
-  60%{bottom:1em}
-  80%{bottom:1.3em}
-  100%{bottom:1em}
+@keyframes updown {
+  0% {
+    bottom: 3em
+  }
+
+  25% {
+    bottom: 4em
+  }
+
+  35% {
+    bottom: 1em
+  }
+
+  50% {
+    bottom: 1.8em
+  }
+
+  60% {
+    bottom: 1em
+  }
+
+  80% {
+    bottom: 1.3em
+  }
+
+  100% {
+    bottom: 1em
+  }
 
 }
+
 .filter {
   position: absolute;
   top: 0;
@@ -149,7 +170,9 @@ header nav .gnb li a {
 
 /* about me */
 
-section#about {}
+section#about {
+  height: auto;
+}
 
 section#about .block_center {
   max-width: 1200px;
@@ -164,7 +187,6 @@ section#about .block_center>* {
   padding: 20px;
 }
 
-section#about .block_center figure {}
 
 section#about .block_center figure img {
   display: block;
@@ -175,9 +197,6 @@ section#about .block_center figure img {
 
 }
 
-section#about .block_center .right {}
-
-section#about .block_center .right h3 {}
 
 section#about .block_center .right h4 {
 
@@ -209,13 +228,19 @@ section#about .block_center .right .sns li {
   box-sizing: border-box;
 }
 
-section#about .block_center .right .sns li a {}
-
-section#about .block_center .right .sns li a span {}
 
 
 /* service */
+section#sevice {
+  text-align: center;
+}
 
+section#sevice .wrap h3 {}
+
+section#sevice .wrap p {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 
 /* =============== */
