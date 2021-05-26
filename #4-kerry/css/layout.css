@@ -451,22 +451,36 @@ section#portfolio .wrap ul.list li:hover .blind {
   line-height: 1.5;
 }
 
-section#portfolio .wrap ul li a {}
-
 /* blog */
 section#blog {
   text-align: center;
 }
-
-section#blog .wrap {
-  line-height: 1.5;
+section#blog ul{margin-top: 50px;}
+section#blog ul li {
+  width: calc(100%/3 - 2em);
+  margin-right: 1em;
 }
 
-section#blog .wrap h3 {}
+section#blog ul li>* {
+  text-align: left;
+}
+section#blog ul li p>a{
+  display: inline-block;
+  font-weight: 800;
+  padding-left: 10px;
+}
+section#blog ul li figure {
+  width: 100%;
+}
 
-section#blog .wrap p {}
-
-
+section#blog ul li figure img {
+  width: 100%;
+  object-fit: fill;
+}
+section#blog ul li span>a{
+  color:#03033f;
+  font-weight: 800;
+}
 /* =============== */
 /* FOOTER */
 /* =============== */

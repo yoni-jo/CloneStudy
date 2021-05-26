@@ -30,23 +30,34 @@ section {
     padding: 150px 0;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
-section .wrap{
+
+section .wrap {
     line-height: 1.5;
 }
+
+section .wrap>p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 section .wrap ul {
     display: flex;
     justify-content: center;
-  }
+}
 
-  
+
 section .wrap ul.list {
 
     flex-wrap: wrap;
-  }
+}
+
 ion-icon {
     font-size: 1.5em;
     display: block;
-  }
+}
 
-  img{display: block;}
+img {
+    display: block;
+}
