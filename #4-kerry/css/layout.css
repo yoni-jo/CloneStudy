@@ -9,14 +9,16 @@ header {
   text-transform: capitalize;
   line-height: 5em;
   position: fixed;
-  
+
   transition: all 0.5s;
 }
-header.header_bg{
+
+header.header_bg {
   background-color: #000;
-  z-index:99999;
+  z-index: 99999;
   transition: all 0.5s;
 }
+
 header .wrap {
   display: flex;
   justify-content: space-between;
@@ -35,7 +37,7 @@ header nav .gnb {
 
 header nav .gnb li {
   margin-right: 2em;
-  position:relative;
+  position: relative;
 }
 
 header nav .gnb li a {
@@ -43,19 +45,20 @@ header nav .gnb li a {
   font-family: 'Nunito', sans-serif;
 }
 
-.click{
+.click {
   font-weight: 800;
   transition: all .3s;
   display: inline;
   box-sizing: border-box;
 }
-header nav .gnb li span{
-  position:absolute;
-  width:0%;
+
+header nav .gnb li span {
+  position: absolute;
+  width: 0%;
   height: 2px;
   background-color: #fff;
   bottom: 20px;
-  left:0;
+  left: 0;
   transition: all .3s;
 }
 
@@ -378,18 +381,9 @@ section#portfolio {
   text-align: center;
 }
 
-section#portfolio .wrap {
-  line-height: 1.5;
-}
-
 section#portfolio .wrap p {
   max-width: 500px;
   margin: 0 auto;
-}
-
-section#portfolio .wrap ul {
-  display: flex;
-  justify-content: center;
 }
 
 section#portfolio .wrap ul.listMenu {
@@ -400,7 +394,7 @@ section#portfolio .wrap ul.listMenu {
 }
 
 section#portfolio .wrap ul.listMenu li a {
-  
+
   transition: all .3s;
   padding: 10px 20px;
   box-sizing: border-box;
@@ -412,13 +406,6 @@ section#portfolio .wrap ul.listMenu li:hover a {
   color: white;
   box-sizing: border-box;
   font-weight: 800;
-}
-
-
-
-section#portfolio .wrap ul.list {
-
-  flex-wrap: wrap;
 }
 
 section#portfolio .wrap ul.list li {
@@ -467,6 +454,19 @@ section#portfolio .wrap ul.list li:hover .blind {
 section#portfolio .wrap ul li a {}
 
 /* blog */
+section#blog {
+  text-align: center;
+}
+
+section#blog .wrap {
+  line-height: 1.5;
+}
+
+section#blog .wrap h3 {}
+
+section#blog .wrap p {}
+
+
 /* =============== */
 /* FOOTER */
 /* =============== */
