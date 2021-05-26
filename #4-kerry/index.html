@@ -30,9 +30,9 @@
     $(window).scroll(function () {
 
       if ($("header").offset().top != 0) {
-        $("header").css("background-color", "black")
+        $("header").addClass("header_bg");
       } else {
-        $("header").css("background-color", "rgba(0,0,0,0)")
+        $("header").removeClass("header_bg");
       }
     })
     
@@ -187,8 +187,8 @@
         using 'Content here."</p>
       <p> <strong>- Ebony verty,Envanto</strong></p>
     </section>
-    <!-- our works -->
-    <section id="ourworks">
+    <!-- portfolio -->
+    <section id="portfolio">
       <div class="wrap">
         <h3>Our Works</h3>
         <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.
@@ -230,8 +230,7 @@
         </ul>
       </div>
     </section>
-    <!-- portfolio -->
-    <section id="portfolio"></section>
+    
     <!-- blog -->
     <section id="blog"></section>
     <!-- contact -->

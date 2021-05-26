@@ -9,8 +9,14 @@ header {
   text-transform: capitalize;
   line-height: 5em;
   position: fixed;
+  
+  transition: all 0.5s;
 }
-
+header.header_bg{
+  background-color: #000;
+  z-index:99999;
+  transition: all 0.5s;
+}
 header .wrap {
   display: flex;
   justify-content: space-between;
@@ -45,7 +51,7 @@ header nav .gnb li a {
 }
 header nav .gnb li span{
   position:absolute;
-  width:100%;
+  width:0%;
   height: 2px;
   background-color: #fff;
   bottom: 20px;
@@ -348,7 +354,6 @@ section#client {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
 }
 
 section#client>p {
@@ -368,40 +373,40 @@ section#client figure img {
   border-radius: 50%;
 }
 
-/* ourwork */
-section#ourworks {
+/*portfolio */
+section#portfolio {
   text-align: center;
 }
 
-section#ourworks .wrap {
+section#portfolio .wrap {
   line-height: 1.5;
 }
 
-section#ourworks .wrap p {
+section#portfolio .wrap p {
   max-width: 500px;
   margin: 0 auto;
 }
 
-section#ourworks .wrap ul {
+section#portfolio .wrap ul {
   display: flex;
   justify-content: center;
 }
 
-section#ourworks .wrap ul.listMenu {
+section#portfolio .wrap ul.listMenu {
   max-width: 500px;
   margin: 50px auto;
   justify-content: space-around;
 
 }
 
-section#ourworks .wrap ul.listMenu li a {
+section#portfolio .wrap ul.listMenu li a {
   
   transition: all .3s;
   padding: 10px 20px;
   box-sizing: border-box;
 }
 
-section#ourworks .wrap ul.listMenu li:hover a {
+section#portfolio .wrap ul.listMenu li:hover a {
   background-color: #8a2be2;
   border-radius: 25px;
   color: white;
@@ -411,28 +416,28 @@ section#ourworks .wrap ul.listMenu li:hover a {
 
 
 
-section#ourworks .wrap ul.list {
+section#portfolio .wrap ul.list {
 
   flex-wrap: wrap;
 }
 
-section#ourworks .wrap ul.list li {
+section#portfolio .wrap ul.list li {
   max-width: calc(100%/3 - 2em);
   margin: 1em;
   position: relative;
 }
 
-section#ourworks .wrap ul.list li a {
+section#portfolio .wrap ul.list li a {
   width: 100%;
   height: 100%;
 }
 
-section#ourworks .wrap ul.list li a img {
+section#portfolio .wrap ul.list li a img {
   width: 100%;
   object-fit: fill;
 }
 
-section#ourworks .wrap ul.list li:hover .blind {
+section#portfolio .wrap ul.list li:hover .blind {
 
   opacity: 0.8;
 }
@@ -459,7 +464,7 @@ section#ourworks .wrap ul.list li:hover .blind {
   line-height: 1.5;
 }
 
-section#ourworks .wrap ul li a {}
+section#portfolio .wrap ul li a {}
 
 /* =============== */
 /* FOOTER */
