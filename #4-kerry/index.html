@@ -22,7 +22,40 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // 스크롤 내렸을때 header부분 배경색 검정으로 
+    $(window).scroll(function () {
+
+      if ($("header").offset().top != 0) {
+        $("header").css("background-color", "black")
+      } else {
+        $("header").css("background-color", "rgba(0,0,0,0)")
+      }
+    })
+    
+    // gnb메뉴 클릭시 밑줄 및 글자 굵기변경
+    $(".gnb>li").click(function () {
+      var span = document.createElement("span")
+      $(this).append(span)
+      $(this).children("a").addClass("click").siblings("span")
+
+      $(this).siblings("li").children("a").removeClass("click")
+
+
+      // gnb메뉴 클릭시 해당 section으로 스크롤다운
+      var scrollPosition = $($(this).children("a").attr("data-target")).offset().top
+
+
+      $('html,body').animate({
+        scrollTop: scrollPosition
+      }, 500)
+    })
+
+  })
+</script>
 
 <body>
   <!-- ==================== -->
@@ -36,13 +69,13 @@
       </h1>
       <nav>
         <ul class="gnb">
-          <li><a href="javascript:void(0)">home</a></li>
-          <li><a href="javascript:void(0)">about</a></li>
-          <li><a href="javascript:void(0)">services</a></li>
-          <li><a href="javascript:void(0)">client</a></li>
-          <li><a href="javascript:void(0)">portfolio</a></li>
-          <li><a href="javascript:void(0)">blog</a></li>
-          <li><a href="javascript:void(0)">contact</a></li>
+          <li><a data-target=".title" href="javascript:void(0)">home</a></li>
+          <li><a data-target="#about" href="javascript:void(0)">about</a></li>
+          <li><a data-target="#sevice" href="javascript:void(0)">services</a></li>
+          <li><a data-target="#client" href="javascript:void(0)">client</a></li>
+          <li><a data-target="#portfolio" href="javascript:void(0)">portfolio</a></li>
+          <li><a data-target="#blog" href="javascript:void(0)">blog</a></li>
+          <li><a data-target="#contact" href="javascript:void(0)">contact</a></li>
         </ul>
         <span class="ham"><span></span></span>
       </nav>
@@ -198,11 +231,11 @@
       </div>
     </section>
     <!-- portfolio -->
-    <section></section>
+    <section id="portfolio"></section>
     <!-- blog -->
-    <section></section>
+    <section id="blog"></section>
     <!-- contact -->
-    <section></section>
+    <section id="contact"></section>
   </main>
 
   <!-- ==================== -->
