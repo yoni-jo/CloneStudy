@@ -48,10 +48,8 @@
       // gnb메뉴 클릭시 해당 section으로 스크롤다운
       var scrollPosition = $($(this).children("a").attr("data-target")).offset().top
 
-
       $('html,body').animate({
         scrollTop: scrollPosition
-      }, 500)
     })
 
   })
