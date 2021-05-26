@@ -26,33 +26,34 @@
 </head>
 <script type="text/javascript">
   $(document).ready(function () {
-    // 스크롤 내렸을때 header부분 배경색 검정으로 
-    $(window).scroll(function () {
+        // 스크롤 내렸을때 header부분 배경색 검정으로 
+        $(window).scroll(function () {
 
-      if ($("header").offset().top != 0) {
-        $("header").addClass("header_bg");
-      } else {
-        $("header").removeClass("header_bg");
-      }
-    })
+          if ($("header").offset().top != 0) {
+            $("header").addClass("header_bg");
+          } else {
+            $("header").removeClass("header_bg");
+          }
+        })
 
-    // gnb메뉴 클릭시 밑줄 및 글자 굵기변경
-    $(".gnb>li").click(function () {
-      var span = document.createElement("span")
-      $(this).append(span)
-      $(this).children("a").addClass("click").siblings("span")
+        // gnb메뉴 클릭시 밑줄 및 글자 굵기변경
+        $(".gnb>li").click(function () {
+          var span = document.createElement("span")
+          $(this).append(span)
+          $(this).children("a").addClass("click").siblings("span")
 
-      $(this).siblings("li").children("a").removeClass("click")
+          $(this).siblings("li").children("a").removeClass("click")
 
 
-      // gnb메뉴 클릭시 해당 section으로 스크롤다운
-      var scrollPosition = $($(this).children("a").attr("data-target")).offset().top
+          // gnb메뉴 클릭시 해당 section으로 스크롤다운
+          var scrollPosition = $($(this).children("a").attr("data-target")).offset().top
 
-      $('html,body').animate({
-        scrollTop: scrollPosition
-    })
+          $('html,body').animate({
+            scrollTop: scrollPosition
+          })
 
-  })
+        })
+      })
 </script>
 
 <body>
