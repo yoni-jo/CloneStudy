@@ -17,6 +17,10 @@ a {
     display: block;
 }
 
+img {
+    display: block;
+}
+
 button {
     cursor: pointer;
 }
@@ -31,6 +35,7 @@ section {
     width: 100%;
     height: 100%;
     text-align: center;
+    box-sizing: content-box;
 }
 
 section .wrap {
@@ -58,6 +63,50 @@ ion-icon {
     display: block;
 }
 
-img {
-    display: block;
+section .wrap ul li.ion_flex {
+    max-width: calc(100%/3 - 2em);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em;
+}
+
+section .wrap ul li h4 {
+    font-weight: 600;
+    line-height: 3;
+    transition: 0.4s;
+}
+
+section .wrap ul li:hover h4 {
+    background: linear-gradient(-45deg, #ffffff 0%, #8a2be2 91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .wrap ul li ion-icon {
+    margin: 0 auto;
+    font-size: 3em;
+    color: #8a2be2;
+}
+
+section .wrap ul li:hover ion-icon {
+    animation: jumping .7s infinite;
+}
+
+@keyframes jumping {
+    0% {
+        margin-bottom: 10px;
+    }
+
+    50% {
+        margin-bottom: 0px;
+    }
+
+    100% {
+        margin-bottom: 10px;
+    }
 }
