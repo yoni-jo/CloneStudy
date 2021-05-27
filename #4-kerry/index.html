@@ -26,34 +26,34 @@
 </head>
 <script type="text/javascript">
   $(document).ready(function () {
-        // 스크롤 내렸을때 header부분 배경색 검정으로 
-        $(window).scroll(function () {
+    // 스크롤 내렸을때 header부분 배경색 검정으로 
+    $(window).scroll(function () {
 
-          if ($("header").offset().top != 0) {
-            $("header").addClass("header_bg");
-          } else {
-            $("header").removeClass("header_bg");
-          }
-        })
+      if ($("header").offset().top != 0) {
+        $("header").addClass("header_bg");
+      } else {
+        $("header").removeClass("header_bg");
+      }
+    })
 
-        // gnb메뉴 클릭시 밑줄 및 글자 굵기변경
-        $(".gnb>li").click(function () {
-          var span = document.createElement("span")
-          $(this).append(span)
-          $(this).children("a").addClass("click").siblings("span")
+    // gnb메뉴 클릭시 밑줄 및 글자 굵기변경
+    $(".gnb>li").click(function () {
+      var span = document.createElement("span")
+      $(this).append(span)
+      $(this).children("a").addClass("click").siblings("span")
 
-          $(this).siblings("li").children("a").removeClass("click")
+      $(this).siblings("li").children("a").removeClass("click")
 
 
-          // gnb메뉴 클릭시 해당 section으로 스크롤다운
-          var scrollPosition = $($(this).children("a").attr("data-target")).offset().top
+      // gnb메뉴 클릭시 해당 section으로 스크롤다운
+      var scrollPosition = $($(this).children("a").attr("data-target")).offset().top
 
-          $('html,body').animate({
-            scrollTop: scrollPosition
-          })
-
-        })
+      $('html,body').animate({
+        scrollTop: scrollPosition
       })
+
+    })
+  })
 </script>
 
 <body>
@@ -289,9 +289,11 @@
         </ul>
 
         <fieldset>
-          <div><label for=""></label><input type="text"><input type="text"></div>
-          <div><label for=""></label><input type="text"></div>
-          <div><label for=""></label><textarea name="" id="" cols="30" rows="10"></textarea></div>
+          <div><label for="name"></label><input type="text" placeholder="Your Name*" id="name"><label
+              for="email"></label><input type="email" placeholder="Your Email*"></div>
+          <div><label for="title"></label><input type="text" placeholder="Your Subject*" id="title"></div>
+          <div><label for="message"></label><textarea placeholder="Your message*" id="message"></textarea></textarea>
+          </div>
           <button>send message</button>
         </fieldset>
 
