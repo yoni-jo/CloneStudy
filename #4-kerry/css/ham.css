@@ -7,7 +7,7 @@
   display: block;
   position: absolute;
   z-index: 3;
-  right: 0;
+  right: 1em;
   top: 2.5em;
   transition: all 1s;
   display: none;
