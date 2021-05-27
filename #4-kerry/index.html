@@ -39,12 +39,10 @@
 
     // gnb메뉴 클릭시 밑줄 및 글자 굵기변경
     $(".gnb>li").click(function () {
-      var span = document.createElement("span")
-      $(this).append(span)
-      $(this).children("a").addClass("click").siblings("span")
+      $(this).children("a").addClass("click").css("background-color","rgba(255,255,255,.5)")
       
 
-      $(this).siblings("li").children("a").removeClass("click")
+      $(this).siblings("li").children("a").removeClass("click").css("background-color","rgba(255,255,255,0)")
 
 
       // gnb메뉴 클릭시 해당 section으로 스크롤다운

@@ -43,13 +43,18 @@ header nav .gnb li {
 header nav .gnb li a {
   color: #fff;
   font-family: 'Nunito', sans-serif;
+  
 }
 
 .click {
   font-weight: 800;
-  transition: all .3s;
+  transition: all .5s;
   display: inline;
   box-sizing: border-box;
+  color:#8a2be2 !important;
+  background-color:rgba(255,255,255,0);
+  border-radius:10px;
+  padding: 0 1em;
 }
 
 header nav .gnb li span {
