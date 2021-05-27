@@ -6,17 +6,60 @@
     /* menu bar */
     header nav .gnb {
         display: none;
-        
+
     }
 
     .ham {
 
         display: block
     }
+
+  
+    section#about .block_center {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    section#about .block_center>* {
+        max-width: 80%;
+    }
+    section .wrap ul li.ion_flex{
+        max-width: 100%;
+    }
+    
+    section .wrap .list li{
+        max-width: 80% !important;
+    }
+
+   
 }
 
 /*태블릿  */
-@media screen and (min-width:768px) and (max-width:1023px) {}
+@media screen and (max-width:1023px) {
+h1,h2,h3,h4,h5,strong{transform: scale(0.9);}
+
+    section#contact fieldset{
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    section#contact fieldset div {
+        flex-wrap:wrap;
+       
+      }
+      section#contact fieldset div:nth-of-type(1) input {
+        max-width: 100%;
+        margin-right:0;
+      }
+      section#contact fieldset div:nth-of-type(1) input:last-child {
+        margin-top: 1em;
+      }
+    section#contact fieldset div input {
+       
+      }
+
+
+
+}
 
 /* 모바일 */
 @media screen and (min-width:320px) and (max-width:767px) {}

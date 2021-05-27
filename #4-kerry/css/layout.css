@@ -406,7 +406,7 @@ section#blog ul {
 }
 
 section#blog ul li {
-  width: calc(100%/3 - 2em);
+  max-width: calc(100%/3 - 2em);
   margin-right: 1em;
   background-color: #fff;
   padding: 1em;
@@ -469,7 +469,7 @@ section#contact fieldset div {
 }
 
 section#contact fieldset div:nth-of-type(1) input {
-  width: 50%;
+  max-width: 50%;
   margin-right: 1em;
 }
 
