@@ -27,7 +27,6 @@ button {
 
 main {
     width: 100%;
-    height: 100%;
 }
 
 section {
@@ -110,3 +109,18 @@ section .wrap ul li:hover ion-icon {
         margin-bottom: 10px;
     }
 }
+    
+.sns {
+    display: flex;
+    margin-top: 2em;
+    gap: 5px;
+  }
+  
+  .sns li {
+    margin-right: .5em;
+    line-height: 3em;
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding: 5px;
+    box-sizing: border-box;
+  }
