@@ -55,6 +55,22 @@
       })
 
     })
+    // top arrow버튼 클릭시 상위로 이동 
+    $(".top>a").click(function () {
+      var top = $($(this).attr("data-target")).offset().top
+      $('html,body').animate({
+        scrollTop: top
+      },1000)
+
+    })
+     // top arrow버튼 클릭시 상위로 이동 
+     $(".scrolldown>a").click(function () {
+      var about = $($(this).attr("data-target")).offset().top
+      $('html,body').animate({
+        scrollTop: about
+      },1000)
+
+    })
   })
 </script>
 
@@ -92,7 +108,7 @@
     </h2>
     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
     <button>DOWNLOAD CV</button>
-    <span class="scrolldown"><a href="javascript:void(0)"></a></span>
+    <span class="scrolldown"><a href="javascript:void(0)" data-target="#about"></a></span>
   </div>
   <div class="filter"></div>
   <!-- ==================== -->
@@ -302,6 +318,12 @@
       </div>
 
     </section>
+
+    <div class="top">
+      <a href="javascript:void(0)" data-target=".title">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+    </div>
   </main>
 
   <!-- ==================== -->
