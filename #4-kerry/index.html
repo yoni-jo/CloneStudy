@@ -74,7 +74,6 @@
     var popup_img = "popup_img"
     var imgsrc = "img/ourwork/1.jpg"
     $("#portfolio .wrap ul li").click(function () {
-      console.log("dd")
       $("#portfolio").append(`<div class='${popup_img}'></div>`)
       $("#portfolio .popup_img").append(`<img src='${imgsrc}'/>`).click(function () {
         $("#portfolio .popup_img").remove($(this).fadeOut(600))
