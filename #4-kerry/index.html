@@ -71,15 +71,24 @@
     })
 
     // our works 이미지 클릭시 팝업
-    var popup_img = "popup_img"
-    var imgsrc = "img/ourwork/1.jpg"
-    $("#portfolio .wrap ul li").click(function () {
-      $("#portfolio").append(`<div class='${popup_img}'></div>`)
-      $("#portfolio .popup_img").append(`<img src='${imgsrc}'/>`).click(function () {
-        $("#portfolio .popup_img").remove($(this).fadeOut(600))
+
+    $("#portfolio .wrap ul li").click(
+      function () {
+
+        var popup_img = "popup_img"
+        var imgsrc = $(this).find("img").attr("src")
+
+        $("#portfolio").append(`<div class='${popup_img}'></div>`)
+        $("#portfolio .popup_img").append(`<img src='${imgsrc}'/>`).click(
+          function () {
+            $(this).fadeOut(1000, function () {
+              $(this).remove();
+              return false;
+            })
+          })
+
+
       })
-      return false;
-    })
   })
 </script>
 
@@ -233,23 +242,23 @@
               <h5>Project Title</h5>
             </span>
           </li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a><span class="blind">
+          <li><a href="javascript:void(0)"><img src="img/ourwork/2.jpg" alt=""></a><span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a><span class="blind">
+          <li><a href="javascript:void(0)"><img src="img/ourwork/3.jpg" alt=""></a><span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a><span class="blind">
+          <li><a href="javascript:void(0)"><img src="img/ourwork/4.jpg" alt=""></a><span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a><span class="blind">
+          <li><a href="javascript:void(0)"><img src="img/ourwork/5.jpg" alt=""></a><span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a><span class="blind">
+          <li><a href="javascript:void(0)"><img src="img/ourwork/6.jpg" alt=""></a><span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
