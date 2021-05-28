@@ -356,7 +356,7 @@ section#portfolio .wrap ul.listMenu li a {
   background-color: rgba(0, 0, 0, .8);
   top: 0;
   display: flex;
-  transition:all .3s;
+  transition: all .3s;
 }
 
 .popup_img img {
@@ -364,6 +364,27 @@ section#portfolio .wrap ul.listMenu li a {
   object-fit: cover;
   object-position: center;
   margin: auto;
+}
+
+button.close_btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 26%;
+top: 19%;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.5em;
+  font-weight: 900;
+  border: 1px solid;
+  transition: all .3s;
+  box-sizing: border-box;
+}
+
+button.close_btn:hover {
+  color: #eeeeee;
+  background-color: rgba(0, 0, 0, 1);
+
+
 }
 
 section#portfolio .wrap ul.listMenu li:hover a {
