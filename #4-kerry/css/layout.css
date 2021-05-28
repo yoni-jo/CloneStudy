@@ -355,6 +355,7 @@ section#portfolio .wrap ul.listMenu li a {
   background-color: rgba(0, 0, 0,.8);
   top: 0;
   display: flex;
+  transition: all 0.3s;
 
 }
 .popup_img img{
