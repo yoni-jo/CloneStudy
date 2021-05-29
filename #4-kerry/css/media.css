@@ -86,4 +86,11 @@
         right: 13%;
         top: 37%;
     }
+    section#contact fieldset div input {
+       
+        font-size: 1em;
+    }
+    section#contact fieldset div textarea {
+        font-size: 1em;
+    }
 }
