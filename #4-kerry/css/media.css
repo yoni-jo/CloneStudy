@@ -30,6 +30,7 @@
 
     section .wrap ul.list li {
         max-width: 100% !important;
+    }
 
 }
 
@@ -42,8 +43,7 @@
     h4,
     h5,
     strong,
-    p
-     {
+    p {
         transform: scale(0.9);
     }
 
@@ -72,8 +72,8 @@
 
     button.close_btn {
 
-        right: 10%;
-        top: 33%;
+        right: 13%;
+        top: 30%;
     }
 }
 
@@ -81,9 +81,9 @@
 
 /* 모바일 */
 @media screen and (min-width:320px) and (max-width:767px) {
-
     button.close_btn {
-        transform: scale(0.8);
-
+        transform: scale(0.9);
+        right: 13%;
+        top: 37%;
     }
 }

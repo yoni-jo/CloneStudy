@@ -76,17 +76,19 @@
       function () {
 
         var popup_img = "popup_img"
+        var popup_wrap = "popup_wrap"
         var imgsrc = $(this).find("img").attr("src")
 
-        $("#portfolio").append(`<div class='${popup_img}'></div>`).fadeIn('slow')
-        $("#portfolio .popup_img").append(`<img src='${imgsrc}'/>`)
-        $("#portfolio .popup_img").append(`<button class="close_btn">X</button>`)
+        $("#portfolio").append(`<div class='${popup_img}'></div>`)
+        $("#portfolio .popup_img").append(`<div class='${popup_wrap}'></div>`)
+        $("#portfolio .popup_img .popup_wrap").append(`<img src='${imgsrc}'/>`)
+        $("#portfolio .popup_img .popup_wrap").append(`<button class="close_btn">X</button>`)
 
 
         // 팝업후 x박스클릭시 사라지는 효과
-        $("#portfolio .popup_img .close_btn").click(
+        $("#portfolio .popup_img .popup_wrap .close_btn").click(
           function () {
-            $(this).parent(".popup_img").fadeOut(500,function(){
+            $(this).parent(".popup_wrap").parent(".popup_img").fadeOut(500,function(){
               $(this).remove()
             })
           
