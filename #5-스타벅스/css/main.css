@@ -1,4 +1,7 @@
 /* COMMON */
+html,body{
+    width: 100%;
+}
 body {
     color: #333;
     font-size: 16px;
@@ -19,7 +22,7 @@ a {
 header {}
 
 header .inner {
-    width: 1100px;
+    max-width: 1100px;
     height: 120px;
     margin: 0 auto;
     background-color: orange;
@@ -38,6 +41,7 @@ header .logo {
 header .sub-menu {
     
     display: flex;
+    justify-content: flex-end;
 }
 
 header .sub-menu ul.menu {
@@ -103,4 +107,8 @@ header .sub-menu .search div.material-icons {
     bottom: 0;
     right: 5px;
     margin:auto;
+    transition:.4s;
+}
+header .sub-menu .search.focused div.material-icons{
+    opacity: 0;
 }
