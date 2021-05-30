@@ -4,16 +4,33 @@
 @media screen and (max-width:1024px) {
 
     /* menu bar */
+    header .wrap {
+        display: block;
+
+
+    }
     header nav .gnb {
         display: none;
-
+        flex-direction: column;
+        align-items: flex-end;
     }
+
+    .flex {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .flex>li {
+        width: 100%;
+        height: 100%;
+        text-align: right;
+    }
+
 
     .ham {
-
-        display: block
+        display: block;
     }
-
 
     section#about .block_center {
         flex-wrap: wrap;
@@ -31,8 +48,10 @@
     section .wrap ul.list li {
         max-width: 100% !important;
     }
-
 }
+
+
+
 
 /*태블릿  */
 @media screen and (max-width:1023px) {
@@ -43,7 +62,8 @@
     h4,
     h5,
     strong,
-    p {
+    p,
+    a {
         transform: scale(0.9);
     }
 
@@ -68,6 +88,7 @@
 
     section#portfolio .wrap ul.listMenu {
         max-width: 100%;
+        flex-wrap: wrap;
     }
 
     button.close_btn {
@@ -80,17 +101,24 @@
 
 
 /* 모바일 */
-@media screen and (min-width:320px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     button.close_btn {
         transform: scale(0.9);
         right: 13%;
         top: 37%;
     }
+
+    header .logo a {
+        padding-left: 0px;
+    }
+
     section#contact fieldset div input {
-       
+
         font-size: 1em;
     }
+
     section#contact fieldset div textarea {
         font-size: 1em;
     }
+
 }

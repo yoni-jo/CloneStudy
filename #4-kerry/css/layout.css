@@ -30,22 +30,26 @@ header .logo a {
   font-size: 3rem;
   padding-left: 1em;
 }
-
-header nav .gnb {
+header .gnb {
   display: flex;
+
 }
 
-header nav .gnb li {
+header .gnb li {
   margin-right: 2em;
   position: relative;
 }
 
-header nav .gnb li a {
+header .gnb li a {
   color: #fff;
   font-family: 'Nunito', sans-serif;
 
 }
-
+header .gnb li:hover a{
+  display: inline;
+  color: #8a2be2 !important;
+  background-color: rgba(255,255,255,.5)
+} 
 .click {
   font-weight: 800;
   transition: all .5s;
@@ -56,7 +60,7 @@ header nav .gnb li a {
   border-radius: 10px;
   padding: 0 1em;
 }
-
+header nav{}
 header nav .gnb li span {
   position: absolute;
   width: 0%;
