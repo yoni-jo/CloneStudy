@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 모니터 */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
 
     /* menu bar */
     header .wrap {
