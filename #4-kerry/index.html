@@ -64,8 +64,18 @@
         $("nav ul").slideToggle({start:function(){
           $(this).css({display:'flex'})
         }})
+        
       })
-     
+      $(window).resize(
+      function(){
+        if($(window).width()>1200){
+          $("nav ul").css("display","flex");
+        }else{
+          $("nav ul").css("display","none");
+        }
+      }
+    );
+
     // top arrow버튼 클릭시 상위로 이동 
     $(".top>a").click(function () {
       var top = $($(this).attr("data-target")).offset().top
