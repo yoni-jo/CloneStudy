@@ -1,7 +1,9 @@
 /* COMMON */
-html,body{
+html,
+body {
     width: 100%;
 }
+
 body {
     color: #333;
     font-size: 16px;
@@ -21,7 +23,7 @@ a {
 /* HEADER */
 header {
     background-color: #f6f5f0;
-    border-bottom: 1px solid #c8c8c8;;
+    border-bottom: 1px solid #c8c8c8;
 }
 
 header .inner {
@@ -29,6 +31,7 @@ header .inner {
     height: 120px;
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
 
 header .logo {
@@ -40,14 +43,14 @@ header .logo {
 }
 
 header .sub-menu {
-    
+
     display: flex;
     justify-content: flex-end;
 }
 
 header .sub-menu ul.menu {
     display: flex;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 header .sub-menu ul.menu li {
@@ -60,13 +63,15 @@ header .sub-menu ul.menu li::before {
     height: 12px;
     background-color: #e5e5e5;
     position: absolute;
-    top:0;
-    bottom:0;
-    margin:auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
-header .sub-menu ul.menu li:first-child::before{
+
+header .sub-menu ul.menu li:first-child::before {
     display: none;
 }
+
 header .sub-menu ul.menu li a {
     display: block;
     padding: 11px 16px;
@@ -92,24 +97,71 @@ header .sub-menu .search input {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 5px;
-    outline:none;
+    outline: none;
     background-color: #fff;
     transition: width .4s;
     font-style: 12px;
 }
-header .sub-menu .search input:focus{
+
+header .sub-menu .search input:focus {
     width: 190px;
     border-color: #669900;
-} 
+}
+
 header .sub-menu .search div.material-icons {
     height: 24px;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 5px;
-    margin:auto;
-    transition:.4s;
+    margin: auto;
+    transition: .4s;
 }
-header .sub-menu .search.focused div.material-icons{
+
+header .sub-menu .search.focused div.material-icons {
     opacity: 0;
+}
+
+
+
+/* MEIN-MENU */
+header .main-menu {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+}
+
+header .main-menu .item {}
+
+header .main-menu .item .item__name {
+    padding: 10px 20px 34px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+header .main-menu .item:hover .item__name {
+    background-color: #2c2a29;
+    color: #669900;
+    border-radius: 6px 6px 0 0;
+
+}
+
+header .main-menu .item .item__contents {
+    width: 100%;
+    position:fixed;
+    left:0;
+    
+}
+
+header .main-menu .item .item__contents .contents__menu {
+    background-color: red;
+    height: 200px;
+}
+
+header .main-menu .item .item__contents .contents__texture {
+    background-color: green;
+    height: 100px;
 }
