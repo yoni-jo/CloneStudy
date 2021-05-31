@@ -15,18 +15,6 @@
         align-items: flex-end;
     }
 
-    .flex {
-        display: flex !important;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .flex>li {
-        width: 100%;
-        height: 100%;
-        text-align: right;
-    }
-
 
     .ham {
         display: block;
