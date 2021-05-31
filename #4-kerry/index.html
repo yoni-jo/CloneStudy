@@ -61,7 +61,9 @@
     // 햄버거 버튼 클릭시 드롭다운메뉴
        
     $(".ham").on("click",function () {
-        $("nav ul").slideToggle()
+        $("nav ul").slideToggle({start:function(){
+          $(this).css({display:'flex'})
+        }})
       })
      
     // top arrow버튼 클릭시 상위로 이동 
