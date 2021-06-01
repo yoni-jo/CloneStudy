@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+:root {
+    /* color */
+    --font_b: #FF3901;
+    --bg: fe4d2e;
+    --w: #fff;
+    --b: #000;
+    /* font */
+    --kor: "Nanum Gothic";
+    --eng:'MuseoModerno', cursive;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+   
+}
+
+header ul li:last-child {
+    margin-left: 1.3em;
+    position: relative;
+}
+
+header ul li:last-child::before {
+    content: '/';
+    color: var(--font_b);
+    position: absolute;
+    top: 0;
+    left: -0.5em;
+    font-weight:bolder;
+    font-size: 2em;
+
+}
+
+header ul li a {
+    font-family:var(--eng);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+}
