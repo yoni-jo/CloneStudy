@@ -28,15 +28,22 @@
 <script type="text/javascript">
   $(document).ready(function () {
     // 스크롤 내렸을때 header부분 배경색 검정으로 
+    var height = $("header").height();
+    
+    //header보다 높이값이 현재 스크롤값보다 클때 
+    //새로고침해도 변경된 배경값 유지
+    if($(window).scrollTop()>height){
+      $("header").addClass("header_bg");
+    }
+    //
     $(window).scroll(function () {
-
-      if ($("header").offset().top >$("header").height()) {
+      if ($(window).scrollTop() > height) {
         $("header").addClass("header_bg");
-        $("header nav .gnb").css("background-color","rbg(0,0,0)")
+        $("header nav .gnb").css("background-color", "rbg(0,0,0)")
       } else {
         $("header").removeClass("header_bg");
-        $("header nav ul").css("background-color","rbga(0,0,0,0)")
-       
+        $("header nav ul").css("background-color", "rbga(0,0,0,0)")
+
       }
     })
 
@@ -51,27 +58,31 @@
 
       $('html,body').animate({
         scrollTop: scrollPosition
-        
-      })
 
-      
+      })
+      return false;
+
     })
 
 
     // 햄버거 버튼 클릭시 드롭다운메뉴
-       
-    $(".ham").on("click",function () {
-        $("nav ul").slideToggle({start:function(){
-          $(this).css({display:'flex'})
-        }})
-        
+
+    $(".ham").on("click", function () {
+      $("nav ul").slideToggle({
+        start: function () {
+          $(this).css({
+            display: 'flex'
+          })
+        }
       })
-      $(window).resize(
-      function(){
-        if($(window).width()>1200){
-          $("nav ul").css("display","flex");
-        }else{
-          $("nav ul").css("display","none");
+
+    })
+    $(window).resize(
+      function () {
+        if ($(window).width() > 1200) {
+          $("nav ul").css("display", "flex");
+        } else {
+          $("nav ul").css("display", "none");
         }
       }
     );
@@ -131,7 +142,7 @@
         <a href="javascript:void(0)">kerri</a>
       </h1>
       <nav>
-       
+
         <ul class="gnb">
           <li><a data-target=".title" href="javascript:void(0)">home</a></li>
           <li><a data-target="#about" href="javascript:void(0)">about</a></li>
@@ -141,7 +152,7 @@
           <li><a data-target="#blog" href="javascript:void(0)">blog</a></li>
           <li><a data-target="#contact" href="javascript:void(0)">contact</a></li>
         </ul>
-      
+
       </nav>
       <span class="ham"><span></span></span>
     </div>

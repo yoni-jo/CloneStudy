@@ -101,7 +101,7 @@ header nav .gnb li span {
 }
 
 .title>* {
-  z-index: 999;
+  z-index: 3;
 }
 
 .title h2 strong {
