@@ -8,14 +8,8 @@
 a {
     display: block
 }
-
 main {
     width: 100%;
-}
-
-section {
-    padding-top: 5em;
-    max-width: 100%;
 }
 
 img {
