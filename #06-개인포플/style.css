@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+:root{
+    /* color */
+    --font_b:#FF3901;
+    /* font */
+    --kor: "Nanum Gothic";
+    --eng: "Sansita Swashed";
+}
