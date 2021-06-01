@@ -1,10 +1,23 @@
 @charset "utf-8";
 
 .wrap {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 a {
+    display: block
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    padding-top: 5em;
+    max-width: 100%;
+}
+
+img {
     display: block
 }
