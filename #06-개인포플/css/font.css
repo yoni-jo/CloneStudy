@@ -1,9 +1,21 @@
 @charset "utf-8";
 
-h1,h2,h3,h4,h5,p,a,strong,pre{
-/* 기본 */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+strong,
+pre {
+    /* 기본 */
     font-family: 'Nanum Gothic', sans-serif;
-    color:var(--font_b);
+    color: var(--font_b);
 }
 
-h2{text-align: left;padding: 1em;font-size: 2em;}
+h2 {
+    text-align: left;
+    padding: 1em;
+    font-size: 2em;
+}
