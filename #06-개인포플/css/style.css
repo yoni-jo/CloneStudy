@@ -3,12 +3,12 @@
 :root {
     /* color */
     --font_b: #FF3901;
-    --bg: fe4d2e;
+    --bg: #fe4d2e;
     --w: #fff;
     --b: #000;
     /* font */
     --kor: "Nanum Gothic";
-    --eng:'MuseoModerno', cursive;
+    --eng: 'MuseoModerno', cursive;
 }
 
 
@@ -26,12 +26,12 @@ header ul {
 }
 
 header ul li {
-   
+    position: relative;
 }
 
 header ul li:last-child {
     margin-left: 1.3em;
-    position: relative;
+
 }
 
 header ul li:last-child::before {
@@ -39,15 +39,76 @@ header ul li:last-child::before {
     color: var(--font_b);
     position: absolute;
     top: 0;
-    left: -0.5em;
-    font-weight:bolder;
+    left: -.5em;
+    font-weight: bolder;
     font-size: 2em;
 
 }
 
+
 header ul li a {
-    font-family:var(--eng);
+    font-family: var(--eng);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2em;
+    transition: all .3s;
+    padding: 0 .5em;
+    box-sizing: border-box;
+}
+
+header ul li:hover a::after {
+    width: 100%;
+}
+
+header ul li:hover a {
+    color: #fff;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 50%;
+    top: 25%;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--bg);
+    z-index: -1;
+    transition: all .3s;
+}
+
+/* PORFOLIO */
+
+#portfolio {}
+
+#portfolio ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#portfolio ul li {
+    display: flex;
+}
+
+#portfolio ul li>* {
+
+    width: calc(100%/2)
+}
+
+#portfolio ul li figure img {
+    max-width: 100%;
+    object-fit: fill;
+    height: 100%
+}
+
+#portfolio ul li .content {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
 }
