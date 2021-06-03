@@ -1,35 +1,32 @@
-const nav = document.querySelector("nav")
-const menu = nav.querySelector("ul")
-const section = document.querySelectorAll("section")
-const header=document.querySelector("header")
+$(document).ready(function () {
+    const header = $('header')
 
-window.addEventListener('scroll',()=>{
-    
-const header_height = header.offsetHeight
-    if(window.scrollY>header_height){
-        header.classList.add("bg")
-        header.lastChild.style.color="white"
-    }else{
-        header.classList.remove("bg")
+    // 스크롤 내렸을때 값 유지
+    if ($(window).scrollTop() > header.height()) {
+        $(header).addClass('bg');
+
+
     }
-    
-})
-
-
-menu.addEventListener('click', (e) => {
-    const menu_a = e.target
-    const toggle = menu_a.dataset.toggle
-
-    section.forEach((sections) => {
-        let section_height = sections.offsetTop;
-        // 클릭한 메뉴의 이름과 각 세션별 아이디 이름이 같을경우실행
-        if (toggle === sections.id) {
-            window.scrollTo({
-                top: section_height,
-                behavior: 'smooth'
-            })
-   
+    // 스크롤 내렸을때 
+    $(window).scroll(function () {
+        // header 배경색,글씨색변경
+        if ($(window).scrollTop() > header.height()) {
+            $(header).addClass('bg');
+            $("nav ul li a").addClass('change')
+        } else {
+            $(header).removeClass('bg');
+            $("nav ul li a").removeClass('change')
         }
-    });
-    e.preventDefault();
+        
+    })
+
+// 메뉴클릭시 해당 seciton으로 스크롤 다운
+    $("nav ul>li").click(function () {
+        let scrollPosition = $($(this).children("a").attr("data-toggle")).offset().top
+
+        $('html,body').animate({
+            scrollTop: scrollPosition
+
+        }, 1500)
+    })
 })

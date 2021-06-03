@@ -21,13 +21,17 @@ header {
     position: fixed;
     z-index: 1;
     background-color: #fff;
-    
+    border-bottom: 1px solid var(--font_b);
+    box-sizing: border-box;
 }
 
-header.bg{
-    background-color:var(--bg);
-    
+header.bg {
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--w);
+    box-sizing: border-box;
+
 }
+
 header ul {
     display: flex;
     justify-content: flex-end;
@@ -64,6 +68,14 @@ header ul li a {
     box-sizing: border-box;
 }
 
+header ul li a.change {
+    color: var(--w)
+}
+
+header ul li:hover a.change {
+    color: var(--font_b)
+}
+
 header ul li:hover a::after {
     width: 100%;
 }
@@ -86,9 +98,14 @@ header ul li a::after {
     transition: all .3s;
 }
 
+header ul li a.change::after {
+
+    background-color: var(--w);
+}
+
 /* PORFOLIO */
 #portfolio {
-    height: auto
+    height: auto;
 }
 
 #portfolio ul li {
@@ -122,26 +139,37 @@ header ul li a::after {
 }
 
 /* ABOUT */
-#about {}
+#about {
+    
+}
 
 #about .story {
     width: 100%;
     height: 100%;
-    /*  */
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
-#about .story:nth-of-type(1) {
+#about .story:nth-child(1) {
     background-color: var(--bg);
-}
 
-#about .story:nth-of-type(2) {
+    
+}
+#about .story:nth-child(2) {
     background-color: var(--w);
 }
 
-#about .story:nth-of-type(3) {
+#about .story:nth-child(3) {
     background-color: var(--bg);
 }
-
+#about .story .story__img{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    background-attachment: fixed;
+   
+}
 /* profile */
 #about .story .profile {
     width: 800px;
@@ -151,7 +179,6 @@ header ul li a::after {
     align-items: center;
 
 }
-
 #about .story .profile li {
     width: calc(100%/2);
     height: 400px;
