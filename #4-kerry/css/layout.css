@@ -317,7 +317,8 @@ section#client .wrap {
   display: flex;
   flex-direction: column;
   
-  overflow-x: hidden;
+  overflow: hidden;
+  
 }
 section#client ul.client_list {
   position: relative;
@@ -331,14 +332,13 @@ section#client ul.client_list {
 }
 
 section#client ul.client_list li {
-  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
-
 section#client ul.client_list li>p {
   max-width: 500px;
 }
