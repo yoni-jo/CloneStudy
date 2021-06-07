@@ -18,11 +18,13 @@ $(document).ready(function () {
         if ($(window).scrollTop() > header.height()) {
             $(header).addClass('bg');
             $("nav ul li a").addClass('change')
+           
         } else {
             $(header).removeClass('bg');
             $("nav ul li a").removeClass('change')
+           
         }
-
+    
     })
 
 

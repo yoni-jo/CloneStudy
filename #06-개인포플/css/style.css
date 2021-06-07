@@ -106,7 +106,10 @@ header ul li a.change::after {
 /* PORFOLIO */
 #portfolio {
     height: auto;
+
 }
+
+#portfolio ul {}
 
 #portfolio ul li {
     height: 100%;
@@ -141,10 +144,11 @@ header ul li a.change::after {
 }
 
 /* ABOUT */
+#about {}
 
 #about .story {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,6 +199,17 @@ header ul li a.change::after {
     background-color: blue;
 }
 
+/* footer */
+footer {
+    text-align: center;
+}
+
+footer p {
+    height: 80px;
+    line-height: 80px;
+    color: black;
+    font-size: 1.5em;
+}
 
 /* 반응형 */
 /* pc */

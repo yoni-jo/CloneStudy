@@ -30,6 +30,7 @@ header .logo a {
   font-size: 3rem;
   padding-left: 1em;
 }
+
 header .gnb {
   display: flex;
 
@@ -45,11 +46,13 @@ header .gnb li a {
   font-family: 'Nunito', sans-serif;
 
 }
-header .gnb li:hover a{
+
+header .gnb li:hover a {
   display: inline;
   color: #8a2be2 !important;
-  background-color: rgba(255,255,255,.5)
-} 
+  background-color: rgba(255, 255, 255, .5)
+}
+
 .click {
   font-weight: 800;
   transition: all .5s;
@@ -60,7 +63,9 @@ header .gnb li:hover a{
   border-radius: 10px;
   padding: 0 1em;
 }
-header nav{}
+
+header nav {}
+
 header nav .gnb li span {
   position: absolute;
   width: 0%;
@@ -300,32 +305,66 @@ section#freelancer button {
 
 /* client */
 section#client {
-  margin-top: 0;
-  background-color: #eeeeee;
-  line-height: 2;
   text-align: center;
-  height: auto;
+  height: 420px;
+  background-color: #eeeeee;
+  padding: 0;
+}
+section#client .wrap {
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  overflow-x: hidden;
+}
+section#client ul.client_list {
+  position: relative;
+  padding: 3em 0;
+  width: 300%;
+  height: 100%;
+  display: flex;
+  justify-content:space-around;
+
+
+}
+
+section#client ul.client_list li {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
-section#client>p {
+section#client ul.client_list li>p {
   max-width: 500px;
 }
 
-section#client>p>strong {
+section#client ul.client_list li>p>strong {
   font-weight: 600;
   color: black;
 }
 
-section#client figure {
+section#client ul.client_list li figure:nth {
   margin-top: 50px;
 }
 
-section#client figure img {
+section#client ul.client_list li figure img {
   border-radius: 50%;
+}
+.current_c{
+  background-color: white;
+}
+.current_c a{color:white}
+section#client ul.controll {width: 100%;}
+
+section#client ul.controll li {width:5% ;cursor: pointer;}
+
+section#client ul.controll li a {
+  color: blueviolet;
 }
 
 /*portfolio */
@@ -373,8 +412,8 @@ section#portfolio .wrap ul.listMenu li a {
 
 .popup_wrap {
   width: 100%;
-display: table-cell;
-vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 button.close_btn {

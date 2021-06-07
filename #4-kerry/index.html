@@ -29,10 +29,10 @@
   $(document).ready(function () {
     // 스크롤 내렸을때 header부분 배경색 검정으로 
     var height = $("header").height();
-    
+
     //header보다 높이값이 현재 스크롤값보다 클때 
     //새로고침해도 변경된 배경값 유지
-    if($(window).scrollTop()>height){
+    if ($(window).scrollTop() > height) {
       $("header").addClass("header_bg");
     }
     //
@@ -59,7 +59,7 @@
       $('html,body').animate({
         scrollTop: scrollPosition
 
-      },1200)
+      }, 1200)
 
     })
 
@@ -127,6 +127,41 @@
 
           })
       })
+
+    // our client 이미지 슬라이드
+
+    var cn = 0;
+    $("#client ul.controll li a").click(function () {
+
+      $(this).parent("li").addClass("current_c");
+      $(this).parent("li").siblings("li").removeClass("current_c")
+      cn = $(this).attr("data-cn")
+      console.log(cn)
+      $("#client ul.client_list li)").stop().animate({
+        "left": -100 * cn + "%"
+      }, 1500)
+      cn++
+    })
+
+    // var cn1 = 1;
+    // setInterval(function () {
+    //   console.log(cn)
+    //   if (cn < 3) {
+    //     if (cn == 0) {
+    //       cn1 = cn1 * -1;
+    //     }
+    //     $("#client ul.client_list li").stop().animate({
+    //       "left": -100 * cn + "%"
+    //     }, 1500);
+    //     $("#client ul.controll li:eq(" + cn + ")").addClass("current_c")
+    //     $("#client ul.controll li:eq(" + cn + ")").siblings().removeClass("current_c")
+    //     cn=cn+cn1
+    //   }else if(cn==3){
+    //     cn=2;
+    //     cn1=cn1*-1;
+    //   }
+
+    // })
   })
 </script>
 
@@ -256,12 +291,49 @@
     </section>
     <!-- client -->
     <section id="client">
-      <h3>Our Client</h3>
-      <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-      <figure><img src="img/client/testi-2.jpg" alt=""></figure>
-      <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-        using 'Content here."</p>
-      <p> <strong>- Ebony verty,Envanto</strong></p>
+      <div class="wrap">
+        <ul class='client_list'>
+          <li>
+            <h3>Our Client</h3>
+            <p>It is a long established fact that a reader will be of a page when established fact looking at its
+              layout.
+            </p>
+            <figure><img src="img/client/testi-2.jpg" alt=""></figure>
+            <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+              to
+              using 'Content here."</p>
+            <p> <strong>- Ebony verty,Envanto</strong></p>
+          </li>
+          <li>
+            <h3>Our Client</h3>
+            <p>It is a long established fact that a reader will be of a page when established fact looking at its
+              layout.
+            </p>
+            <figure><img src="img/client/testi-2.jpg" alt=""></figure>
+            <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+              to
+              using 'Content here."</p>
+            <p> <strong>- Ebony verty,Envanto</strong></p>
+          </li>
+          <li>
+            <h3>Our Client</h3>
+            <p>It is a long established fact that a reader will be of a page when established fact looking at its
+              layout.
+            </p>
+            <figure><img src="img/client/testi-2.jpg" alt=""></figure>
+            <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+              to
+              using 'Content here."</p>
+            <p> <strong>- Ebony verty,Envanto</strong></p>
+          </li>
+        </ul>
+        <ul class="controll">
+          <li><a data-cn="0" href="javascript:void(0)">1</a></li>
+          <li><a data-cn="1" href="javascript:void(0)">2</a></li>
+          <li><a data-cn="2" href="javascript:void(0)">3</a></li>
+        </ul>
+      </div>
+
     </section>
     <!-- portfolio -->
     <section id="portfolio">
