@@ -15,8 +15,11 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/font.css">
 
-  <script src="./js/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+     <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/scroll.js"></script>
+  <script src="./js/wheel.js"></script>
+ 
   <title>Document</title>
 </head>
 
@@ -33,14 +36,12 @@
     </div>
   </header>
   <!-- MAIN -->
-  <main>
+  <main id="fullPage"> 
     <!-- PORTFOLIO -->
     <section id="portfolio">
       
-      <div class="wrap">
-       
         <ul>
-          <li>
+          <li class="wheel">
             <a href="">
               <figure>
                 <img
@@ -53,7 +54,7 @@
               <p>test</p>
             </div>
           </li>
-          <li>
+          <li class="wheel">
             <a href="">
               <figure>
                 <img
@@ -66,7 +67,7 @@
               <p>test</p>
             </div>
           </li>
-          <li>
+          <li class="wheel">
             <a href="">
               <figure>
                 <img
@@ -79,7 +80,7 @@
               <p>test</p>
             </div>
           </li>
-          <li>
+          <li class="wheel">
             <a href="">
               <figure>
                 <img
@@ -92,16 +93,16 @@
               <p>test</p>
             </div>
           </li>
-          <li>
+        
         </ul>
-      </div>
+      
     </section>
 
     <!-- ABOUT -->
     <section id="about">
-      <div class="story"><div class="story__img">test</div></div>
-      <div class="story"><div class="story__img">test</div></div>
-      <div class="story">
+      <div class="story wheel"><div class="story__img">test</div></div>
+      <div class="story wheel"><div class="story__img">test</div></div>
+      <div class="story wheel">
         <ul class="profile">
           <li><div>왼쪽</div> </li>
           <li><div>오른쪽</div></li>
