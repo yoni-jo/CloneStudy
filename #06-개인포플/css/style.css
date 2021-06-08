@@ -109,7 +109,9 @@ header ul li a.change::after {
 
 }
 
-#portfolio ul {}
+#portfolio ul {
+    padding-top: 50px;
+}
 
 #portfolio ul li {
     height: 100%;
@@ -126,7 +128,10 @@ header ul li a.change::after {
     padding-top: 5em;
 }
 
-#portfolio ul li a figure {}
+#portfolio ul li a figure {
+    border: 1px solid var(--bg);
+    border-right: none;
+}
 
 #portfolio ul li a figure img {
     width: 100%;
@@ -135,7 +140,7 @@ header ul li a.change::after {
 }
 
 #portfolio ul li .content {
-    background-color: blue;
+    border: 1px solid var(--bg);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -181,18 +186,15 @@ header ul li a.change::after {
 
 #about .story .profile li figure {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-flow: column;
 }
 
 #about .story .profile li figure img {
-    object-fit: fill;
-    object-position: center;
-}
-
-#about .story .profile li figure figcaption {
     width: 100%;
-    height: 20px;
+    height: 100%;
+    object-fit: cover;
 }
 
 #about .story .profile li figure figcaption p {
@@ -256,6 +258,10 @@ footer p {
         width: 100%;
     }
 
+    #portfolio ul li a figure {
+        border: 1px solid var(--bg);
+    }
+
     #portfolio ul li+li {
         padding-top: 0;
     }
@@ -312,9 +318,7 @@ footer p {
         width: 70%;
         height: 400px;
     }
-    #about .story .profile lif{
-        margin-bottom: 5em;
-    }
+
     #about .story .profile li div {
         height: 50%;
     }
