@@ -14,17 +14,28 @@ $(document).ready(function () {
     var li = $("#portfolio ul li")
 
     $(window).scroll(function () {
+
+        console.log(
+            $(window).scrollTop())
         // header 배경색,글씨색변경
         if ($(window).scrollTop() > header.height()) {
             $(header).addClass('bg');
             $("nav ul li a").addClass('change')
+            $("nav ul li").addClass('change')
            
         } else {
             $(header).removeClass('bg');
             $("nav ul li a").removeClass('change')
+            $("nav ul li").removeClass('change')
            
         }
-    
+        if($(window).scrollTop()>=$("#about").offset().top){
+            $(".story ul li.profile div.skill ul li span").css({animationName:"Gauge",animationDelay:"0.8s"})
+         
+        }else if($(window).scrollTop()<$("#about").offset().top){
+            $(".story ul li.profile div.skill ul li span").css({animationName:"none",animationDelay:"none"})
+        }
+
     })
 
 
@@ -38,5 +49,9 @@ $(document).ready(function () {
 
         }, 1500)
         
+        if($(this).children("a").attr("data-toggle")==="#about"){
+            $(".story ul li.profile div.skill ul li span").css({animationName:"Gauge"})
+           
+        }
     })
 })

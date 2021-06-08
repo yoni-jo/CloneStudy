@@ -103,6 +103,11 @@ header ul li a.change::after {
     background-color: var(--w);
 }
 
+header ul li.change::before {
+    color: var(--w);
+
+}
+
 /* PORFOLIO */
 #portfolio {
     height: auto;
@@ -167,8 +172,8 @@ header ul li a.change::after {
 }
 
 /* profile */
-#about .story .profile {
-    width: 800px;
+#about .story>ul {
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -176,38 +181,101 @@ header ul li a.change::after {
 
 }
 
-#about .story .profile li {
-    width: calc(100%/2);
-    max-width: 400px;
+#about .story>ul>li {
+    width: 100%;
     height: 600px;
     overflow: hidden;
     position: relative;
 }
 
-#about .story .profile li figure {
+#about .story ul>li:first-child {
+    width: 40%;
+}
+
+#about .story ul li figure {
     width: 100%;
     height: 100%;
     display: flex;
     flex-flow: column;
 }
 
-#about .story .profile li figure img {
+#about .story ul li figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#about .story .profile li figure figcaption p {
-
-    text-align: left;
-    color: #fff;
-    font-size: 2em
+#about .story ul li.profile {
+    display: flex;
 }
 
-#about .story .profile li div {
+#about .story ul li.profile div>* {
+    color: #fff;
+}
+
+#about .story ul li.profile div {
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--w);
+    border: 1px solid var(--bg);
+    box-sizing: border-box;
+}
+
+#about .story ul li.profile div h1 {
+    background-color: var(--bg);
+    font-size: 3em;
+    vertical-align: top;
+    color: var(--w);
+    line-height: 1.3em;
+    border: 1px solid var(--w);
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#about .story ul li.profile div ul {
+    height: 100%;
+}
+
+#about .story ul li.profile div ul li {
+    font-size: 2em;
+    letter-spacing: -1.5px;
+    width: 100%;
+    line-height: 1.5em;
+    color: #9b2d01f3;
+    font-family: var(--kor);
+}
+/* skill */
+#about .story ul li.profile div.skill ul li {
+    color: var(--b)
+}
+
+#about .story ul li.profile div.skill ul li span {
+    display:block;
+    width: 0%;
+    height: 8px;
+    background-color: #ec780b;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay:1.5s;
+}
+#about .story ul li.profile div.skill ul li:nth-of-type(1) span{
+    
+    max-width: 90%;
+}
+#about .story ul li.profile div.skill ul li:nth-of-type(2) span{
+    
+    max-width: 60%;
+}
+#about .story ul li.profile div.skill ul li:nth-of-type(3) span{
+    
+    max-width: 60%;
+}
+@keyframes Gauge {
+
+    0%{width:0}
+    100%{width: 100%;}
+
 }
 
 /* footer */
@@ -249,7 +317,7 @@ footer p {
     }
 
     #portfolio ul li {
-        width: 50%;
+        width: 100%;
         position: relative;
 
     }
@@ -292,7 +360,7 @@ footer p {
     }
 
     #portfolio ul li {
-        width: 50%;
+        width: 100%;
         position: relative;
 
     }
@@ -309,17 +377,17 @@ footer p {
         height: 100%;
     }
 
-    #about .story .profile {
+    #about .story ul {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #about .story .profile li {
+    #about .story>ul>li {
         width: 70%;
         height: 400px;
     }
 
-    #about .story .profile li div {
+    #about .story ul li div {
         height: 50%;
     }
 }
