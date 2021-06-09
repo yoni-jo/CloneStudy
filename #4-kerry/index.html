@@ -132,7 +132,10 @@
 
     var cn = 0;
     $("#client ul.controll li:eq(0)").addClass("current_c")
+
     $("#client ul.controll li a").click(function () {
+
+      
       $(this).parent("li").addClass("current_c");
       $(this).parent("li").siblings("li").removeClass("current_c")
       cn = $(this).attr("data-cn")
@@ -157,7 +160,6 @@
       }else if(cn>2){
         cn=0;
 
-        $(".itemt3").insertAfter(".item1")
       }
 
     },2000)

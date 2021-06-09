@@ -245,36 +245,46 @@ header ul li.change::before {
     color: #9b2d01f3;
     font-family: var(--kor);
 }
+
 /* skill */
 #about .story ul li.profile div.skill ul li {
     color: var(--b)
 }
 
 #about .story ul li.profile div.skill ul li span {
-    display:block;
+    display: block;
     width: 0%;
     height: 8px;
     background-color: #ec780b;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    animation-delay:1.5s;
+    animation-delay: 1.5s;
 }
-#about .story ul li.profile div.skill ul li:nth-of-type(1) span{
-    
+
+#about .story ul li.profile div.skill ul li:nth-of-type(1) span {
+
     max-width: 90%;
 }
-#about .story ul li.profile div.skill ul li:nth-of-type(2) span{
-    
+
+#about .story ul li.profile div.skill ul li:nth-of-type(2) span {
+
     max-width: 60%;
 }
-#about .story ul li.profile div.skill ul li:nth-of-type(3) span{
-    
+
+#about .story ul li.profile div.skill ul li:nth-of-type(3) span {
+
     max-width: 60%;
 }
+
 @keyframes Gauge {
 
-    0%{width:0}
-    100%{width: 100%;}
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%;
+    }
 
 }
 
@@ -377,7 +387,7 @@ footer p {
         height: 100%;
     }
 
-    #about .story ul {
+    #about .story>ul {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -387,7 +397,13 @@ footer p {
         height: 400px;
     }
 
-    #about .story ul li div {
+    #about .story>ul>li>div {
         height: 50%;
+    }
+
+    #about .story ul li.profile {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
     }
 }
