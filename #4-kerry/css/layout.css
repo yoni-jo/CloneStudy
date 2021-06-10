@@ -306,25 +306,23 @@ section#freelancer button {
 /* client */
 section#client {
   text-align: center;
-  height: 420px;
+  height: 500px;
   background-color: #eeeeee;
   padding: 0;
 }
 
 section#client .wrap {
   line-height: 1.5;
-  height: 100%;
+  height: 450px;
   width: 100%;
   display: flex;
-  flex-direction: column;
-
+  justify-content: space-between;
   overflow: hidden;
 
 }
 
 section#client ul.client_list {
   position: relative;
-  padding: 3em 0;
   width: 300%;
   height: 100%;
   display: flex;
@@ -334,7 +332,7 @@ section#client ul.client_list {
 }
 
 section#client ul.client_list li {
-  width: 100%;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,6 +367,8 @@ section#client ul.client_list li figure img {
 
 section#client ul.controll {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 section#client ul.controll li {
