@@ -132,8 +132,8 @@
 
     var cn = 0;
     $("#client ul.controll li:eq(0)").addClass("current_c")
-
     $("#client .client_list").clone().appendTo("#client .wrap")
+    
     $("#client ul.controll li a").click(function () {
       $(this).parent("li").addClass("current_c");
       $(this).parent("li").siblings("li").removeClass("current_c")
