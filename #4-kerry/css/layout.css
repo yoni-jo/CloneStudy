@@ -358,26 +358,31 @@ section#client ul.client_list li figure img {
 }
 
 .current_c {
-  background-color: white;
+  background-color: blueviolet !important;
+  border-radius: 2px;
+  transform:scaleX(1.5);
 }
 
 .current_c a {
-  color: white
+
 }
 
 section#client ul.controll {
-  width: 100%;
+  margin:0 auto;
+  width: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 section#client ul.controll li {
-  width: 5%;
+  width: calc(100%/5);
   cursor: pointer;
+  background-color: #fff;
+  border-radius:10px;
+  transition: all .5s;
 }
-
 section#client ul.controll li a {
-  color: blueviolet;
+  text-indent: -99999px;
 }
 
 /*portfolio */
