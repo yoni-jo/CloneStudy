@@ -24,6 +24,7 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
   </script>
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script defer src="./js/typing.js"></script>
 </head>
 <script type="text/javascript">
   $(document).ready(function () {
@@ -133,7 +134,7 @@
     var cn = 0;
     $("#client ul.controll li:eq(0)").addClass("current_c")
     $("#client .client_list").clone().appendTo("#client .wrap")
-    
+
     $("#client ul.controll li a").click(function () {
       $(this).parent("li").addClass("current_c");
       $(this).parent("li").siblings("li").removeClass("current_c")
@@ -143,7 +144,6 @@
       }, 1500)
     })
     var cnt = 0;
-
 
     function autoslide() {
       if (cn < 4) {
@@ -177,6 +177,10 @@
       cn++;
     }
     setInterval(autoslide, 2000)
+
+
+
+    
   })
 </script>
 
@@ -212,9 +216,8 @@
   <!-- ==================== -->
 
   <div class="title">
-    <h2>welcome
-      <strong>I'M Kerri Deo</strong>
-    </h2>
+    <h2>welcome I'M
+      <strong class="cursor"></strong></h2>
     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
     <button>DOWNLOAD CV</button>
     <span class="scrolldown"><a href="javascript:void(0)" data-target="#about"></a></span>
