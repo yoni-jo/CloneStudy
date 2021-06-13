@@ -20,18 +20,21 @@ a {
     text-decoration: none;
 }
 
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
 /* HEADER */
 header {
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8;
 }
 
-header .inner {
-    max-width: 1100px;
+header>.inner {
     height: 120px;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
 }
 
 header .logo {
@@ -124,7 +127,7 @@ header .sub-menu .search.focused div.material-icons {
 
 
 
-/* MEIN-MENU */
+/* MAIN-MENU */
 header .main-menu {
     display: flex;
     position: absolute;
@@ -151,17 +154,56 @@ header .main-menu .item:hover .item__name {
 
 header .main-menu .item .item__contents {
     width: 100%;
-    position:fixed;
-    left:0;
+    position: fixed;
+    left: 0;
+    display: none;
+
+}
+
+header .main-menu .item:hover .item__contents {
+    display: block;
+}
+
+/* contents_menu */
+header .main-menu .item .item__contents .contents__menu {
+    background-color: #2c2a29;
+}
+
+header .main-menu .item .item__contents .contents__menu>ul.inner {
+    display: flex;
+    padding: 20px 0;
+}
+
+header .main-menu .item .item__contents .contents__menu>ul.inner>li {
+    width: 220px;
+}
+
+header .main-menu .item .item__contents .contents__menu>ul.inner>li h4 {
+    padding:3px 0 12px 0;
+    font-size: 14px;
+    color:#fff
+}
+header .main-menu .item .item__contents .contents__menu>ul.inner>li>ul>li {
+    padding: 5px 0;
+    font-size:12px;
+    color:#999;
+    cursor: pointer;
+}
+
+/*contents__textur */
+header .main-menu .item .item__contents .contents__texture {
+    background-image: url('../images/main_menu_pattern.jpg');
+    height: 100px;
+    font-size: 12px;
+    padding: 26px 0;
+
+}
+header .main-menu .item .item__contents .contents__texture h4{
+    color:#999;
+    font-weight: 700;
     
 }
-
-header .main-menu .item .item__contents .contents__menu {
-    background-color: red;
-    height: 200px;
-}
-
-header .main-menu .item .item__contents .contents__texture {
-    background-color: green;
-    height: 100px;
+header .main-menu .item .item__contents .contents__texture p{
+    color:#669900;
+    margin: 4px 0 14px;
 }

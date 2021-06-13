@@ -5,7 +5,7 @@ const searchInput = searchEl.querySelector("input")
 
 searchEl.addEventListener("click", ()=>{
 
-    searchInput.focus()
+    searchInput.focus()//클릭시 커서가 해당 위치로 
 })
 
 searchInput.addEventListener("focus",()=>{
