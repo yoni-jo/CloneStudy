@@ -2,6 +2,7 @@
 html,
 body {
     width: 100%;
+    height: 3000px;
 }
 
 body {
@@ -29,8 +30,11 @@ a {
 
 /* HEADER */
 header {
+    width: 100%;
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8;
+    position: fixed;
+    top: 0;
 }
 
 header>.inner {
@@ -204,4 +208,18 @@ header .main-menu .item .item__contents .contents__texture h4{
 header .main-menu .item .item__contents .contents__texture p{
     color:#669900;
     margin: 4px 0 14px;
+}
+
+header .badges{
+position: absolute;
+top: 132px;
+right: 12px;
+transition: all .3s;
+}
+header .badges .badge{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 12px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+    cursor: pointer;
 }
