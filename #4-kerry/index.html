@@ -104,6 +104,37 @@
 
     })
 
+    //#portfolio =>
+
+    //list메뉴 클릭시 filter
+    var list = $("#portfolio ul.list")
+    var list_child = $("#portfolio ul.list li")
+
+$(list_child).each(function (index) {
+
+      $("#portfolio ul.listMenu li").click(function (e) {
+      var className = $(this).attr("class");
+        //all클릭시 
+
+       
+        if (className === undefined) {
+           
+          $(list_child).sort().show('slow')
+        } else {
+         
+          //class가 없을경우 삭제
+          $(list_child).not("li." + className).sort().hide("slow")
+        
+          
+          //class명이 같을경우 나타나게하기
+          $(list).find("." + className).sort().show("slow")
+          
+         
+        }
+      
+    })
+    
+  })
     // our works 이미지 클릭시 팝업
 
     $("#portfolio .wrap ul.list li").click(
@@ -178,9 +209,9 @@
     }
     setInterval(autoslide, 2000)
 
+    // 
 
 
-    
   })
 </script>
 
@@ -361,35 +392,40 @@
         </p>
         <ul class="listMenu">
           <li><a href="javascript:void(0)">all</a></li>
-          <li><a href="javascript:void(0)">seo</a></li>
-          <li><a href="javascript:void(0)">webdesign</a></li>
-          <li><a href="javascript:void(0)">work</a></li>
-          <li><a href="javascript:void(0)">wordpress</a></li>
+          <li class="seo"><a href="javascript:void(0)">seo</a></li>
+          <li class="webdesign"><a href="javascript:void(0)">webdesign</a></li>
+          <li class="work"><a href="javascript:void(0)">work</a></li>
+          <li class="wordpress"><a href="javascript:void(0)">wordpress</a></li>
         </ul>
         <ul class="list">
-          <li><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a>
+          <li class="webdesign wordpress"><a href="javascript:void(0)"><img src="img/ourwork/1.jpg" alt=""></a>
             <span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span>
           </li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/2.jpg" alt=""></a><span class="blind">
+          <li class="seo webdesign work"><a href="javascript:void(0)"><img src="img/ourwork/2.jpg" alt=""></a><span
+              class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/3.jpg" alt=""></a><span class="blind">
+          <li class="seo wordpress"><a href="javascript:void(0)"><img src="img/ourwork/3.jpg" alt=""></a><span
+              class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/4.jpg" alt=""></a><span class="blind">
+          <li class="webdesign work wordpress"><a href="javascript:void(0)"><img src="img/ourwork/4.jpg"
+                alt=""></a><span class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/5.jpg" alt=""></a><span class="blind">
+          <li class="seo webdesign"><a href="javascript:void(0)"><img src="img/ourwork/5.jpg" alt=""></a><span
+              class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>
-          <li><a href="javascript:void(0)"><img src="img/ourwork/6.jpg" alt=""></a><span class="blind">
+          <li class="webdesign"><a href="javascript:void(0)"><img src="img/ourwork/6.jpg" alt=""></a><span
+              class="blind">
               <p>Category</p>
               <h5>Project Title</h5>
             </span></li>

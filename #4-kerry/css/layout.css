@@ -476,7 +476,9 @@ section#portfolio .wrap ul.listMenu li:hover a {
   box-sizing: border-box;
   font-weight: 800;
 }
-
+section#portfolio .wrap ul.list{
+  flex-wrap: wrap;
+}
 section#portfolio .wrap ul.list li {
   max-width: calc(100%/3 - 2em);
   margin: 1em;
