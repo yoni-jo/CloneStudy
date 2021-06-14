@@ -1,6 +1,5 @@
 "use strict"
 let target = document.querySelector("strong")
-
 let i=0;
 //커서 깜빡이게 하기
 function blink() {
