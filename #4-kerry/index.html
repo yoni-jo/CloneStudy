@@ -125,7 +125,9 @@
     var z = 0;
     var position_left;
     var position_top;
+
     $(list_child).each(function () {
+
       index = index % 3;
       position_left = $(this).width() * index + 20 * index;
       position_top = $(this).height() / 2 * Math.floor(z / 3) + 20 * Math.floor(z / 3);
@@ -143,41 +145,55 @@
 
     $("#portfolio ul.listMenu li").click(function () {
       var className = $(this).attr("class");
+
       //all클릭시 
 
-
       if (className === undefined) {
+        $(list_child).show()
+        index = 0;
+        z = 0;
+        $(list_child).each(function () {
 
-        $(list_child).show('slow')
+          index = index % 3;
+          position_left = $(this).width() * index + 20 * index;
+          position_top = $(this).height() * Math.floor(z / 3) + 20 * Math.floor(z / 3);
 
+          $(this).css({
+            "position": "absolute",
+            "left": position_left,
+            "top": position_top
+          })
+          index++
+          z++
+
+        })
 
       } else {
         //class가 없을경우 삭제
-        $(list_child).not("li." + className).hide("slow")
+        $(list_child).not("li." + className).hide()
 
 
         //class명이 같을경우 나타나게하기
-        $(list).find("." + className).show("slow", function () {
+        $(list).find("." + className).show()
 
-          var index = 0;
-          var z = 0;
-          var position_left;
-          var position_top;
-          $($(this)).each(function () {
-            index = index % 3;
-            position_left = $(this).width() * index + 20 * index;
-            position_top = $(this).height() * Math.floor(z / 3) + 20 * Math.floor(z / 3);
-            console.log($(this))
-            $(this).css({
-              "left": position_left,
-              "top": position_top
-            })
-            index++
-            z++
+        index = 0;
+        z = 0;
+        $(list).find("." + className).each(function () {
 
+
+          index = index % 3;
+          position_left = $(this).width() * index + 20 * index;
+          position_top = $(this).height() * Math.floor(z / 3) + 20 * Math.floor(z / 3);
+
+          $(this).css({
+            "position": "absolute",
+            "left": position_left,
+            "top": position_top
           })
-        })
+          index++
+          z++
 
+        })
       }
 
     })
@@ -248,10 +264,13 @@
       }, 1500)
     })
     var cnt = 0;
-
-    function autoslide() {
+    
+    var time=2000;
+    
+    function autoslide(time) {
+      
       if (cn < 4) {
-
+        
         $("#client ul.controll li").removeClass("current_c")
         $("#client ul.client_list").stop().animate({
           "left": -100 * cn + "%"
@@ -265,7 +284,7 @@
           $("#client ul.controll li:eq(" + cnt + ")").siblings().removeClass("current_c")
 
         }
-
+        
       } else if (cn == 4) {
         cn = 0
         cnt = 0
@@ -273,15 +292,17 @@
         $("#client .wrap ul.client_list").css({
           left: 0
         })
-
-
+        
+        
+        time=0
       }
-
       cnt++
       cn++;
     }
-    setInterval(autoslide, 2000)
+    console.log(time)
+    setInterval(autoslide,time)
 
+  
     // 
 
 

@@ -483,6 +483,7 @@ section#portfolio .wrap ul.list li {
   max-width: calc(100%/3 - 2em);
   margin: 1em;
   position: relative;
+  transition: left .3s, top .3s;
 }
 
 section#portfolio .wrap ul.list li a {
