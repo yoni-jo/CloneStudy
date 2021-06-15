@@ -107,34 +107,107 @@
     //#portfolio =>
 
     //list메뉴 클릭시 해당이미지만보이게
-    var list = $("#portfolio ul.list")
-    var list_child = $("#portfolio ul.list li")
 
-$(list_child).each(function (index) {
 
-      $("#portfolio ul.listMenu li").click(function (e) {
-      var className = $(this).attr("class");
-        //all클릭시 
+    var list = $("#portfolio ul.list");
+    var list_child = $("#portfolio ul.list li");
+    //유동적으로 위치값 재설정 
+    var listResetHeight = $(list_child).height() * 2 + 20 * 3 //각 li 높이값합계 
 
-       
-        if (className === undefined) {
-           
-          $(list_child).sort().show('slow')
-        } else {
-         
-          //class가 없을경우 삭제
-          $(list_child).not("li." + className).sort().hide("slow")
-        
-          
-          //class명이 같을경우 나타나게하기
-          $(list).find("." + className).sort().show("slow")
-          
-         
-        }
-      
+    $(list).css({
+      "position": "relative",
+      "height": listResetHeight,
     })
-    
-  })
+    // our works 이미지 재배치 
+
+
+    var index = 0;
+    var z = 0;
+    var position_left;
+    var position_top;
+    $(list_child).each(function () {
+      index = index % 3;
+      position_left = $(this).width() * index + 20 * index;
+      position_top = $(this).height() / 2 * Math.floor(z / 3) + 20 * Math.floor(z / 3);
+
+      $(this).css({
+        "position": "absolute",
+        "left": position_left,
+        "top": position_top
+      })
+      index++
+      z++
+
+    })
+
+
+    $("#portfolio ul.listMenu li").click(function () {
+      var className = $(this).attr("class");
+      //all클릭시 
+
+
+      if (className === undefined) {
+
+        $(list_child).show('slow')
+
+
+      } else {
+        //class가 없을경우 삭제
+        $(list_child).not("li." + className).hide("slow")
+
+
+        //class명이 같을경우 나타나게하기
+        $(list).find("." + className).show("slow", function () {
+
+          var index = 0;
+          var z = 0;
+          var position_left;
+          var position_top;
+          $($(this)).each(function () {
+            index = index % 3;
+            position_left = $(this).width() * index + 20 * index;
+            position_top = $(this).height() * Math.floor(z / 3) + 20 * Math.floor(z / 3);
+            console.log($(this))
+            $(this).css({
+              "left": position_left,
+              "top": position_top
+            })
+            index++
+            z++
+
+          })
+        })
+
+      }
+
+    })
+    //   // 스트롤이벤트시 service li분산이동
+    //   $(document).on("scroll",function(){
+
+    // if($(window).scrollTop()>=po3){
+    //   $("ul.gnb li:nth-child(3) a").addClass("current_gnb");
+    //   $("ul.gnb li a").not("ul.gnb li:nth-child(3) a").removeClass("current_gnb");
+    //   // li항목들이 위치로 분산이 --------------
+    //   $("#service ul li").each(function(){
+    //     k=k%3;
+    //     sl=$(this).width()*k+20*k;
+    //     st=$(this).height()*Math.floor(m/3)+20*Math.floor(m/3);
+    //     $(this).css({"left":sl,"top":st});
+    //     k++;
+    //     m++;
+    //     if(m==6){
+    //       $(document).off("scroll");
+    //     //  $(window).off("scroll");
+    //     }
+    //   });
+    // }
+
+    // });
+
+
+
+
+
     // our works 이미지 클릭시 팝업
 
     $("#portfolio .wrap ul.list li").click(
