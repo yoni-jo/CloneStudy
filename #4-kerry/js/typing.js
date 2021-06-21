@@ -23,9 +23,9 @@ function randomString() {
 
 //타이핑 리셋
 function resetTyping() {
-    target.textContent = "";
+    target.textContent = ""; // 초기화후 
  
-    dynamic(randomString())
+    dynamic(randomString()) //다시 함수실행 
 
 }
 
@@ -45,4 +45,4 @@ function dynamic(randomArr) {
    
 
 }
-dynamic(randomString())
+dynamic(randomString()) //1.함수실행

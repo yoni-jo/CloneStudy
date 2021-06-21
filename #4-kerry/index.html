@@ -226,52 +226,53 @@
 
     // our works 이미지 클릭시 팝업
 
-    $("#portfolio .wrap ul.list li").click(
-      function () {
+    $("#portfolio .wrap ul.list li").click(function () {
 
-        var popup_img = "popup_img"
-        var popup_wrap = "popup_wrap"
-        var imgsrc = $(this).find("img").attr("src")
+      var popup_img = "popup_img"
+      var popup_wrap = "popup_wrap"
+      var imgsrc = $(this).find("img").attr("src")
 
-        $("#portfolio").append(`<div class='${popup_img}'></div>`)
-        $("#portfolio .popup_img").append(`<div class='${popup_wrap}'></div>`)
-        $("#portfolio .popup_img .popup_wrap").append(`<img src='${imgsrc}'/>`)
-        $("#portfolio .popup_img .popup_wrap").append(`<button class="close_btn">X</button>`)
+      $("#portfolio").append(`<div class='${popup_img}'></div>`)
+      $("#portfolio .popup_img").append(`<div class='${popup_wrap}'></div>`)
+      $("#portfolio .popup_img .popup_wrap").append(`<img src='${imgsrc}'/>`)
+      $("#portfolio .popup_img .popup_wrap").append(`<button class="close_btn">X</button>`)
 
 
-        // 팝업후 x박스클릭시 사라지는 효과
-        $("#portfolio .popup_img .popup_wrap .close_btn").click(
-          function () {
-            $(this).parent(".popup_wrap").parent(".popup_img").fadeOut(500, function () {
-              $(this).remove()
-            })
-
+      // 팝업후 x박스클릭시 사라지는 효과
+      $("#portfolio .popup_img .popup_wrap .close_btn").click(
+        function () {
+          $(this).parent(".popup_wrap").parent(".popup_img").fadeOut(500, function () {
+            $(this).remove()
           })
-      })
 
+        })
+    })
     // our client 이미지 슬라이드
-    var cnt = 0;
+  
     var cn = 0;
-    var attr;
+    var cnt=0
+
     $("#client ul.controll li:eq(0)").addClass("current_c")
     $("#client .client_list").clone().appendTo("#client .wrap")
 
     $("#client ul.controll li a").click(function () {
-     
+      //클릭시 일시적으로 setinterval 멈추게 설정
+      stopInterval()
       $(this).parent("li").addClass("current_c");
       $(this).parent("li").siblings("li").removeClass("current_c")
-      
-      attr =$(this).attr("data-cn");
+
+      cn = $(this).attr("data-cn");
+     
       $("#client ul.client_list").stop().animate({
-        "left": -100 * Number(attr) + "%"
+        "left": -100 * Number(cn) + "%"
       })
-     cnt = Number(attr)
-      return cnt
-    })
     
+      //1초뒤에 다시 시작
+   
+    })
+
     function autoslide() {
       if (cn < 4) {
-       
         $("#client ul.controll li").removeClass("current_c")
         $("#client ul.client_list").stop().animate({
           "left": -100 * cn + "%"
@@ -281,36 +282,40 @@
 
 
         //4번째 이미지에서 첫번째 컨트롤 버튼에 색상변경
-        if (cnt == 3) {
+        if (cn == 3) {
           cnt = 0
           $("#client ul.controll li:eq(" + cnt + ")").addClass("current_c")
           $("#client ul.controll li:eq(" + cnt + ")").siblings().removeClass("current_c")
-
          
         }
-       
 
+        setTimeout(function () {
+          autoslide()
+        }, 2000)
       } else if (cn == 4) {
-        cn = 0
-        cnt = 0
-       
+        cn=0
+        cnt=0
         $("#client .wrap ul.client_list:eq(0)").insertAfter($("#client .wrap ul.client_list:eq(1)"))
         setTimeout(autoslide, 0)
-        
+
         $("#client .wrap ul.client_list").css({
           left: 0
         })
-     
-      }
 
+      }
       
       cn++;
       cnt++
-     
-      
     }
-   var slideEvent= setInterval(autoslide,3000)
 
+    //슬라이드 반복설정
+
+
+    autoslide()
+
+    function stopInterval() {
+      clearInterval(autoslide)
+    }
 
 
     // 
