@@ -1,8 +1,12 @@
 header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
     height: 100px;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0);
     border-bottom: 1px solid #e0dfdf !important;
+
 }
 
 .top {
@@ -16,10 +20,11 @@ header {
 
 h1.logo {
     width: 10%;
+
 }
 
 h1.logo>a {
-    background-image: url(../img/logo/logo-samhwa-red.svg);
+    background-image: url(../img/logo/logo-samhwa-white.svg);
     background-repeat: no-repeat;
     text-indent: -99999px;
     background-position: center;
@@ -61,6 +66,10 @@ ul.gnb>.item::after {
 
 ul.gnb>.item:hover::after {
     transform: scaleX(100%)
+}
+
+ul.gnb>.item>.item__name a {
+    color: white
 }
 
 ul.gnb>.item:nth-of-type(5)>.item__name {
@@ -162,7 +171,8 @@ ul.enb>li {
 
 }
 
-ul.enb>li>a {}
+ul.enb>li>a {
+    color:white;}
 
 ul.enb>select {
     border: none;

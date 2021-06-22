@@ -10,3 +10,24 @@ a {
     color: black;
     display: block;
 }
+
+main,
+section {
+    height: 100%;
+}
+
+.wrap {
+    height: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.fade {
+    height: 80%;
+}
+
+.block {
+    display: block;
+}

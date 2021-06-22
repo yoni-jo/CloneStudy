@@ -1,1 +1,47 @@
-title{width: 100%;height: 100%;}
+#title {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/title/1623712511581_100.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#title .wrap ul {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#title .wrap ul>li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title .wrap ul.fade>li>* {
+    line-height: 1.2;
+    color:#fff
+}
+
+#title .wrap ul.fade>li>h2 {
+    font-size: 6em;
+}
+
+#title .wrap ul.fade>li>p {
+    font-size: 2em;
+}
+
+#title .wrap ul.fadelist{
+    display: flex;
+}
+#title .wrap ul.fadelist li{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#title .wrap ul.fadelist li+li{
+    margin-left: 1em;
+}
