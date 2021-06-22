@@ -28,6 +28,56 @@ a {
     box-sizing: border-box;
 }
 
+.btn {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: all .4s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* 우선순위 */
+.btn.btn--reverse {
+    background-color: #333;
+    color: white;
+}
+
+.btn.btn--reverse:hover {
+    background-color: transparent;
+    color: #333;
+}
+
+.btn.btn--brown {
+    color: #fff;
+    background-color: #592b18;
+}
+
+.btn.btn--brown:hover {
+    color: #d9aa8a;
+    border-color: #d9aa8a;
+}
+
+.btn.btn--white {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn.btn--white:hover {
+    color: #333;
+    border-color: #fff;
+}
+
 /* HEADER */
 header {
     width: 100%;
@@ -35,6 +85,7 @@ header {
     border-bottom: 1px solid #c8c8c8;
     position: fixed;
     top: 0;
+    z-index: 9;
 }
 
 header>.inner {
@@ -239,7 +290,6 @@ header .badges .badge {
 
 .visual .inner {
     height: 646px;
-    background-color: red;
 }
 
 .visual .title {
@@ -249,7 +299,11 @@ header .badges .badge {
 
 }
 
-.visual a.btn {}
+.visual .title .btn {
+    position: absolute;
+    top: 259px;
+    left: 173px;
+}
 
 .visual .cup1.image {
     position: absolute;
