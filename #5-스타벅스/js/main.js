@@ -52,3 +52,13 @@ gsap.to(fadeEl,1,{
     opacity:1
 })
 })
+
+//공지사항 vertical슬라이드
+
+const swiper = new Swiper('.notice-line .swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    autoplay:true,
+    loop:true
+  
+  });
