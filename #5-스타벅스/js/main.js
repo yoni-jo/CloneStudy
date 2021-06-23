@@ -43,7 +43,7 @@ window.addEventListener("scroll", _.throttle(function () {
 
 
 
-// 타이틀 순차적으로 이미지가 나타나게하기
+// 타이틀 이미지 순차적으로 나타나게하기
 const fadeEls = document.querySelectorAll(".visual .fade-in")
 
 fadeEls.forEach(function (fadeEl, index){
