@@ -63,7 +63,9 @@
     a {
         transform: scale(0.9);
     }
-
+    header .gnb li:hover a {
+        margin-right: 2em;
+      }
     section#contact fieldset {
         margin: 0 auto;
         max-width: 80%;
