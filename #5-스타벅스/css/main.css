@@ -407,4 +407,18 @@ header .badges .badge {
 .notice .notice-line .inner__right {
     width: 40%;
     height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+.notice .notice-line .inner__right h2{}
+.notice .notice-line .inner__right .toggle-promotion{
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.notice .notice-line .inner__right .toggle-promotion .material-icons{}
