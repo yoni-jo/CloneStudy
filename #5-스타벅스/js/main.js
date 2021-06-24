@@ -65,7 +65,7 @@ const swiper = new Swiper('.notice-line .swiper-container', {
 
 });
 
-//프로모션 슬라이드배너
+//프로모션 이미지 슬라이드
 
 new Swiper('.promotion .swiper-container', {
     // Optional parameters
@@ -76,7 +76,16 @@ new Swiper('.promotion .swiper-container', {
     loop: true,
     autoplay: {
         delay: 5000
+    },
+
+    pagination:{
+        el:'.promotion .swiper-pagination',//페이지 번호 요소 선택자
+        clickable:true //사용자의 페이지 번호 요쇼 제어 
+
+    },
+    navigation:{
+        prevEl:'.promotion .swiper-prev',
+        nextEl:'.promotion .swiper-next'
     }
-
-
 });
+
