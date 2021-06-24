@@ -46,11 +46,11 @@ window.addEventListener("scroll", _.throttle(function () {
 // 타이틀 이미지 순차적으로 나타나게하기
 const fadeEls = document.querySelectorAll(".visual .fade-in")
 
-fadeEls.forEach(function (fadeEl, index){
-gsap.to(fadeEl,1,{
-    delay:(index +1)*.7,
-    opacity:1
-})
+fadeEls.forEach(function (fadeEl, index) {
+    gsap.to(fadeEl, 1, {
+        delay: (index + 1) * .7,
+        opacity: 1
+    })
 })
 
 //공지사항 vertical슬라이드
@@ -58,7 +58,25 @@ gsap.to(fadeEl,1,{
 const swiper = new Swiper('.notice-line .swiper-container', {
     // Optional parameters
     direction: 'vertical',
-    autoplay:true,
-    loop:true
-  
-  });
+    autoplay:{
+        delay:4000
+    },
+    loop: true
+
+});
+
+//프로모션 슬라이드배너
+
+new Swiper('.promotion .swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3, //보여줄 슬라이드 개수
+    spaceBetween: 10, //슬라이드 사이 여백
+    centeredSlides: true, //1번 스랄이드가 가운데 보이기 
+    loop: true,
+    autoplay: {
+        delay: 5000
+    }
+
+
+});
