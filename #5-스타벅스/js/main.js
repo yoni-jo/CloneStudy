@@ -58,8 +58,8 @@ fadeEls.forEach(function (fadeEl, index) {
 const swiper = new Swiper('.notice-line .swiper-container', {
     // Optional parameters
     direction: 'vertical',
-    autoplay:{
-        delay:4000
+    autoplay: {
+        delay: 4000
     },
     loop: true
 
@@ -78,14 +78,32 @@ new Swiper('.promotion .swiper-container', {
         delay: 5000
     },
 
-    pagination:{
-        el:'.promotion .swiper-pagination',//페이지 번호 요소 선택자
-        clickable:true //사용자의 페이지 번호 요쇼 제어 
+    pagination: {
+        el: '.promotion .swiper-pagination', //페이지 번호 요소 선택자
+        clickable: true //사용자의 페이지 번호 요쇼 제어 
 
     },
-    navigation:{
-        prevEl:'.promotion .swiper-prev',
-        nextEl:'.promotion .swiper-next'
+    navigation: {
+        prevEl: '.promotion .swiper-prev',
+        nextEl: '.promotion .swiper-next'
     }
 });
 
+//프로모션 클릭시 슬라이드 영역 사라지는 효과
+
+const promotionEl = document.querySelector(".promotion")
+const promotionToggleBtn = document.querySelector(".toggle-promotion")
+let isHidePromotion = false;
+
+promotionToggleBtn.addEventListener("click", function () {
+    isHidePromotion = !isHidePromotion //true
+    if (isHidePromotion) {
+        //숨김처리
+        gsap.to()
+        promotionEl.classList.add("hide")
+        
+    } else {
+        //보임 처리
+        promotionEl.classList.remove("hide")
+    }
+})
