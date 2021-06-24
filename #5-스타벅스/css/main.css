@@ -435,5 +435,27 @@ header .badges .badge {
     align-items: center;
 
 }
+.notice .promotion{
+    height: 693px;
+    background-color: #f6f5ef;
+    position: relative;
+}
+.notice .promotion .swiper-container{
+    width:calc(819px * 3 + 20px);
+    height: 553px;
+    position: absolute;
+    top:40px;
+    left:50%;
+    margin-left: calc((819px * 3 + 20px) / -2);
 
-.notice .notice-line .inner__right .toggle-promotion .material-icons {}
+}
+
+.notice .promotion .swiper-wrapper{}
+.notice .promotion .swiper-slide{
+    opacity: 0.2;
+}
+.notice .promotion .swiper-slide-active{
+    opacity: 1
+}
+.notice .promotion .swiper-slide img{}
+.notice .promotion .swiper-slide img a{}
