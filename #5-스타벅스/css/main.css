@@ -445,10 +445,11 @@ header .badges .badge {
     overflow: hidden;
 }
 
-.notice .promotion.hide{ 
+.notice .promotion.hide {
     height: 0;
-    
+
 }
+
 .notice .promotion .swiper-container {
     width: calc(819px * 3 + 20px);
     height: 553px;
@@ -536,6 +537,57 @@ header .badges .badge {
     color: #fff;
     background-color: #333;
 }
+
 .notice .promotion .swiper-prev .material-icons,
-.notice .promotion .swiper-next .material-icons{
+.notice .promotion .swiper-next .material-icons {}
+
+
+/* REWARDS */
+.rewards {
+    position: relative;
+}
+
+.rewards .bg-left,
+.rewards .bg-right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.rewards .bg-left {
+    left: 0;
+    background-color: #272727;
+}
+
+.rewards .bg-right {
+    right: 0;
+    background-color: #d5c798;
+}
+
+.rewards .inner {
+    background-image: url(../images/rewards.jpg);
+    height: 241px;
+}
+
+.rewards .btn-group {
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rewards .btn-group .btn.sign-up {
+    margin-right: 10px;
+}
+
+.rewards .btn-group .btn.sign-in {
+    width: 110px;
+}
+
+.rewards .btn-group .btn.gift {
+    margin-top: 10px;
+    flex-grow:1
 }
