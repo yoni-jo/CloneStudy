@@ -100,9 +100,33 @@ promotionToggleBtn.addEventListener("click", function () {
     if (isHidePromotion) {
         //숨김처리
         promotionEl.classList.add("hide")
-        
+
     } else {
         //보임 처리
         promotionEl.classList.remove("hide")
     }
 })
+
+
+//둥둥 떠다니는 이미지효과
+function random(min, max) { 
+    return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+
+function floatingObject(selector,delay,size) {
+
+    gsap.to(
+        selector,//선택자
+        random(1.5,2.5), //지속시간 =>여기선 애니메이션 동작 시간
+        {
+        y: size,
+        repeat: -1,
+        yoyo: true,
+        ease: Power1.easeInOut,
+        delay: random(0,delay)
+    });
+}
+
+floatingObject('.floating1',1,15)
+floatingObject('.floating2',.5,15)
+floatingObject('.floating3',1,20)
