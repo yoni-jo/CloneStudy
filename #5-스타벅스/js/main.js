@@ -99,7 +99,6 @@ promotionToggleBtn.addEventListener("click", function () {
     isHidePromotion = !isHidePromotion //true
     if (isHidePromotion) {
         //숨김처리
-        gsap.to()
         promotionEl.classList.add("hide")
         
     } else {
