@@ -130,3 +130,21 @@ function floatingObject(selector,delay,size) {
 floatingObject('.floating1',1,15)
 floatingObject('.floating2',.5,15)
 floatingObject('.floating3',1,20)
+
+
+
+// 스크롤 할때마다 각 세션 이미지가 나타나는 효과
+
+const spyEls = document.querySelectorAll('section.scroll-spy')
+
+spyEls.forEach(function (spyEl){
+
+new ScrollMagic
+    .Scene({
+        triggerElement: spyEl, //보여짐 여부를 감시할 요소를 지정 
+        triggerHook: .8 // 위 triggerElement가 0.8위치에 걸리면 실행되게하는 옵션
+    })
+    .setClassToggle(spyEl,'show')
+    .addTo(new ScrollMagic.Controller());
+
+})
