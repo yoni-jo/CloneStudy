@@ -85,6 +85,7 @@ a {
 .btn.btn--white:hover {
     color: #333;
     border-color: #fff;
+    background-color: #fff;
 }
 
 
@@ -711,4 +712,87 @@ header .badges .badge {
 
 .reserve-coffee .text-group {
     margin-left: 40px;
+}
+
+
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+    background-image: url(../images/favorite_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pick-your-favorite .inner {
+    padding: 110px 0;
+}
+
+.pick-your-favorite .text-group {
+    width: 362px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.pick-your-favorite .text-group .title {
+    margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .description {
+    margin-bottom: 40px;
+}
+
+
+/* RESERVE STORE */
+.reserve-store {
+    background-image: url(../images/reserve_store_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.reserve-store .inner {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserve-store .medal {
+    width: 334px;
+    height: 334px;
+    position: relative;
+    perspective: 600px;
+}
+
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: calc(50% - (334px/2));
+    backface-visibility: hidden;
+    transition: .8s ease-in;
+}
+.reserve-store .medal.front{
+    transform: rotateY(0deg)
+}
+.reserve-store .medal:hover .front {
+    transform: rotateY(180deg)
+}
+
+.reserve-store .medal .back {
+    flex-direction: column;
+    transform: rotateY(-180deg)
+}
+.reserve-store .medal .back .more{
+    position: absolute;
+    top:calc(50% + 50px);
+    left:calc(50% - (130px/2));
+}
+.reserve-store .medal:hover .back {
+    transform: rotateY(0deg)
 }
