@@ -88,7 +88,17 @@ new Swiper('.promotion .swiper-container', {
         nextEl: '.promotion .swiper-next'
     }
 });
-
+new Swiper('.awards .swiper-container',{
+    direction:'horizontal',
+    autoplay: true,
+    loop: true,
+    spaceBetween:10,
+    slidesPerView:5,
+    navigation:{
+        prevEl:'.awards .swiper-prev',
+        nextEl:'.awards .swiper-next'
+    }
+});
 //프로모션 클릭시 슬라이드 영역 사라지는 효과
 
 const promotionEl = document.querySelector(".promotion")

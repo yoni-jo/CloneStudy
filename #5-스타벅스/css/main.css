@@ -101,22 +101,27 @@ a {
     transform: translateX(150px);
 }
 
-.show .back-to-position{
+.show .back-to-position {
     opacity: 1;
     transform: translateX(0);
 }
-.show .back-to-position.delay-0{
+
+.show .back-to-position.delay-0 {
     transition-delay: 0s;
 }
-.show .back-to-position.delay-1{
+
+.show .back-to-position.delay-1 {
     transition-delay: .3s;
 }
-.show .back-to-position.delay-2{
+
+.show .back-to-position.delay-2 {
     transition-delay: .6s;
 }
-.show .back-to-position.delay-3{
+
+.show .back-to-position.delay-3 {
     transition-delay: .9s;
 }
+
 /* HEADER */
 header {
     width: 100%;
@@ -880,4 +885,56 @@ header .badges .badge {
 
 .find-store .text-group .description {
     margin-bottom: 20px;
+}
+
+
+/* AWARDS */
+.awards {
+    background-color: #272727;
+}
+
+.awards .inner {
+    padding: 40px 0;
+}
+
+.awards .swiper-container {
+    width: 100%;
+    height: 40px;
+}
+
+.awards .swiper-prev,
+.awards .swiper-next {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    opacity: .3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .3s;
+}
+
+.awards .swiper-prev {
+    left: -100px;
+}
+
+.awards .swiper-next {
+    right: -100px;
+}
+
+.awards .swiper-prev:hover,
+.awards .swiper-next:hover{
+    background-color: #fff;
+    color: #333;
+    
+
+
 }
