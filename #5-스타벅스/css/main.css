@@ -1023,8 +1023,24 @@ footer .copyright {
     margin-top: 12px;
 }
 
-footer .copyright span {}
-
 footer .logo {
     margin: 30px auto 0;
+}
+
+/* scrollTop */
+#to-top {
+    width: 42px;
+    height: 42px;
+    background-color: #333;
+    color:#fff;
+    cursor: pointer;
+    border:2px solid #fff;
+    z-index: 9;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

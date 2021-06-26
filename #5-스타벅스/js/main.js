@@ -21,7 +21,7 @@ searchInput.addEventListener("blur", () => {
 
 const header = document.querySelector("header")
 const badges = document.querySelector(".badges")
-
+const topBtn = document.querySelector('#to-top')
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 window.addEventListener("scroll", _.throttle(function () {
     //스크롤시 header 높이값을 초과했을경우 
@@ -32,16 +32,28 @@ window.addEventListener("scroll", _.throttle(function () {
             opacity: 0,
             display: 'none'
         })
+         //top버튼 보이기
+         gsap.to(topBtn,.2,{
+             x:0
+         })
         //다시 상단으로 스크롤시 나타남
     } else {
         gsap.to(badges, .2, {
             opacity: 1,
             display: 'block'
         })
+        //top버튼 숨기기
+        gsap.to(topBtn,.2,{
+            x:100
+        })
     }
 }, 300))
 
-
+topBtn.addEventListener('click',function(){
+    gsap.to(window,.7,{
+        scrollTo:0
+    })
+})
 
 // 타이틀 이미지 순차적으로 나타나게하기
 const fadeEls = document.querySelectorAll(".visual .fade-in")
