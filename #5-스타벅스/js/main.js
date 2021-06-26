@@ -158,3 +158,9 @@ new ScrollMagic
     .addTo(new ScrollMagic.Controller());
 
 })
+
+//footer copyright부분 연도 해당 연도가 들어가게 설정
+
+const year= document.querySelector(' .this-year')
+const date = new Date();
+year.innerHTML=date.getFullYear()
