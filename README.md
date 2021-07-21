@@ -18,13 +18,13 @@
 
 <h3>21년 6월28일</h3>
 <li>호스팅 연결완료</li>
-<퍼시스>
+<퍼시스><br>
 http://alterego.woobi.co.kr/pf1/<br>
-<새움터>
+<새움터><br>
 http://alterego.woobi.co.kr/pf2/<br>
-<STATED>
+<STATED><br>
 http://alterego.woobi.co.kr/pf3/<br>
-<KARRY>
+<KARRY><br>
 http://alterego.woobi.co.kr/pf4/
 
 
