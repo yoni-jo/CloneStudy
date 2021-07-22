@@ -44,25 +44,74 @@ body {
     background-color: var(--primary-color);
     color: var(--secodary-color);
     text-align: center;
-    line-height:1;
-    font-family:"arial";
+    line-height: 1;
+    font-family: "arial";
 }
-.cow{
+
+.cow {
     background-color: var(--secodary-color);
-    color:var(--primary-color);
-    width: 300px;
+    color: var(--primary-color);
+    width: 200px;
     height: 300px;
-    border-top-left-radius:40px;
-    border-top-right-radius:40px;
-    border-bottom-left-radius:70px;
-    border-bottom-right-radius:70px;
+    margin: 0 auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.horn {
+    background-color: #fff;
+    height: 70px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 0 -70px;
+}
+
+.horn::before {
+    content: "";
+    display: block;
+    height: 30px;
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+.horn::after {
+    content: "";
+    background-color: rosybrown;
+    display: block;
+    height: 80px;
+    margin: 0 80px;
+    transform: translateY(-20px);
+    border-radius: 20px
+}
+
+.eyes {
+    border-top: 30px double;
+    border-radius: 20px;
+    margin: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.eyes::before,
+.eyes::after{
+    content:'O';
+    display:block;
+    width: 30px;
+    height: 30px;
+    background-color: currentColor;
+    margin: 10px;
+    border-radius:50%;
 }
 .title {
     background-color: var(--primary-color);
     font-size: 100px;
     padding: 40px 0;
 }
-.title strong{
+
+.title strong {
     font-weight: bold;
 }
+
 /* DESIGN 끝 */
