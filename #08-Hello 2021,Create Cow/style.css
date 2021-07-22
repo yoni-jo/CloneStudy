@@ -1,3 +1,6 @@
+/* RESET */
+
+
 body {
     margin: 0;
 }
@@ -7,3 +10,26 @@ h1 {
     font-size: 100%;
     font-weight: normal;
 }
+
+/* RESET 끝 */
+/* COMMON */
+
+:root {
+    --primary-color: saddlebrown;
+    --secodary-color: burlywood;
+}
+
+/* COMMON끝 */
+/* LAYOUT */
+.center {
+    background-color: #fff;
+}
+
+/* LAYOUT 끝*/
+/* DESIGN */
+body {
+    background-color: var(--primary-color);
+    color: var(--secodary-color);
+}
+
+/* DESIGN 끝 */
