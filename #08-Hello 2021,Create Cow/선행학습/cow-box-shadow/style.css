@@ -1,0 +1,16 @@
+body {
+    background-color: seashell;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background-color: olive;
+    box-shadow:
+    inset 0px 0px 0px 30px white,
+    inset 0px 0px 0px 40px black 
+    /* 중복해서 사용가능 */
+    /* inset은 내부 그림자 */
+}
