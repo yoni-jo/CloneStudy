@@ -16,7 +16,16 @@
 <strong>※주의)초반 작업물은 똑같을 수 있음😅 </strong>
 </pre>
 
-
+<h3>21년 6월28일</h3>
+<li>호스팅 연결완료</li>
+<퍼시스><br>
+http://alterego.woobi.co.kr/pf1/<br>
+<새움터><br>
+http://alterego.woobi.co.kr/pf2/<br>
+<STATED><br>
+http://alterego.woobi.co.kr/pf3/<br>
+<KARRY><br>
+http://alterego.woobi.co.kr/pf4/
 
 
 
