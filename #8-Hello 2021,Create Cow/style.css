@@ -11,6 +11,10 @@ h1 {
     font-weight: normal;
 }
 
+strong {
+    font-weight: normal;
+}
+
 /* RESET 끝 */
 
 
@@ -26,11 +30,10 @@ h1 {
 
 /* LAYOUT */
 .center {
-    background-color: #fff;
     position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* LAYOUT 끝*/
@@ -40,6 +43,21 @@ h1 {
 body {
     background-color: var(--primary-color);
     color: var(--secodary-color);
+    text-align: center;
+    line-height:1;
+    font-family:"arial";
 }
+.cow{
+    background-color: var(--secodary-color);
+    color:var(--primary-color);
 
+}
+.title {
+    background-color: var(--primary-color);
+    font-size: 100px;
+    padding: 40px 0;
+}
+.title strong{
+    font-weight: bold;
+}
 /* DESIGN 끝 */
