@@ -50,7 +50,12 @@ body {
 .cow{
     background-color: var(--secodary-color);
     color:var(--primary-color);
-
+    width: 300px;
+    height: 300px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+    border-bottom-left-radius:70px;
+    border-bottom-right-radius:70px;
 }
 .title {
     background-color: var(--primary-color);
