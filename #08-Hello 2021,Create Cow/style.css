@@ -12,6 +12,8 @@ h1 {
 }
 
 /* RESET 끝 */
+
+
 /* COMMON */
 
 :root {
@@ -20,12 +22,20 @@ h1 {
 }
 
 /* COMMON끝 */
+
+
 /* LAYOUT */
 .center {
     background-color: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 
 /* LAYOUT 끝*/
+
+
 /* DESIGN */
 body {
     background-color: var(--primary-color);
