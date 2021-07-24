@@ -96,13 +96,14 @@ body {
 }
 .eyes::before,
 .eyes::after{
-    content:'O';
+    content:'';
     display:block;
     width: 30px;
     height: 30px;
-    background-color: currentColor;
+    background-color:white;
     margin: 10px;
     border-radius:50%;
+    box-shadow:inset 5px -8px 0px 12px currentColor;
 }
 .title {
     background-color: var(--primary-color);
