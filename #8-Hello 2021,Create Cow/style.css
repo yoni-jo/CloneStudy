@@ -58,7 +58,7 @@ body {
     border-top-right-radius: 40px;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
-    box-shadow:inset 0 15px 37px 18px rgba(0,0,0,0.3);
+    box-shadow: inset 0 15px 37px 18px rgba(0, 0, 0, 0.3);
 }
 
 .horn {
@@ -67,7 +67,7 @@ body {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     margin: 0 -70px;
-    box-shadow:inset 0 0 20px rgba(0,0,0,0.6)
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6)
 }
 
 .horn::before {
@@ -87,7 +87,7 @@ body {
     margin: 0 80px;
     transform: translateY(-20px);
     border-radius: 20px;
-    box-shadow: inset 0 -30px 20px rgba(0,0,0,0.2);
+    box-shadow: inset 0 -30px 20px rgba(0, 0, 0, 0.2);
 }
 
 .eyes {
@@ -97,33 +97,68 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
 .eyes::before,
-.eyes::after{
-    content:'';
-    display:block;
+.eyes::after {
+    content: '';
+    display: block;
     width: 30px;
     height: 30px;
-    background-color:white;
+    background-color: white;
     margin: 10px;
-    border-radius:50%;
-    box-shadow:inset 5px -8px 0px 12px currentColor;
+    border-radius: 50%;
+    box-shadow: inset 5px -8px 0px 12px currentColor;
 }
-.nose{
+
+.nose {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: var(--secodary-color);
     border-radius: 40px;
-    margin: 0 -20px;
+    margin: -20px;
+    
+    box-shadow:  0 5px 6px currentColor;
 }
+
 .nose::before,
-.nose::after{
-    content:" ";
+.nose::after {
+    content: " ";
     width: 30px;
     height: 20px;
     background-color: var(--primary-color);
     border-radius: 50%;
+    
 }
+
+.mouth {
+    background-color: var(--secodary-color);
+    height: 30px;
+    margin: 20px 30px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 10px currentColor;
+    position: relative;
+   
+}
+
+.mouth::after {
+    content: ' ';
+    background-color: red;
+    height: 30px;
+    position: absolute;
+    bottom:-50px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: 0 60px;
+    transform:translateY(100%);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+    border-bottom: 20px solid var(--secodary-color);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
 .title {
     background-color: var(--primary-color);
     font-size: 100px;
