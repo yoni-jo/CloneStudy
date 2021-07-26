@@ -15,19 +15,25 @@
 
 <strong>※주의)초반 작업물은 똑같을 수 있음😅 </strong>
 </pre>
+
+___
+
+### 21년 7월24일
+>HTMl,CSS만으로 소만들기 
+
+|완성된모습|정리|
+|:--|:--|
+|![image](studyimg/cow.gif)| svg나 canvas를 사용하지 않고<br>Negative Margins ,box-shadow,animation을 사용하여<br> 역동적인 이미지 제작|
 ___
 ### 21년 6월28일
-
 >호스팅 연결완료 ╰(*°▽°*)╯***
 
-|페이지이름| 반응형|링크|
+|페이지이름| 반응형|링크
 |:--:|:--:|:--:|
 |퍼시스|X|[link](http://alterego.woobi.co.kr/pf1/)|
 |새움터|X|[link](http://alterego.woobi.co.kr/pf2/)|
 |STATED|O|[link](http://alterego.woobi.co.kr/pf3/)|
 |KARRY|O|[link](http://alterego.woobi.co.kr/pf4/)|
 
-
 ___
-
 
