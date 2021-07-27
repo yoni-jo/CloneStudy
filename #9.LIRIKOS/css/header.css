@@ -58,13 +58,31 @@ nav .ham-Btn span {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: green;
     z-index: -1;
-    text-align: center;
+    overflow: hidden;
 }
 
-.global__Search input {}
+.global__Search .global__Search--wrap {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+}
 
+.global__Search--wrap form {
+    width: 100%;
+    display: flex;
+}
+
+.global__Search--wrap form input {
+    width: 100%;
+    height: 3em;
+    border:0;
+    border-bottom: 1px solid gray;
+    background-color: rgba(255,255,255,0);
+}
+.global__Search--wrap .suggestions {
+    text-align: left;
+}
 /* GLOBALMENU */
 .global__Menu {
     position: absolute;
