@@ -1,6 +1,11 @@
 /* COMMON */
+html,
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 a {
     text-decoration: none;
     display: block;
-    
+
 }
