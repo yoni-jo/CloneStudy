@@ -15,22 +15,22 @@ header {
 
 .logo a {}
 
-nav.nav {
+.nav {
     display: flex;
     align-items: center;
     transition: .2s;
 }
 
-.hide {
-    display: none !important;
+nav.hide {
+    display: none;
 }
 
-nav.nav .search {
+.nav .search {
     font-size: 1.2em;
 }
 
 
-nav.nav .ham-Btn {
+.nav .ham-Btn {
     cursor: pointer;
     width: 28px;
     height: 28px;
@@ -42,11 +42,11 @@ nav.nav .ham-Btn {
     transition: .1s;
 }
 
-nav.nav .ham-Btn:hover {
+.nav .ham-Btn:hover {
     height: 20px;
 }
 
-nav.nav .ham-Btn span {
+.nav .ham-Btn span {
     width: 100%;
     border: 1px solid black;
     box-sizing: border-box;
@@ -86,19 +86,92 @@ nav.nav .ham-Btn span {
     border: 0;
     border-bottom: 1px solid gray;
     background-color: rgba(255, 255, 255, 0);
-    
+
 }
-.global__Search--wrap form input::placeholder{
+
+.global__Search--wrap form input::placeholder {
     font-size: 1.5em;
-    font-weight: var(--font-weight);    
+    font-weight: var(--font-weight);
 }
-.global__Search--wrap .suggestions {
+
+.suggestions {
     text-align: left;
+}
+
+.suggestions h4 {
+    line-height: 5;
+    color: var(--gray)
+}
+
+.suggestions .menu {}
+
+.suggestions .menu li {
+    line-height: 2;
+}
+
+.suggestions .menu li a {
+    font-size: 1.5em;
+}
+
+.suggestions .menu li:hover a {
+    color: var(--green)
 }
 
 /* GLOBALMENU */
 .global__Menu {
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    display: none;
-    ;
+    top: 0;
+    right:-100%;
+    display: flex;
+    box-sizing: border-box;
+    transition: right 0.5s;
+}
+div.slideLeft{
+    right:0%;
+}
+
+.global__Menu__left,
+.global__Menu__right {
+    width: calc(100%/2);
+    padding:3.2em;
+}
+
+.global__Menu__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.global__Menu__left {background-color: var(--white);}
+
+.global__Menu__left .item {
+}
+
+.global__Menu__left .item>.item__name {
+    line-height:3;
+}
+
+.global__Menu__left .item .item__list {}
+
+.global__Menu__left .item .item__list li {
+    font-size: 1.2em;
+    line-height:2em;
+}
+
+.global__Menu__left .item .item__list li a {
+    color: var(--gray)
+}
+
+.global__Menu__left .sns{
+    display:flex;
+    align-items: flex-start;
+}
+.global__Menu__left .sns li{
+
+}
+.global__Menu__right{
+    position:relative;
+    background-color: var(--green);
 }
