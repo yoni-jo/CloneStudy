@@ -1,12 +1,14 @@
 /* COMMON */
-:root{
+:root {
     /* font */
-    --font-family-orgin:"Arial";
-    --font-weight:light;
+    --font-family-orgin: "Arial";
+    --font-weight: light;
     /* color */
-    --black:#000;
-    --white:#fff;
-    --gray:gray;
+    --black: #000;
+    --white: #fff;
+    --gray: #666;
+    --green: #007a88;
+    
 }
 
 html,
@@ -17,37 +19,52 @@ body {
 }
 
 a {
+    display: block;
     text-decoration: none;
-    color:var(--black)
+    color: var(--black)
 }
 
-input{
+input {
     font-family: 'Titillium Web', sans-serif;
-    
+
 }
+
+h3 {
+    font-size: 1.8em;
+    color:var(--green);
+    font-weight:var(--font-weight)
+}
+
 .material-icons {
     font-size: 2.5em;
     color: black;
 }
+
 .close-btn {
     width: 28px;
     height: 28px;
     position: absolute;
-    top:-3em;
-    right:-3em;
+    top: 3em;
+    right: 3em;
     cursor: pointer;
+    background-color: rgba(255,255,255,0);
+    z-index: 11;
 }
+
 .close-btn span {
     width: 100%;
     height: 2px;
+    top:0;
+    left:0;
     background-color: black;
     position: absolute;
+    display: block;
 }
-.close-btn span:nth-child(1){
-    
-    transform:rotateZ(45deg);
-    
+
+.close-btn span:nth-child(1) {
+    transform: rotateZ(45deg);
 }
-.close-btn span:nth-child(2){
-    transform:rotateZ(-45deg);
-   }
+
+.close-btn span:nth-child(2) {
+    transform: rotateZ(-45deg);
+}
