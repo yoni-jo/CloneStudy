@@ -15,21 +15,26 @@ header {
 
 .logo a {}
 
-nav {
+nav.nav {
     display: flex;
     align-items: center;
+    transition: .2s;
 }
 
-nav .search {
+.hide {
+    display: none !important;
+}
+
+nav.nav .search {
     font-size: 1.2em;
 }
 
-nav .search .material-icons {
+nav.nav .search .material-icons {
     font-size: 1.5em;
     color: black;
 }
 
-nav .ham-Btn {
+nav.nav .ham-Btn {
     cursor: pointer;
     width: 28px;
     height: 28px;
@@ -41,11 +46,11 @@ nav .ham-Btn {
     transition: .1s;
 }
 
-nav .ham-Btn:hover {
+nav.nav .ham-Btn:hover {
     height: 20px;
 }
 
-nav .ham-Btn span {
+nav.nav .ham-Btn span {
     width: 100%;
     border: 1px solid black;
     box-sizing: border-box;
@@ -56,16 +61,22 @@ nav .ham-Btn span {
     width: 100%;
     height: 549px;
     position: absolute;
-    top: 0;
+    top: -549px;
     left: 0;
     z-index: -1;
     overflow: hidden;
+    transition: top 0.5s;
+}
+
+.slideDown {
+    top: 0;
 }
 
 .global__Search .global__Search--wrap {
     width: 80%;
     height: 100%;
     margin: 100px auto;
+    position: relative;
 }
 
 .global__Search--wrap form {
@@ -76,13 +87,15 @@ nav .ham-Btn span {
 .global__Search--wrap form input {
     width: 100%;
     height: 3em;
-    border:0;
+    border: 0;
     border-bottom: 1px solid gray;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
+
 .global__Search--wrap .suggestions {
     text-align: left;
 }
+
 /* GLOBALMENU */
 .global__Menu {
     position: absolute;
