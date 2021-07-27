@@ -29,10 +29,6 @@ nav.nav .search {
     font-size: 1.2em;
 }
 
-nav.nav .search .material-icons {
-    font-size: 1.5em;
-    color: black;
-}
 
 nav.nav .ham-Btn {
     cursor: pointer;
@@ -90,8 +86,12 @@ nav.nav .ham-Btn span {
     border: 0;
     border-bottom: 1px solid gray;
     background-color: rgba(255, 255, 255, 0);
+    
 }
-
+.global__Search--wrap form input::placeholder{
+    font-size: 1.5em;
+    font-weight: var(--font-weight);    
+}
 .global__Search--wrap .suggestions {
     text-align: left;
 }
