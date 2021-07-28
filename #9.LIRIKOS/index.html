@@ -24,6 +24,10 @@
   <link rel="stylesheet" href="./css/footer.css" />
   <title>Premium Marine Cosmetic │ Lirikos Marine Energy </title>
 
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- JS -->
   <script src="./js/index.js" defer></script>
 </head>
@@ -60,7 +64,7 @@
         <span></span>
       </div>
       <div class="global__Search--wrap">
-        
+
         <form action="">
           <input type="text" placeholder="Search Here">
           <a href="javascript:void(0)" class="search">
@@ -116,7 +120,7 @@
         </ul>
       </div>
       <div class="global__Menu__right">
-        
+
         <div class="global_banner">
           test
         </div>
@@ -124,11 +128,36 @@
     </div>
 
   </header>
-
-
   <!-- MAIN -->
   <main>
-    <section class="banner"></section>
+    <section class="main__slider">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="inner">
+              <h2>BALANCING EMULSION with DEEP SEA SALT</h2>
+              <p>The water splashing emulsion that quickly absorbs on the skin with smooth texture.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner">
+              <h2>TRUE AMPOULE
+                MASK</h2>
+              <p>Daily skin care with sheet mask depending on your skin condition</p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+    </section>
   </main>
 </body>
 
