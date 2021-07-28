@@ -39,6 +39,10 @@ section {
     height: 100%;
 }
 
+.wrap {
+    max-width: 1200px
+}
+
 h2 {
     font-family: sans-serif;
     font-size: 4rem;
@@ -136,29 +140,32 @@ h3 {
 }
 
 .more:hover span.line::after {
-    animation:arrow_line;
+    animation: arrow_line;
     animation-duration: .4s;
-    animation-fill-mode:backwards;
-    animation-direction:alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in;
 }
-.more:hover span.line::before{
-    animation:arrow;
+
+.more:hover span.line::before {
+    animation: arrow;
     animation-duration: .4s;
-    animation-fill-mode:backwards;
-    animation-direction:alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in;
 }
+
 @keyframes arrow_line {
     100% {
         opacity: 0;
         width: 40px;
-        right:50%;
+        right: 50%;
     }
 }
-@keyframes arrow{
+
+@keyframes arrow {
     100% {
         opacity: 0;
-        left:45%;
+        left: 45%;
     }
 }
