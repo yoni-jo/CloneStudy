@@ -17,7 +17,7 @@ body {
     font-weight: var(--font-weight);
     width: 100%;
 }
-
+main{padding-top: 130px;}
 a {
     display: block;
     text-decoration: none;
