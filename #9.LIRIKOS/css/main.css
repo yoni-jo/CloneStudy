@@ -1,6 +1,6 @@
 /* CONTENT */
 
-/* main__slider */
+/* MAIN SLIDE*/
 .main__slide {
     width: 100%;
 
@@ -10,24 +10,29 @@
     margin-right: 5em;
 }
 
-.main__slide .inner {
+.main__slide .swiper-slide .inner {
     padding-top: 46%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-.main__slide .first-img {
+.main__slide .swiper-slide .first-img {
     background-image: url(../img/lirikos/main_banner/main_visual_01.jpg);
 }
 
-.main__slide .second-img {
+.main__slide .swiper-slide .second-img {
     background-image: url(../img/lirikos/main_banner/main_visual_02.jpg);
 }
 
-.main__slide .inner .inner--content {
+.main__slide .swiper-slide .inner--content {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
+    opacity: 0;
+    transition: .8s;
+}
+.main__slide .swiper-slide-active .inner--content{
+    opacity: 1;
 }
