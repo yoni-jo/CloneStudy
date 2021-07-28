@@ -1,13 +1,60 @@
 /* CONTENT */
 
 /* main__slider */
-.main__slider{
+.main__slide {
     width: 100%;
+
 }
-.main__slider .inner {
+.main__slide .inner {
     padding-top: 56.25%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.main__slide .inner:nth-child(1) {
     background-image: url(../img/lirikos/main_banner/main_visual_01.jpg);
+}
+
+.main__slide .inner:nth-child(2) {
+    background-image: url(../img/lirikos/main_banner/main_visual_02.jpg);
+}
+
+.more {
+    position:relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+.more>span.line {
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    top:50%;
+    right:5%;
+    transform:translateY(50%);
+    background-color: red; 
+   
+}
+.more>span::before{
+    content:">";
+    position: absolute;
+    color: red; 
+    top:-2px;
+    right:0;
+    transform:translateY(-50%);
+}
+.more>span::after{
+    content:"";
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    top:50%;
+    right:-10px;
+    transform:translateY(-50%);
+    z-index: -1;
 }
