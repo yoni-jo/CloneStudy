@@ -62,6 +62,7 @@ nav.hide {
     z-index: -1;
     overflow: hidden;
     transition: top 0.5s;
+    background-color: var(--white);
 }
 
 .slideDown {
