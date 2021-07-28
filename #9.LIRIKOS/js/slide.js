@@ -18,7 +18,7 @@ new Swiper('.main__slide .swiper-container', {
     pagination: {
         el: '.main__slide .swiper-pagination',
         type: 'progressbar',
-        
+
     },
     navigation: {
         prevEl: '.main__slide .swiper-button-prev',
@@ -27,7 +27,7 @@ new Swiper('.main__slide .swiper-container', {
 });
 // progressbar 위치 하단이동
 const main__slide = document.querySelector(".main__slide")
-const swiper_Pagination =  main__slide.querySelector(".swiper-pagination")
+const swiper_Pagination = main__slide.querySelector(".swiper-pagination")
 const TOP = "calc(100% - 4px)"
 
-swiper_Pagination.style.top =`${TOP}`
+swiper_Pagination.style.top = `${TOP}`
