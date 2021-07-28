@@ -1,0 +1,13 @@
+/* CONTENT */
+
+/* main__slider */
+.main__slider{
+    width: 100%;
+}
+.main__slider .inner {
+    padding-top: 56.25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/lirikos/main_banner/main_visual_01.jpg);
+}
