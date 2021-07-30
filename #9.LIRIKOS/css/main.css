@@ -17,6 +17,7 @@
     background-position: center;
     position: relative;
 }
+
 .main__slide .swiper-slide .first-img {
     background-image: url(../img/lirikos/main_banner/main_visual_01.jpg);
 }
@@ -31,8 +32,57 @@
     left: 10%;
     transform: translateY(-50%);
     opacity: 0;
-    transition: .8s;
 }
-.main__slide .swiper-slide-active .inner--content{
+
+.main__slide .swiper-slide-active .inner--content {
     opacity: 1;
+}
+
+/* BEST SELLERS */
+
+.best-sellers {}
+
+.best-sellers .wrap {
+    padding-top: 200px
+}
+
+.best-sellers .wrap>h2 {}
+
+.best-sellers .items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.best-sellers .items li {
+    margin-top: 5rem;
+    width: calc(100%/3 - 1.2em);
+}
+.best-sellers .items li:hover img{
+    opacity: 0
+}
+.best-sellers .items li+li {
+    padding: 0 1.2em;
+    box-sizing: border-box;
+}
+.best-sellers .items li a figure{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.best-sellers .items li:nth-of-type(2) figure,
+.best-sellers .items li:nth-of-type(5) figure{
+    margin-top: -5.7rem;
+}
+
+.best-sellers .items li a figure img {
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+    display: block;
+}
+
+.best-sellers .items li a h3 {
+    color: var(--black);
+    font-weight: 300;
+    text-align: center;
+    white-space: wrap;
 }

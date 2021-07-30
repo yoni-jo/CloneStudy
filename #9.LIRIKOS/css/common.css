@@ -1,8 +1,8 @@
 /* COMMON */
 :root {
     /* font */
-    --font-family-orgin: "Arial";
-    --font-weight: light;
+    --font-family-orgin: 'Source Sans Pro';
+    --font-weight: 200;
     /* color */
     --black: #000;
     --white: #fff;
@@ -14,7 +14,7 @@
 
 html,
 body {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: var(--font-weight);
     width: 100%;
 }
@@ -30,7 +30,7 @@ a {
 }
 
 input {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: var(--font-family-orgin);
 
 }
 
@@ -40,11 +40,11 @@ section {
 }
 
 .wrap {
-    max-width: 1200px
+    max-width: 1300px;
+    margin:0 auto;
 }
 
 h2 {
-    font-family: sans-serif;
     font-size: 4rem;
     color: var(--darkgreen);
     font-weight: 300;
