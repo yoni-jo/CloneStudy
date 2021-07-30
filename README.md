@@ -48,14 +48,16 @@ ___
 
 * __BEST SELLERS 세션__ :  __바닐라js코딩__ 
   * mouseover이벤트 메서드로 src 경로가 바뀌게 했으나 
-  transiton이 안먹혀서 코드를 전체 수정
+  transiton이 안먹혀서 js코드를 전체 수정
   
   * 제품이미지 파일명을 배열에 담아 foreach함수로 img태그의 src와 
   hover시 나올 이미지는 background-image로 자동으로 담기게 수정
   
     * |수정전|수정후|
       |-|-|
-      |![image](studyimg/리리코스.gif)|![image](studyimg/리리코스변경후.gif)|
+      |![image](studyimg/리리코스.gif)|![image](studyimg/리리코스변경후.gif)
+    * 완성 코드 
+      * ![image](studyimg/리리코스code.png)
 
 
 
