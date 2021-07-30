@@ -52,6 +52,8 @@ ___
   
   * 제품이미지 파일명을 배열에 담아 foreach함수로 img태그의 src와 
   hover시 나올 이미지는 background-image로 자동으로 담기게 수정
+
+  *css로 마우스 호버시 자동으로 이미지가 바뀌게 opacity:0 =>1로 transition:.5s 값을 줌.
   
     * |수정전|수정후|
       |-|-|
