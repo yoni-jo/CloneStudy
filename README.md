@@ -54,14 +54,16 @@ ___
   hover시 나올 이미지는 background-image로 자동으로 담기게 수정
 
   * css로 마우스 호버시 자동으로 이미지가 바뀌게 opacity:0 =>1로 transition:.5s 값을 줌.
-  
-    * |수정전|수정후|
-      |-|-|
-      |![image](studyimg/리리코스.gif)|![image](studyimg/리리코스변경후.gif)
+    <details>
+    <summary>수정 전 후 비교</summary>
+
+    |수정전|수정후|
+    |--|--|
+    |![image](studyimg/리리코스.gif)|![image](studyimg/리리코스변경후.gif)|
     * 완성 코드 
-      * ![image](studyimg/리리코스code.png)
+    ![image](studyimg/리리코스code.png)
 
-
+</details>
 
 
 ## **21년 7월24일**
