@@ -1,5 +1,5 @@
 "use strict"
-
+//상품리스트 이미지
 const item = [{
     img: 'FACIAL ERASER CLEANSING FORM.jpg',
     hover: 'FACIAL-ERASER-CLEANSING-FORM-hover.jpg'
@@ -24,6 +24,7 @@ const best_sellers = document.querySelector(".best-sellers")
 const items = document.querySelector(".items")
 const front_Img_el = items.querySelectorAll(".front")
 
+// 이미지파일 자동등록 
 item.forEach((list, index) => {
     const img = item[index].img
     const hover = item[index].hover
