@@ -3,7 +3,6 @@
 /* MAIN SLIDE*/
 .main__slide {
     width: 100%;
-
 }
 
 .main__slide .swiper-container {
@@ -40,13 +39,9 @@
 
 /* BEST SELLERS */
 
-.best-sellers {}
-
 .best-sellers .wrap {
     padding-top: 200px
 }
-
-.best-sellers .wrap>h2 {}
 
 .best-sellers .items {
     display: flex;
