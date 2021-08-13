@@ -42,7 +42,7 @@ ___
 >원본사이트링크 => [link](http://www.lirikosmarine.com/int/en/index.html)
 
 * __header__ : __바닐라js 코딩__
-  *  => 서치와 햄버거버튼 클릭시,  숨겨진 이벤트 발생
+  * 서치와 햄버거버튼 클릭시,  숨겨진 이벤트 발생
 
 * __상단배너__ :
   * __swiper.js 사용__ 
